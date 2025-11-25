@@ -1,6 +1,6 @@
-function Form() {
+function Form({ onSubmit }) {
   return (
-    <form>
+    <form onSubmit={onSubmit}>
       <div className="mb-3">
         <label htmlFor="name" className="form-label">
           Name:
