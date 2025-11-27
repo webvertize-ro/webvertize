@@ -5,24 +5,26 @@ function Modal({ show, onClose, title, children }) {
   const modalRef = useRef(null);
   const bsModal = useRef(null);
 
-  // Initialize Bootstrap modal instance once
+  // Initialize Bootstrap modal once
   useEffect(() => {
     bsModal.current = new BSModal(modalRef.current, {
       backdrop: true,
       keyboard: true,
     });
 
-    // Close event listener (when clicking X or pressing ESC)
+    // Trigger onClose AFTER Bootstrap fully hides modal
     modalRef.current.addEventListener('hidden.bs.modal', onClose);
   }, [onClose]);
 
-  // Show/hide when props change
+  // Reactively show/hide
   useEffect(() => {
-    if (show) bsModal.current.show();
-    else {
-      bsModal.current.hide();
+    if (show) {
+      bsModal.current.show();
+    } else {
+      bsModal.current.hide(); // DO NOT call onClose() manually
     }
-  }, [show, onClose]);
+  }, [show]);
+
   return (
     <div className="modal fade" tabIndex="-1" ref={modalRef}>
       <div className="modal-dialog">
