@@ -19,8 +19,11 @@ function Modal({ show, onClose, title, children }) {
   // Show/hide when props change
   useEffect(() => {
     if (show) bsModal.current.show();
-    else bsModal.current.hide();
-  }, [show]);
+    else {
+      onClose();
+      bsModal.current.hide();
+    }
+  }, [show, onClose]);
   return (
     <div className="modal fade" tabIndex="-1" ref={modalRef}>
       <div className="modal-dialog">

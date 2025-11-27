@@ -3,10 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMessage } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
 import Modal from './Modal';
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import Form from './Form';
 import { useNavigate } from 'react-router-dom';
-import { Modal as BSModal } from 'bootstrap';
 
 const SideButtonsContainer = styled.div`
   display: flex;
@@ -34,7 +33,6 @@ const FormButton = styled.a`
 function SideButtons() {
   const navigate = useNavigate();
   const [showForm, setShowForm] = useState(false);
-  const bsModal = useRef(null);
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -53,7 +51,6 @@ function SideButtons() {
       // Navigate to the thank-you page
       navigate('/thank-you');
       setShowForm(false);
-      bsModal.current.hide();
     } else {
       alert('Error sending message!');
     }
