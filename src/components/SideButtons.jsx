@@ -45,6 +45,8 @@ function SideButtons() {
       body: JSON.stringify(data),
     });
 
+    console.log(res);
+
     if (res.success) {
       alert('Message sent!');
       setShowForm(false);
