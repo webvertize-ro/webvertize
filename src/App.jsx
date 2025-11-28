@@ -17,6 +17,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/thank-you" element={<ThankYou />} />
+        <Route path="/too-many-requests" element={<TooManyRequests />} />
       </Routes>
     </div>
   );
