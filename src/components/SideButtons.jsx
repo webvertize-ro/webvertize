@@ -53,7 +53,9 @@ function SideButtons() {
       document.body.classList.remove('modal-open');
       document.querySelectorAll('.modal-backdrop').forEach((el) => el.remove());
       setShowForm(false);
-      // 2. Navigating to the thank-you page
+      // 2. Setting a flag in the SessionStorage
+      sessionStorage.setItem('formSubmitted', 'true');
+      // 3. Navigating to the thank-you page
       navigate('/thank-you');
     } else {
       alert('Error sending message!');
