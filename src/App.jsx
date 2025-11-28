@@ -6,6 +6,7 @@ import Navigation from './components/Navigation';
 import OurMission from './pages/Services';
 import Projects from './pages/Projects';
 import ThankYou from './pages/ThankYou';
+import TooManyRequests from './pages/TooManyRequests';
 
 function App() {
   return (
