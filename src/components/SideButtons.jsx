@@ -49,6 +49,8 @@ function SideButtons() {
 
     if (res.ok) {
       // Navigate to the thank-you page
+      document.body.classList.remove('modal-open');
+      document.querySelectorAll('.modal-backdrop').forEach((el) => el.remove());
       setShowForm(false);
       navigate('/thank-you');
     } else {
