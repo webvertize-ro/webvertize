@@ -61,7 +61,8 @@ function SideButtons() {
       document.body.classList.remove('modal-open');
       document.querySelectorAll('.modal-backdrop').forEach((el) => el.remove());
       setShowForm(false);
-
+      // setting a flag in sessionStorage
+      sessionStorage.setItem('tooManyRequests', 'true');
       navigate('/too-many-requests');
       return;
     }
