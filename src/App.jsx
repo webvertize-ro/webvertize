@@ -7,6 +7,7 @@ import OurMission from './pages/Services';
 import Projects from './pages/Projects';
 import ThankYou from './pages/ThankYou';
 import TooManyRequests from './pages/TooManyRequests';
+import '../App.css';
 
 function App() {
   return (
