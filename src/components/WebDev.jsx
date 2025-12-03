@@ -29,6 +29,7 @@ function WebDev() {
               link2="/services"
               icon="websites-icon"
               bgImage={bgWebsitesImage}
+              bgColor="rgba(110, 162, 193, 0.2)"
               overlayOpacity={0.35}
               blur={5}
             />
@@ -42,6 +43,7 @@ function WebDev() {
               link2="/services"
               icon="web-app-icon"
               bgImage={bgWebAppsImage}
+              bgColor="rgba(199, 204, 210, 0.5)"
               overlayOpacity={0.35}
               blur={5}
             />

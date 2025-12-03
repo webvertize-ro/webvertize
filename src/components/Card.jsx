@@ -10,6 +10,7 @@ const StyledCard = styled.div`
   overflow: hidden;
   transition: all 0.3s ease;
   cursor: pointer;
+  background-color: ${(props) => props.bgColor};
 
   /* Hover background */
   &:hover {
@@ -69,6 +70,7 @@ function Card({
   bgImage,
   overlayOpacity = 0.5,
   blur = 0,
+  bgColor,
 }) {
   const getIcon = () => {
     if (icon === 'website-icon') return faGlobe;
@@ -79,6 +81,7 @@ function Card({
   return (
     <StyledCard
       className="card"
+      bgColor={bgColor}
       bgImage={bgImage}
       overlayOpacity={overlayOpacity}
       blur={blur}
