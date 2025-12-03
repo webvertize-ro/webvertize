@@ -1,84 +1,157 @@
 import { useState, useEffect, useRef } from 'react';
-import './Dropdown.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import './Dropdown.css';
 import styled from 'styled-components';
 
-const StyledDropdown = styled.div`
-  /* width: 250px; */
+const DropdownContainer = styled.li`
   position: relative;
-  justify-content: center;
-`;
-
-const StyledLink = styled.a`
+  height: 100%;
+  flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
+
+  /* Making dropdown full width on mobile */
+  @media (max-width: 992px) {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+`;
+
+const DropdownToggle = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: left;
   gap: 0.5rem;
   text-decoration: none;
   color: #000;
-  cursor: default;
   height: 100%;
   width: 100%;
-  justify-content: center;
-  align-items: center;
-  &:hover {
-    color: #fff;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+
+  &::after {
+    display: none !important;
   }
+
   &:hover {
     background-color: rgb(39, 55, 77);
+    color: #fff;
+  }
+
+  /* For mobile: adjust styling */
+  @media (max-width: 992px) {
+    padding-left: 0;
+    width: 100%;
   }
 `;
 
-const Options = styled.div`
+const DropdownMenu = styled.div`
   position: absolute;
-  top: 0;
-  background-color: rgb(39, 55, 77);
-  padding: 1rem 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: ${(props) => (props.$isOpen ? 'flex' : 'none')};
+  min-width: 200px;
+  padding: 0.5rem 0;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
 
-  &:hover {
-    color: #fff;
+  /* For mobile: making dropdown full width and remove absolute positioning */
+  @media (max-width: 992px) {
+    position: static;
+    display: ${(props) => (props.$isOpen ? 'flex' : 'none')} !important;
+
+    flex-direction: column;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    padding-left: 1rem;
   }
 `;
 
-const OptionsLink = styled(Link)`
+const DropdownItem = styled.div`
   display: flex;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0;
+
+  &:hover {
+    background-color: #f8f9fa;
+  }
+`;
+
+const DropdownLink = styled(Link)`
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0.5rem 1rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
   text-decoration: none;
-  color: #fff;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  width: 100%;
 
   &:hover {
-    background-color: rgb(157, 178, 191);
+    background-color: rgb(39, 55, 77);
     color: #fff;
+    text-decoration: none;
+  }
+
+  /* For mobile: adjust padding */
+  @media (max-width: 992px) {
+    justify-content: flex-start;
+    padding: 0.5rem 0 0.5rem 1rem;
+    color: rgba(0, 0, 0, 0.55);
+
+    &:hover {
+      background-color: rgba(39, 55, 77, 0.1);
+      color: rgba(0, 0, 0, 0.7);
+    }
   }
 `;
 
-function Dropdown() {
-  const [dropdownToggled, setDropdownToggled] = useState(false);
-  const [selectedOption, setSelectedOption] = useState(null);
+function Dropdown({ closeNav }) {
+  const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
 
+  const toggleDropdown = (e) => {
+    e.stopPropagation();
+    setIsOpen(!isOpen);
+  };
+
+  const handleItemClick = () => {
+    setIsOpen(false);
+    // Close the entire navbar on mobile when an item is clicked
+    if (closeNav && window.innerWidth < 992) {
+      closeNav();
+    }
+  };
+
+  // Close dropdown when clicking outside
   useEffect(() => {
-    function handler(e) {
-      if (dropdownRef.current) {
-        if (!dropdownRef.current.contains(e.target)) {
-          setDropdownToggled(false);
-        }
+    function handleClickOutside(e) {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+        setIsOpen(false);
       }
     }
 
-    document.addEventListener('click', handler);
+    document.addEventListener('click', handleClickOutside);
     return () => {
-      document.removeEventListener('click', handler);
+      document.removeEventListener('click', handleClickOutside);
     };
-  });
+  }, []);
 
   const dropdownOptions = [
     {
@@ -107,37 +180,38 @@ function Dropdown() {
     },
   ];
   return (
-    <StyledDropdown className="dropdown" ref={dropdownRef}>
-      <StyledLink
-        className="toggle"
-        onClick={() => setDropdownToggled(!dropdownToggled)}
+    <DropdownContainer className="nav-item dropdown" ref={dropdownRef}>
+      <DropdownToggle
+        className="nav-link dropdown-toggle"
+        onClick={toggleDropdown}
+        aria-expanded={isOpen}
+        role="button"
       >
-        <div className="services-single">Services</div>
-        <div>
-          {dropdownToggled ? (
-            <FontAwesomeIcon icon={faChevronUp} />
-          ) : (
-            <FontAwesomeIcon icon={faChevronDown} />
-          )}
-        </div>
-      </StyledLink>
-      <Options className={`options ${dropdownToggled ? 'visible' : ''}`}>
-        {dropdownOptions.map((option, index) => {
-          return (
-            <OptionsLink
+        <span className="services-single">Services</span>
+        {isOpen ? (
+          <FontAwesomeIcon icon={faChevronUp} />
+        ) : (
+          <FontAwesomeIcon icon={faChevronDown} />
+        )}
+      </DropdownToggle>
+      <DropdownMenu
+        className="dropdown-menu"
+        $isOpen={isOpen}
+        aria-labelledby="navbarDropdown"
+      >
+        {dropdownOptions.map((option) => (
+          <DropdownItem>
+            <DropdownLink
               to={option.dest}
-              onClick={() => {
-                setSelectedOption(option);
-                setDropdownToggled(false);
-              }}
-              key={index}
+              onClick={handleItemClick}
+              className="dropdown-item"
             >
               {option.label}
-            </OptionsLink>
-          );
-        })}
-      </Options>
-    </StyledDropdown>
+            </DropdownLink>
+          </DropdownItem>
+        ))}
+      </DropdownMenu>
+    </DropdownContainer>
   );
 }
 

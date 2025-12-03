@@ -5,31 +5,57 @@ import { faGlobe, faGear } from '@fortawesome/free-solid-svg-icons';
 
 const StyledCard = styled.div`
   position: relative;
-  height: 500px;
+  padding: 5rem 1rem;
   border-radius: 1rem;
   overflow: hidden;
   transition: all 0.3s ease;
   cursor: pointer;
   background-color: ${(props) => props.bgColor};
 
-  /* Hover background */
-  &:hover {
-    color: #fff;
-    background-image: url(${(props) => props.bgImage || ''});
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  @media (max-width: 576px) {
+    padding: 0;
+    margin-bottom: 1rem;
+  }
 
-    &::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.75);
-      z-index: 1;
-      border-radius: inherit;
-      transition: all 0.3s ease;
+  @media (min-width: 576px) and (max-width: 769px) {
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    padding: 0;
+  }
+
+  @media (min-width: 992px) and (max-width: 1200px) {
+    padding: 0.5rem;
+  }
+
+  /* Hover background */
+  @media (min-width: 768px) {
+    &:hover {
+      color: #fff;
+      background-image: url(${(props) => props.bgImage || ''});
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.75);
+        z-index: 1;
+        border-radius: inherit;
+        transition: all 0.3s ease;
+      }
     }
   }
+`;
+
+const CardTitle = styled.h4`
+  /* @media (min-width: 992px) and (max-width: 1200px) {
+    text-align: left;
+  } */
 `;
 
 const CardBody = styled.div`
@@ -70,10 +96,10 @@ function Card({
   bgImage,
   overlayOpacity = 0.5,
   blur = 0,
-  bgColor,
+  bgcolor,
 }) {
   const getIcon = () => {
-    if (icon === 'website-icon') return faGlobe;
+    if (icon === 'websites-icon') return faGlobe;
     if (icon === 'web-app-icon') return faGear;
     return null;
   };
@@ -81,7 +107,7 @@ function Card({
   return (
     <StyledCard
       className="card"
-      bgColor={bgColor}
+      bgcolor={bgcolor}
       bgImage={bgImage}
       overlayOpacity={overlayOpacity}
       blur={blur}
@@ -94,7 +120,11 @@ function Card({
           </h2>
         )}
 
-        {subtitle && <h4 className="card-subtitle mb-2">{subtitle}</h4>}
+        {subtitle && (
+          <CardTitle className="text-start card-subtitle mb-2">
+            {subtitle}
+          </CardTitle>
+        )}
         {text && <StyledP>{text}</StyledP>}
 
         {(link1 || link2) && (

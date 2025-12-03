@@ -3,6 +3,10 @@ import logoImg from '../assets/logo_no_text_simple_final.png';
 
 const StyledLogoImg = styled.img`
   width: 75px;
+
+  @media (max-width: 576px) {
+    width: 50px;
+  }
 `;
 
 const LogoTitle = styled.div`
@@ -10,6 +14,10 @@ const LogoTitle = styled.div`
   font-weight: 800;
   font-size: 1.8rem;
   color: #1b3c53;
+
+  @media (max-width: 576px) {
+    font-size: 1.4rem;
+  }
 `;
 
 const LogoSubtitle = styled.div`
@@ -20,6 +28,11 @@ const LogoSubtitle = styled.div`
   margin-top: -10px;
   font-size: 1rem;
   margin-left: 7px;
+
+  @media (max-width: 576px) {
+    font-size: 0.8rem;
+    margin-left: 3px;
+  }
 `;
 
 function Logo() {
