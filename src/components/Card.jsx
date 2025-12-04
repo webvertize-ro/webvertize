@@ -11,7 +11,6 @@ const StyledCard = styled.div`
   overflow: hidden;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
-  background-color: ${(props) => props.bgColor};
 
   @media (max-width: 576px) {
     padding: 0;
@@ -44,7 +43,7 @@ const StyledCard = styled.div`
         content: '';
         position: absolute;
         inset: 0;
-        background: rgba(0, 0, 0, 0.75);
+        background-color: rgba(0, 0, 0, 0.65);
         z-index: 1;
         border-radius: inherit;
         transition: all 0.3s ease;
@@ -135,7 +134,7 @@ function Card({
             {link1 && <StyledLink to={link1}>View Case Studies</StyledLink>}
             {link2 && <StyledLink to={link2}>Explore Services</StyledLink>}
             {link3 && (
-              <StyledLink to={link2}>Read more about campaign types</StyledLink>
+              <StyledLink to={link3}>Read more about campaign types</StyledLink>
             )}
           </div>
         )}
