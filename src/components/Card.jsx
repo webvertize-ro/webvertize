@@ -4,11 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe, faGear } from '@fortawesome/free-solid-svg-icons';
 
 const StyledCard = styled.div`
+  height: 100%;
   position: relative;
   padding: 5rem 1rem;
   border-radius: 1rem;
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease-in-out;
   cursor: pointer;
   background-color: ${(props) => props.bgColor};
 
@@ -66,6 +67,7 @@ const CardBody = styled.div`
   justify-content: center;
   height: 100%;
   padding: 1rem;
+  flex-grow: 1 !important;
 `;
 
 const StyledP = styled.p`
@@ -92,6 +94,7 @@ function Card({
   text,
   link1,
   link2,
+  link3,
   icon,
   bgImage,
   overlayOpacity = 0.5,
@@ -127,10 +130,13 @@ function Card({
         )}
         {text && <StyledP>{text}</StyledP>}
 
-        {(link1 || link2) && (
+        {(link1 || link2 || link3) && (
           <div className="d-flex">
             {link1 && <StyledLink to={link1}>View Case Studies</StyledLink>}
             {link2 && <StyledLink to={link2}>Explore Services</StyledLink>}
+            {link3 && (
+              <StyledLink to={link2}>Read more about campaign types</StyledLink>
+            )}
           </div>
         )}
       </CardBody>

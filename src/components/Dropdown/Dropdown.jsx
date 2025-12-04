@@ -10,8 +10,8 @@ const DropdownContainer = styled.li`
   height: 100%;
   flex: 1;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 
   /* Making dropdown full width on mobile */
   @media (max-width: 992px) {
@@ -24,7 +24,7 @@ const DropdownContainer = styled.li`
 const DropdownToggle = styled.a`
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
   gap: 0.5rem;
   text-decoration: none;
   color: #000;
@@ -41,6 +41,10 @@ const DropdownToggle = styled.a`
     background-color: rgb(39, 55, 77);
     color: #fff;
   }
+  @media (max-width: 576px) {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
 
   /* For mobile: adjust styling */
   @media (max-width: 992px) {
@@ -55,7 +59,9 @@ const DropdownMenu = styled.div`
   left: 0;
   z-index: 1000;
   display: ${(props) => (props.$isOpen ? 'flex' : 'none')};
+  flex-direction: column;
   min-width: 200px;
+  width: 100%;
   padding: 0.5rem 0;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.15);
@@ -119,6 +125,12 @@ const DropdownLink = styled(Link)`
       background-color: rgba(39, 55, 77, 0.1);
       color: rgba(0, 0, 0, 0.7);
     }
+  }
+`;
+
+const StyledServicesSingle = styled.span`
+  @media (max-width: 576px) {
+    /* width: 100%; */
   }
 `;
 
@@ -187,7 +199,9 @@ function Dropdown({ closeNav }) {
         aria-expanded={isOpen}
         role="button"
       >
-        <span className="services-single">Services</span>
+        <StyledServicesSingle className="services-single">
+          Services
+        </StyledServicesSingle>
         {isOpen ? (
           <FontAwesomeIcon icon={faChevronUp} />
         ) : (

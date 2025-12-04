@@ -6,27 +6,33 @@ function Ads() {
     <div>
       <h1>Advertisment: Content Creation and Ad Campaigns Management</h1>
       <div className="container">
-        <div className="row">
-          <div className="col-md-4">
+        <div className="row d-flex align-items-stretch">
+          <div className="col-md-4 mb-4">
             {/* Content Creation */}
-            <ContentCreationCard />
+            <Card
+              title="Content Creation"
+              subtitle="Promotional images & Reels for ads"
+              text="High-quaality  promotional content for Facebook and Google Ads, including professionally designed split-image posts and short video Reels that highlight your brand, services and calls to action."
+              link1="View Case Studies"
+              link2="Explore Services"
+            />
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 mb-4">
             {/* Google Ads Campaigns */}
             <Card
               title="Google Ads Campaigns"
-              subtitle="Creating and managing Google Ads Campaigns that best suit your business needs."
-              text="Working together in order to create a Google Ads campaign from scratch, choose the most appropriate goals for your business, then managing it and providing monthly reports about its performance."
-              link2="Read more about the campaign types"
+              subtitle="Strategic creation and ongoing management of Google Ads campaigns tailored to your business goals"
+              text="Google Ads campaigns general description: we collaborate with you to design a high-performing Google Ads campaign from the ground up - selecting the right objectives and ensuring consistent optimizations and monitoring. We monitor performance, implement improvements and deliver clear monthly reports so you always know how your campaign is progressing."
+              link3="Read more about campaign types"
             />
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 mb-4">
             {/* Facebook Ads Campaigns */}
             <Card
               title="Facebook Ads Campaigns"
-              subtitle="Facebook Ads Campaigns with different objectives"
-              text="Creating and managing Facebook Ads campaigns with different objectives as per your business needs."
-              link2="Read more about the campaign types"
+              subtitle="Engaging campaigns tailored to your business goals"
+              text="Creating and managing Facebook Ads campaigns, including promotional content, ad copy, and performance monitoring to reach your audience effectively."
+              link3="Read more about campaign types"
             />
           </div>
         </div>

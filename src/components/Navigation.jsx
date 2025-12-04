@@ -6,7 +6,14 @@ import FacebookIcon from './FacebookIcon';
 import Dropdown from '../components/Dropdown/Dropdown';
 
 const StyledNav = styled.nav`
-  padding: 1rem;
+  height: 80px;
+  padding: 0;
+  /* padding: 1rem; */
+
+  @media (max-width: 576px) {
+    height: unset;
+    padding: 1rem;
+  }
 `;
 
 const StyledLinkLogo = styled(Link)`
@@ -16,17 +23,22 @@ const StyledLinkLogo = styled(Link)`
 const StyledLink = styled(Link)`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: black;
   max-width: 320px;
   height: 100%;
   width: 100%;
-  align-items: flex-start;
 
   &:hover {
     background-color: rgb(39, 55, 77);
     color: #fff;
+  }
+
+  @media (max-width: 992px) {
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 `;
 
@@ -44,7 +56,10 @@ const StyledLi = styled.li`
   flex: 1;
   display: flex;
   justify-content: center;
-  align-items: left;
+`;
+
+const FacebookIconContainer = styled.div`
+  padding-left: 1rem;
 `;
 
 function Navigation() {
@@ -135,9 +150,9 @@ function Navigation() {
               </StyledLink>
             </StyledLi>
           </StyledUl>
-          <div>
+          <FacebookIconContainer>
             <FacebookIcon />
-          </div>
+          </FacebookIconContainer>
         </div>
       </div>
     </StyledNav>
