@@ -4,13 +4,13 @@ import styled from 'styled-components';
 
 const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
   font-size: 2rem;
-  color: #1b3c53;
+  color: ${(props) => (props.color === 'light' ? '#fff' : '#1b3c53')};
 `;
 
-function FacebookIcon() {
+function FacebookIcon({ color }) {
   return (
     <a href="https://facebook.com" target="_blank">
-      <StyledFontAwesomeIcon icon={faFacebook} />
+      <StyledFontAwesomeIcon icon={faFacebook} color={color} />
     </a>
   );
 }

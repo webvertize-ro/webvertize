@@ -101,7 +101,7 @@ function Navigation() {
 
   return (
     <StyledNav
-      className="navbar navbar-expand-lg navbar-light bg-light"
+      className="navbar navbar-expand-lg navbar-light bg-light sticky-top"
       ref={navRef}
     >
       <div className="container h-100">
@@ -151,7 +151,7 @@ function Navigation() {
             </StyledLi>
           </StyledUl>
           <FacebookIconContainer>
-            <FacebookIcon />
+            <FacebookIcon color="dark" />
           </FacebookIconContainer>
         </div>
       </div>

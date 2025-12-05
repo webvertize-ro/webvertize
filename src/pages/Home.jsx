@@ -5,6 +5,7 @@ import WebDev from '../components/WebDev';
 import Ads from '../components/Ads';
 import OurMission from '../components/OurMission';
 import CTA from '../components/CTA';
+import WhatsAppButton from '../components/WhatsAppButton';
 
 function Home() {
   return (
@@ -28,6 +29,7 @@ function Home() {
       />
 
       <SideButtons />
+      <WhatsAppButton />
       <Footer />
     </div>
   );
