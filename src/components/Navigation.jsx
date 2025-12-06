@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Logo from './Logo';
 import FacebookIcon from './FacebookIcon';
-import Dropdown from '../components/Dropdown/Dropdown';
+import Dropdown from './Dropdown/Dropdown';
 
 const StyledNav = styled.nav`
   height: 80px;

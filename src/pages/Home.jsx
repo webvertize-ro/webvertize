@@ -6,6 +6,7 @@ import Ads from '../components/Ads';
 import OurMission from '../components/OurMission';
 import CTA from '../components/CTA';
 import WhatsAppButton from '../components/WhatsAppButton';
+import OurProcess from '../components/OurProcess';
 
 function Home() {
   return (
@@ -17,6 +18,9 @@ function Home() {
       <div className="container">
         <Ads />
       </div>
+
+      <OurProcess />
+
       <div className="container">
         <OurMission />
       </div>

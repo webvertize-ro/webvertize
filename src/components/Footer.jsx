@@ -24,6 +24,11 @@ const StyledLink = styled.a`
     text-decoration: underline;
   }
 `;
+const StyledLinkLogo = styled(Link)`
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+`;
 
 const StyledRegularLink = styled(Link)`
   text-decoration: none;
@@ -118,9 +123,9 @@ function Footer() {
         <div className="container">
           <FooterRow className="row d-flex">
             <LogoWrapper className="col-md-4 d-flex">
-              <StyledLink href="">
+              <StyledLinkLogo to="/">
                 <Logo theme={'light'} />
-              </StyledLink>
+              </StyledLinkLogo>
             </LogoWrapper>
             <QuickLinksWrapper className="col-md-4 d-flex">
               <div>
