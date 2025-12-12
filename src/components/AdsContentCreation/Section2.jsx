@@ -54,6 +54,13 @@ const ContentRow = styled.div`
   }
 `;
 
+const StyledUl = styled.ul`
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+`;
+
 function Section2() {
   return (
     <StyledSection2 className="container">
@@ -64,7 +71,7 @@ function Section2() {
         </TitleContainer>
 
         <Content>
-          <ContentRow className="row">
+          <ContentRow className="row mb-4">
             <div className="col-sm-12 col-xl-4 d-flex align-items-center justify-content-center">
               <GoogleAdsCampaigns
                 src={googleAdsCampaigns}
@@ -83,6 +90,79 @@ function Section2() {
             </div>
           </ContentRow>
         </Content>
+        <ContentRow className="row">
+          <h4>Our Process</h4>
+          <StyledUl>
+            <li>
+              <div class="card">
+                <div class="card-body">
+                  <h5>
+                    Account setup using your own Google profile (you retain full
+                    ownership)
+                  </h5>
+                  <p>
+                    We begin by helping you set up your Google Ads account
+                    (using your own Google profile so you maintain full
+                    ownership). Once everything is in place, we give our account
+                    the approapriate management access and start shaping a
+                    strategy built on clarity, relevance and ongoing
+                    optimization.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card">
+                <div class="card-body">
+                  <h5>Strategy development based on goals and budget</h5>
+                  <p>
+                    Before launching the campaign, we clarify your objectives
+                    (whether it's driving leads, phone calls, sales, or website
+                    visits) and align these with an appropriate monthly budget.
+                    We then develop a campaign structure tailored to your
+                    market, services, and target audience.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card">
+                <div class="card-body">
+                  <h5>Daily performance monitoring</h5>
+                  <p></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card">
+                <div class="card-body">
+                  Continuous bid, keyword, and targeting optimizations
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card">
+                <div class="card-body">
+                  Notifications and assistance with billing thresholds
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card">
+                <div class="card-body">
+                  Implementation of conversion tracking when needed
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card">
+                <div class="card-body">
+                  Monthly performance reports for complete transparency
+                </div>
+              </div>
+            </li>
+          </StyledUl>
+        </ContentRow>
       </div>
     </StyledSection2>
   );
