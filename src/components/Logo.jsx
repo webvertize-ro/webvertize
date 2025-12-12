@@ -10,6 +10,10 @@ const StyledLogoImg = styled.img`
   @media (max-width: 576px) {
     width: 50px;
   }
+
+  @media (min-width: 576px) and (max-width: 768px) {
+    width: 60px;
+  }
 `;
 
 const LogoTitle = styled.div`
@@ -20,6 +24,10 @@ const LogoTitle = styled.div`
 
   @media (max-width: 576px) {
     font-size: 1.4rem;
+  }
+
+  @media (min-width: 576px) and (max-width: 768px) {
+    font-size: 1.25rem;
   }
 `;
 
@@ -36,6 +44,12 @@ const LogoSubtitle = styled.div`
   @media (max-width: 576px) {
     font-size: 0.8rem;
     margin-left: 3px;
+  }
+
+  @media (min-width: 576px) and (max-width: 768px) {
+    font-size: 0.7rem;
+    margin-left: 3px;
+    margin-top: -5px;
   }
 `;
 

@@ -9,11 +9,11 @@ import Projects from './pages/Projects';
 import ThankYou from './pages/ThankYou';
 import TooManyRequests from './pages/TooManyRequests';
 import AiAutomation from './pages/Services/AiAutomation';
-import AdCampaigns from './pages/Services/AdCampaigns';
+import AdCampaigns from './pages/Services/AdsContentCreation';
 import ContentCreation from './pages/Services/ContentCreation';
 import WebsitesPage from './pages/Services/WebsitesPage';
 import WebAppsPage from './pages/Services/WebAppsPage';
-import AdvertisingContentCreation from './pages/Services/AdCampaigns';
+import AdvertisingContentCreation from './pages/Services/AdsContentCreation';
 
 function App() {
   return (

@@ -42,7 +42,6 @@ const StyledRegularLink = styled(Link)`
 const FooterRow = styled.div`
   @media (max-width: 768px) {
     display: flex;
-    gap: 1rem;
   }
 `;
 
