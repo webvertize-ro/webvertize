@@ -19,10 +19,23 @@ const Section = styled.section`
   width: 100%;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
   gap: 1.5rem;
   padding: 4rem 0;
+
+  @media (max-width: 1200px) {
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-top: 0;
+  }
+`;
+
+const SectionTitle = styled.h2`
+  text-align: left;
+  padding: 0;
+  @media (max-width: 576px) {
+    text-align: center;
+    padding: 0 1rem;
+  }
 `;
 
 const CardsList = styled.ul`
@@ -39,6 +52,7 @@ const Card = styled.li`
   transform-origin: center top;
   width: 100%;
   height: 430px;
+
   border-radius: 1.5rem;
   padding: 2rem;
   margin: 0 0 4rem 0;
@@ -66,21 +80,62 @@ const Card = styled.li`
     position: relative;
     z-index: 2;
   }
+
+  @media (max-width: 576px) {
+    height: 200px;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  @media (min-width: 576px) and (max-width: 768px) {
+    height: 300px;
+    margin: 0;
+    padding: 1.25rem;
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    height: 325px;
+    margin: 0;
+    padding: 1.5rem;
+  }
+
+  @media (min-width: 992px) and (max-width: 1200px) {
+    height: 450px;
+    margin: 0;
+    padding: 2rem;
+  }
 `;
 
 const Title = styled.h2`
   font-size: 2rem;
   margin-bottom: 1rem;
   font-weight: bold;
+
+  @media (max-width: 576px) {
+    font-size: 1.25rem;
+  }
 `;
 
 const Text = styled.p`
   font-size: 1.1rem;
   line-height: 1.7;
+
+  @media (max-width: 576px) {
+    font-size: 1rem !important;
+  }
 `;
 
+const StyledLiInner = styled.div`
+  @media (max-width: 576px) {
+    font-size: 0.5rem !important;
+  }
+`;
 const StyledUl = styled.ul`
   list-style: none;
+
+  @media (max-width: 992px) {
+    display: none;
+  }
 `;
 
 const StyledLi = styled.li`
@@ -339,12 +394,14 @@ export default function ServicesStackedCards() {
 
   return (
     <Section className="container">
-      <h2>Our Process - How We Bring Your Project to Life</h2>
+      <SectionTitle>
+        Our Process - How We Bring Your Project to Life
+      </SectionTitle>
       <CardsList className="js-stack-cards">
         {steps.map((step, i) => (
           <Card key={i} bg={step.image} className="js-stack-cards__item">
             <Title>{step.title}</Title>
-            <Text className="fs-4">
+            <Text className="fs-5">
               <strong>{step.objective.title}</strong>: {step.objective.content}
             </Text>
             <StyledUl>
@@ -353,10 +410,10 @@ export default function ServicesStackedCards() {
                   <div>
                     <FontAwesomeIcon icon={icons[i]} />
                   </div>
-                  <div>
-                    <strong className="fs-5">{item.itemTitle}</strong>:{' '}
+                  <StyledLiInner>
+                    <strong className="fs-6">{item.itemTitle}</strong>:{' '}
                     {item.itemText}
-                  </div>
+                  </StyledLiInner>
                 </StyledLi>
               ))}
             </StyledUl>

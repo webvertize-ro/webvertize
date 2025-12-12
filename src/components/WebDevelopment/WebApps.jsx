@@ -12,7 +12,11 @@ const StyledUl = styled.ul`
   padding: 0;
 `;
 
-const WebApplications = styled.div``;
+const WebApplications = styled.div`
+  @media (max-width: 576px) {
+    margin-bottom: 1.5rem;
+  }
+`;
 
 const Section = styled.section``;
 
