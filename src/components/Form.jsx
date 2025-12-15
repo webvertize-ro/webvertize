@@ -5,12 +5,22 @@ import { useForm } from 'react-hook-form';
 function Form({ onSubmit }) {
   const [turnstileToken, setTurnstileToken] = useState(null);
 
-  const { register, handleSubmit } = useForm();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
 
-  function onSubmit() {}
+  function submitHandler(data) {
+    if (!turnstileToken) {
+      return;
+    }
+
+    onValidSubmit({ ...data, cf_turnstile_token: turnstileToken });
+  }
 
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={handleSubmit(submitHandler)}>
       <div className="mb-3">
         <label htmlFor="name" className="form-label">
           Name:
@@ -19,7 +29,8 @@ function Form({ onSubmit }) {
           type="text"
           className="form-control"
           name="name"
-          {...register('name')}
+          {...register('name', { required: 'Name is required' })}
+          {errors.name && <small className="text-danger">{errors.name.message}</small>}
         />
       </div>
       <div className="mb-3">
