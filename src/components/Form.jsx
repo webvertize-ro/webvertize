@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Turnstile from './Turnstile';
 import { useForm } from 'react-hook-form';
+import toast from 'react-hot-toast';
 
 function Form({ onSubmit }) {
   const [turnstileToken, setTurnstileToken] = useState(null);
@@ -31,9 +32,7 @@ function Form({ onSubmit }) {
           name="name"
           {...register('name', { required: 'Name is required' })}
         />
-        {errors.name && (
-          <small className="text-danger">{errors.name.message}</small>
-        )}
+        {errors.name && toast.error(errors.name.message)}
       </div>
       <div className="mb-3">
         <label htmlFor="email" className="form-label">
