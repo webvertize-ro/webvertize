@@ -23,6 +23,13 @@ function Form({ onSubmit }) {
           className="form-control"
         ></textarea>
       </div>
+      <div className="mb-3 d-flex justify-content-center">
+        <div
+          class="cf-turnstile"
+          data-sitekey="0x4AAAAAACGwYToVvX6OMIl0"
+          data-theme="light"
+        ></div>
+      </div>
       <button type="submit" className="btn btn-primary w-100">
         Submit
       </button>

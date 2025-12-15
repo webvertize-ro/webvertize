@@ -26,6 +26,7 @@ function FormButton() {
 
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
+    console.log(data);
 
     // send to Vercel API route
     const res = await fetch('/api/contact', {
@@ -52,6 +53,8 @@ function FormButton() {
       sessionStorage.setItem('tooManyRequests', 'true');
       navigate('/too-many-requests');
       return;
+    } else if (res.status === 400) {
+      console.log('Captcha verification failed');
     }
   }
 

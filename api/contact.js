@@ -18,6 +18,23 @@ export default async function handler(req, res) {
       req.on('error', reject);
     });
 
+    // Verify turnstile
+    const responseToken = await fetch(
+      'https://challenges.cloudflare.com/turnstile/v0/siteverify',
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams({
+          secret: process.env.TURNSTILE_SECRET,
+          response: data['cf-turnstile-response'],
+        }),
+      }
+    ).then((res) => res.json());
+
+    if (!responseToken.success) {
+      return res.status(400).json({ error: 'CAPTCHA verification failed!' });
+    }
+
     const client = await clientPromise;
     const db = client.db('WebvertizeFormSubmissions');
     const collection = db.collection('Webvertize');
