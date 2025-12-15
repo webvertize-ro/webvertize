@@ -1,4 +1,8 @@
+import { useState } from 'react';
+import Turnstile from './Turnstile';
+
 function Form({ onSubmit }) {
+  const [turnstileToken, setTurnstileToken] = useState(null);
   return (
     <form onSubmit={onSubmit}>
       <div className="mb-3">
@@ -23,14 +27,19 @@ function Form({ onSubmit }) {
           className="form-control"
         ></textarea>
       </div>
+      <input
+        type="hidden"
+        name="cf_turnstile_token"
+        value={turnstileToken || ''}
+      />
       <div className="mb-3 d-flex justify-content-center">
-        <div
-          class="cf-turnstile"
-          data-sitekey="0x4AAAAAACGwYToVvX6OMIl0"
-          data-theme="light"
-        ></div>
+        <Turnstile onVerify={setTurnstileToken} />
       </div>
-      <button type="submit" className="btn btn-primary w-100">
+      <button
+        type="submit"
+        disabled={!turnstileToken}
+        className="btn btn-primary w-100"
+      >
         Submit
       </button>
     </form>
