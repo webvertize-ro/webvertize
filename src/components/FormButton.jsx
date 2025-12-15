@@ -37,6 +37,8 @@ function FormButton() {
       toast.success('Success!');
       navigate('/thank-you');
     } else if (res.status === 429) {
+      document.body.classList.remove('modal-open');
+      document.querySelectorAll('.modal-backdrop').forEach((el) => el.remove());
       setShowForm(false);
       sessionStorage.setItem('tooManyRequests', 'true');
       navigate('/too-many-requests');
