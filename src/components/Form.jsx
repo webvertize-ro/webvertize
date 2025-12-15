@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import { use, useEffect, useState } from 'react';
 import Turnstile from './Turnstile';
 import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
 
-function Form({ onSubmit }) {
+function Form({ onValidSubmit }) {
   const [turnstileToken, setTurnstileToken] = useState(null);
 
   const {
@@ -11,6 +11,18 @@ function Form({ onSubmit }) {
     handleSubmit,
     formState: { errors },
   } = useForm();
+
+  useEffect(() => {
+    if (errors.name) {
+      toast.error(errors.name.message);
+    }
+  }, [errors.name]);
+
+  useEffect(() => {
+    if (errors.email) {
+      toast.error(errors.email.message);
+    }
+  }, [errors.email]);
 
   function submitHandler(data) {
     if (!turnstileToken) {
@@ -32,7 +44,6 @@ function Form({ onSubmit }) {
           name="name"
           {...register('name', { required: 'Name is required' })}
         />
-        {errors.name && toast.error(errors.name.message)}
       </div>
       <div className="mb-3">
         <label htmlFor="email" className="form-label">
@@ -42,7 +53,7 @@ function Form({ onSubmit }) {
           type="email"
           className="form-control"
           name="email"
-          {...register('email')}
+          {...register('email', { required: 'Email is required' })}
         />
       </div>
       <div className="mb-3">
@@ -53,7 +64,7 @@ function Form({ onSubmit }) {
           name="message"
           id="form-message"
           className="form-control"
-          {...register('message')}
+          {...register('message', { required: 'Message is required' })}
         ></textarea>
       </div>
       <input
