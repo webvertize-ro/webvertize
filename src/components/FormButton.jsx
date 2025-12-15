@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Modal from './Modal';
 import Form from './Form';
+import toast from 'react-hot-toast';
 
 const StyledFormButton = styled.a`
   display: flex;
@@ -44,6 +45,7 @@ function FormButton() {
       // 2. Setting a flag in the SessionStorage
       sessionStorage.setItem('formSubmitted', 'true');
       // 3. Navigating to the thank-you page
+      toast.success('Success!');
       navigate('/thank-you');
     } else if (res.status === 429) {
       document.body.classList.remove('modal-open');
@@ -55,6 +57,7 @@ function FormButton() {
       return;
     } else if (res.status === 400) {
       console.log('Captcha verification failed');
+      toast.error('Captcha verification failed!');
     }
   }
 

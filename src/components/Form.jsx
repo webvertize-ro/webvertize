@@ -35,11 +35,7 @@ function Form({ onSubmit }) {
       <div className="mb-3 d-flex justify-content-center">
         <Turnstile onVerify={setTurnstileToken} />
       </div>
-      <button
-        type="submit"
-        disabled={!turnstileToken}
-        className="btn btn-primary w-100"
-      >
+      <button type="submit" className="btn btn-primary w-100">
         Submit
       </button>
     </form>
