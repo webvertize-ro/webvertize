@@ -12,18 +12,6 @@ function Form({ onValidSubmit }) {
     formState: { errors },
   } = useForm();
 
-  useEffect(() => {
-    if (errors.name) {
-      toast.error(errors.name.message);
-    }
-  }, [errors.name]);
-
-  useEffect(() => {
-    if (errors.email) {
-      toast.error(errors.email.message);
-    }
-  }, [errors.email]);
-
   function submitHandler(data) {
     if (!turnstileToken) {
       return;
@@ -44,6 +32,9 @@ function Form({ onValidSubmit }) {
           name="name"
           {...register('name', { required: 'Name is required' })}
         />
+        {errors?.message && (
+          <small className="text-danger">{errors.name?.message}</small>
+        )}
       </div>
       <div className="mb-3">
         <label htmlFor="email" className="form-label">
@@ -55,6 +46,9 @@ function Form({ onValidSubmit }) {
           name="email"
           {...register('email', { required: 'Email is required' })}
         />
+        {errors?.email && (
+          <small className="text-danger">{errors.email?.message}</small>
+        )}
       </div>
       <div className="mb-3">
         <label htmlFor="message" className="form-label">
@@ -66,6 +60,9 @@ function Form({ onValidSubmit }) {
           className="form-control"
           {...register('message', { required: 'Message is required' })}
         ></textarea>
+        {errors?.message && (
+          <small className="text-danger">{errors.message?.message}</small>
+        )}
       </div>
       <input
         type="hidden"
