@@ -34,7 +34,6 @@ function FormButton() {
       document.querySelectorAll('.modal-backdrop').forEach((el) => el.remove());
       setShowForm(false);
       sessionStorage.setItem('formSubmitted', 'true');
-      toast.success('Success!');
       navigate('/thank-you');
     } else if (res.status === 429) {
       document.body.classList.remove('modal-open');
