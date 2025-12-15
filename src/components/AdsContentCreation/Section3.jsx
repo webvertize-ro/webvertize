@@ -13,18 +13,19 @@ const ContentRow = styled.div`
   }
 `;
 
+const TitleTotal = styled.div``;
+
+const Title = styled.h4``;
+
+const Subtitle = styled.div`
+  margin-top: -12px;
+`;
+
 const StyledUl = styled.ul`
   list-style-type: none;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-`;
-
-const TitleTotal = styled.div``;
-
-const Title = styled.h4``;
-const Subtitle = styled.div`
-  margin-top: -12px;
 `;
 
 function Section3() {

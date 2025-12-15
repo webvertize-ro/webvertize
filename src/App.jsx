@@ -15,10 +15,12 @@ import WebsitesPage from './pages/Services/WebsitesPage';
 import WebAppsPage from './pages/Services/WebAppsPage';
 import AdvertisingContentCreation from './pages/Services/AdsContentCreation';
 import { Toaster } from 'react-hot-toast';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <div>
+      <ScrollToTop />
       {/* Route definitions */}
       <Routes>
         <Route path="/" element={<Home />} />

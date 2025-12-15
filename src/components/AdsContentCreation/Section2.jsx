@@ -5,6 +5,31 @@ const StyledSection2 = styled.section`
   padding-bottom: 4rem;
 `;
 
+const TitleTotal = styled.div`
+  margin-bottom: 1rem;
+`;
+
+const Title = styled.h2``;
+
+const Subtitle = styled.div`
+  margin-top: -12px;
+`;
+
+const Content = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+`;
+
+const ContentRow = styled.div`
+  @media (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1.5rem;
+  }
+`;
+
 const GoogleAdsCampaigns = styled.img`
   border-radius: 1.2rem;
 
@@ -25,34 +50,9 @@ const GoogleAdsCampaigns = styled.img`
   }
 `;
 
-const ContentRow = styled.div`
-  @media (max-width: 1200px) {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 0 1.5rem;
-  }
-`;
-
-const TitleTotal = styled.div`
-  margin-bottom: 1rem;
-`;
-
-const Title = styled.h2``;
-
-const Subtitle = styled.div`
-  margin-top: -12px;
-`;
-
 const StyledP = styled.p`
   font-size: 1.2rem;
   text-align: justify;
-`;
-
-const Content = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
 `;
 
 const StyledUl = styled.ul`
