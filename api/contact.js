@@ -62,6 +62,10 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: 'All fields are required!' });
     }
 
+    const date = new Date().toLocaleDateString('ro-Ro', {
+      timeZone: 'Europe/Bucharest',
+    });
+
     // Send the email
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
@@ -77,7 +81,7 @@ export default async function handler(req, res) {
     await transporter.sendMail({
       from: `Webvertize Form ${process.env.SMTP_USER}`,
       to: process.env.RECEIVING_EMAIL,
-      subject: `Webvertize Form`,
+      subject: `Webvertize Form - ${date}`,
       html: `
         <h2>Somone filled out the form on the website and here are the details:</h2>
         <p><strong>Name: </strong> ${data.name}</p>
