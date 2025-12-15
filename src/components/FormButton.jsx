@@ -27,8 +27,12 @@ function FormButton() {
 
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
-    console.log(data);
 
+    function onSubmit(data) {
+      console.log('react-hook-form', data);
+    }
+
+    handleSubmit(onSubmit);
     // send to Vercel API route
     const res = await fetch('/api/contact', {
       method: 'POST',

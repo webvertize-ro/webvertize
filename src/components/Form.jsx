@@ -1,21 +1,37 @@
 import { useState } from 'react';
 import Turnstile from './Turnstile';
+import { useForm } from 'react-hook-form';
 
 function Form({ onSubmit }) {
   const [turnstileToken, setTurnstileToken] = useState(null);
+
+  const { register, handleSubmit } = useForm();
+
+  function onSubmit() {}
+
   return (
     <form onSubmit={onSubmit}>
       <div className="mb-3">
         <label htmlFor="name" className="form-label">
           Name:
         </label>
-        <input type="text" className="form-control" name="name" />
+        <input
+          type="text"
+          className="form-control"
+          name="name"
+          {...register('name')}
+        />
       </div>
       <div className="mb-3">
         <label htmlFor="email" className="form-label">
           Email:
         </label>
-        <input type="email" className="form-control" name="email" />
+        <input
+          type="email"
+          className="form-control"
+          name="email"
+          {...register('email')}
+        />
       </div>
       <div className="mb-3">
         <label htmlFor="message" className="form-label">
@@ -25,6 +41,7 @@ function Form({ onSubmit }) {
           name="message"
           id="form-message"
           className="form-control"
+          {...register('message')}
         ></textarea>
       </div>
       <input
