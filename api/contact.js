@@ -26,7 +26,7 @@ export default async function handler(req, res) {
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: new URLSearchParams({
           secret: process.env.TURNSTILE_SECRET,
-          response: data['cf-turnstile-response'],
+          response: data['cf_turnstile_response'],
         }),
       }
     ).then((res) => res.json());
