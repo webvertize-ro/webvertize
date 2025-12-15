@@ -30,8 +30,10 @@ function Form({ onSubmit }) {
           className="form-control"
           name="name"
           {...register('name', { required: 'Name is required' })}
-          {errors.name && <small className="text-danger">{errors.name.message}</small>}
         />
+        {errors.name && (
+          <small className="text-danger">{errors.name.message}</small>
+        )}
       </div>
       <div className="mb-3">
         <label htmlFor="email" className="form-label">
