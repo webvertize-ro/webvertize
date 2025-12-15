@@ -62,7 +62,7 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: 'All fields are required!' });
     }
 
-    const date = new Date().toLocaleDateString('ro-Ro', {
+    const date = new Date().toLocaleString('ro-Ro', {
       timeZone: 'Europe/Bucharest',
     });
 
