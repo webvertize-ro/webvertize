@@ -5,7 +5,7 @@ import About from './pages/Services';
 import Contact from './pages/Contact';
 import Navigation from './components/Navigation';
 import OurMission from './pages/Services';
-import Projects from './pages/Projects';
+import Portfolio from './pages/Portfolio';
 import ThankYou from './pages/ThankYou';
 import TooManyRequests from './pages/TooManyRequests';
 import AiAutomation from './pages/Services/AiAutomation';
@@ -25,7 +25,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<OurMission />} />
-        <Route path="/portfolio" element={<Projects />} />
+        <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/thank-you" element={<ThankYou />} />
         <Route path="/too-many-requests" element={<TooManyRequests />} />
