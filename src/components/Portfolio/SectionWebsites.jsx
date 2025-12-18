@@ -9,6 +9,8 @@ import edionTransLogo from '../../assets/portfolio/websites/logos/ediontrans_log
 import fotoAddaLogo from '../../assets/portfolio/websites/logos/foto_adda_logo.svg';
 import CardFlip from './CardFlip';
 import styled from 'styled-components';
+import reelCerticorp from '../../assets/portfolio/content_creation/post4-reel.mp4';
+import reelPoster from '../../assets/portfolio/content_creation/reel_poster.png';
 
 const StyledSectionWebsites = styled.div`
   padding: 2.5rem 0 4rem;
@@ -149,9 +151,54 @@ function SectionWebsites() {
     },
     {
       title: 'FixAzi',
-      shortDescription: 'Web application for a local phone repair shop',
+      companyName: 'FixAzi',
+      aboutCompany:
+        'FixAzi is a local device repair service specializing in smartphones, tablets, and laptops. Customers bring their devices to the service location for diagnostics and repairs, making fast communication and clear pricing essential to the business.',
+      projectChallenges: {
+        title: 'Project Challenges',
+        challenges: [
+          'Lack of structured digital content to present services and pricing',
+          'Identifying meaningful functionalities beyond a simple presentation website',
+          'Allowing administrators to manage supported devices and pricing without developer involvement',
+          'Improving customer communication through real-time interaction',
+          'Implementing a secure authentication system for admins',
+          'Implementing a secure authentication system for administrators',
+          'Building an admin dashboard for managing conversations and responding to messages',
+          'Implementing real-time notifications for incoming messages',
+        ],
+      },
+      projectSolution:
+        'We designed and developed a web application that combines a professional presentation website with a real-time communication system. The project began by defining and implementing the core functionalities—content management and live chat—followed by creating structured content and a clean, user-friendly interface. An admin dashboard was built to allow secure management of services, prices, and customer conversations, while real-time notifications ensure no customer message is missed.',
+      projectResults: {
+        generalText:
+          'The final application improves both customer experience and internal efficiency:',
+        listResults: [
+          'Clear presentation of services, pricing, and contact information',
+          'Real-time live chat enabling instant customer communication',
+          'Centralized admin interface for managing conversations and content',
+          'Improved responsiveness to customer inquiries through notifications',
+        ],
+      },
+      keyAppFunctionalities: [
+        'Secure admin authentication and role-restricted dashboard',
+        'Live chat system for real-time customer communication',
+        'Admin-managed content for supported devices and pricing',
+        'Conversation management interface for responding to customer messages',
+        'Real-time browser notifications for new chat messages',
+        'Responsive design optimized for desktop and mobile devices',
+      ],
+      projectKeyPoints: [
+        'Customer-first communication. Live chat lowers the barrier for customers to ask questions and request services.',
+        'Functionality-driven development. Core business needs were implemented first, followed by content and design.',
+        'Scalable foundation. The application is built to support future features and increased user interaction.',
+      ],
+      shortDescription: 'Web Application for a local device repair service',
       longDescription:
-        'Web Application that allows users to send forms and use the live-chat functionality. The owner has an admin page from where he can reply to the chat messages.',
+        'A web application combining a presentational website with content management and real-time live chat, allowing customers to easily contact the service and administrators to manage communication and pricing.',
+      button1: {
+        text: 'Live Application',
+        link: 'https://www.fixazi.com/',
+      },
       image: imgWebApps2,
       category: 'Web Apps',
     },
@@ -159,27 +206,152 @@ function SectionWebsites() {
 
   const content = [
     {
-      title: 'Promotional Image for Energy Management',
-      shortDescription: 'Advertisment for Energy Efficiency',
+      title: 'Promotional Poster for FixAzi Device Repair',
+      companyName: 'FixAzi',
+
+      aboutCompany:
+        'FixAzi is a local repair service specializing in smartphones, tablets, and laptops. Customers bring their devices to the service location for diagnostics and repairs, making clear communication and visually appealing marketing materials essential for attracting new clients.',
+
+      projectChallenges: {
+        title: 'Project Challenges',
+        challenges: [
+          'Designing a poster that clearly communicates the business offer',
+          'Choosing colors and typography that align with the brand identity',
+          'Selecting high-quality stock images that visually support the message',
+        ],
+      },
+
+      projectSolution:
+        'We approached the poster design by first mapping out the placement of key elements—images, title, and offer details. The goal was to create a visually appealing poster that conveys the business offer effectively while capturing the attention of potential customers.',
+
+      projectResults: {
+        generalText:
+          'The final poster presents the business offer clearly and professionally, enhancing FixAzi’s brand image and communication:',
+        listResults: [
+          'Clear and concise presentation of the services and offer',
+          'Actionable contact information, including phone number and website',
+          'Inclusion of company logo and slogan to boost brand recognition',
+        ],
+      },
+
+      projectKeyPoints: [
+        'Strong first impressions matter. Professionally designed promotional materials convey trust and credibility to potential clients.',
+        'Purpose-driven design. Every element of the poster serves to highlight key offers and services.',
+        'Attractive visuals drive engagement. Eye-catching and well-structured posters increase the likelihood of customer interaction.',
+      ],
+
+      shortDescription: 'Promotional poster for a local device repair service',
+
       longDescription:
-        'This creative image targets small and medium businesses in order to make them investigate their energy efficiency.',
+        'A visually appealing promotional poster for FixAzi, designed to clearly communicate business offers and drive customer engagement.',
+
+      button1: {
+        text: 'View Full Poster',
+        link: '../../assets/portfolio/content_creation/content1.png',
+      },
+
       image: imgContent1,
       category: 'Ads',
     },
     {
-      title: 'Promotional Poster for Energy Certificates',
-      shortDescription: 'Advertisment for Issuing Energy Certificates',
+      title: 'Promotional Poster for CERTICORP',
+      companyName: 'CERTICORP',
+
+      aboutCompany:
+        'CERTICORP is a specialized energy audit and management company that provides energy certificates for individuals, businesses, and institutions. Their services are essential when selling or renovating real estate, securing mortgages, or fulfilling regulatory requirements.',
+
+      projectChallenges: {
+        title: 'Project Challenges',
+        challenges: [
+          'Designing a poster that clearly communicates CERTICORP’s services and purpose',
+          'Selecting colors and typography that reflect the brand while engaging potential clients',
+          'Using high-quality imagery that visually supports the message and encourages action',
+        ],
+      },
+
+      projectSolution:
+        'We designed the poster to clearly communicate both the services CERTICORP provides and the situations in which these services are needed. The poster serves a dual purpose: informing potential clients about energy certificates and educating them on when such services are required, while maintaining a professional and approachable look.',
+
+      projectResults: {
+        generalText:
+          'The final poster communicates CERTICORP’s offer clearly and effectively, helping potential clients understand when to use their services:',
+        listResults: [
+          'Clear and concise presentation of services and business offer',
+          'Actionable contact information, including phone number and website',
+          'Inclusion of company logo to strengthen brand recognition',
+        ],
+      },
+
+      projectKeyPoints: [
+        'Concise and meaningful content. Text is informative, easy to read, and highlights the value for potential clients.',
+        'Visually suggestive design. Every image was chosen to imply an action or scenario, making the poster more engaging.',
+        'Professional yet approachable. The design positions CERTICORP as both a trustworthy and friendly business.',
+      ],
+
+      shortDescription:
+        'Promotional poster for an energy audit and management company',
+
       longDescription:
-        'This creative image is designed to target people or companies that are either selling, renovating or taking a loan.',
+        'A professional and approachable poster for CERTICORP, designed to clearly present their energy audit and certificate services while educating potential clients.',
+
+      button1: {
+        text: 'View Full Poster',
+        link: '../../assets/portfolio/content_creation/content2.png',
+      },
+
       image: imgContent2,
       category: 'Ads',
     },
     {
-      title: 'Facebook Reel',
-      shortDescription: '',
-      longDescription: '',
+      title: 'Promotional Short Video for CERTICORP',
+      companyName: 'CERTICORP',
+
+      aboutCompany:
+        'CERTICORP is a specialized energy audit and management company that provides energy certificates for individuals, businesses, and institutions. Their services are essential when selling or renovating real estate, securing mortgages, or meeting regulatory requirements.',
+
+      projectChallenges: {
+        title: 'Project Challenges',
+        challenges: [
+          'Creating a short video that simultaneously educates the public and promotes CERTICORP’s services',
+          'Selecting high-quality free stock footage that effectively communicates the intended message',
+          'Designing concise, engaging captions to complement the voice-over and reinforce the key points',
+        ],
+      },
+
+      projectSolution:
+        'We started by developing a concise script to address both educational and promotional goals. Then we carefully selected video footage and crafted captions to clearly convey the message within a short timeframe, while maintaining a professional and approachable tone.',
+
+      projectResults: {
+        generalText:
+          'The final Reel successfully educates viewers while presenting CERTICORP’s services in a 19-second voice-over video with captions:',
+        listResults: [
+          'Clear explanation of when and why clients might need CERTICORP’s services',
+          'Prominent display of contact information for easy follow-up',
+          'Inclusion of the company logo to strengthen brand awareness',
+        ],
+      },
+
+      projectKeyPoints: [
+        'Concise storytelling. The Reel quickly communicates different scenarios in which CERTICORP’s services are relevant.',
+        'Visually coherent design. Every stock video segment aligns with the message being presented, creating a seamless and engaging experience.',
+        'Professional yet approachable style. The video conveys credibility while remaining friendly and accessible, encouraging viewer engagement.',
+      ],
+
+      shortDescription:
+        'A short promotional video for CERTICORP highlighting their services and educating potential clients',
+
+      longDescription:
+        'A professional and engaging 19-second promotional video for CERTICORP, designed to educate viewers about their services and enhance brand awareness.',
+
+      button1: {
+        text: 'Watch Full Video',
+        link: '',
+      },
+
       image: imgContent3,
-      category: 'Ads',
+      video: reelCerticorp,
+      poster: reelPoster,
+      category: 'Reel',
     },
   ];
 

@@ -2,6 +2,10 @@ import Modal from '../Modal';
 import { useState } from 'react';
 import Form from '../Form';
 import styled from 'styled-components';
+import Lightbox from 'yet-another-react-lightbox';
+import 'yet-another-react-lightbox/styles.css';
+import imgContent1 from '../../assets/portfolio/content_creation/content1.png';
+import { Video } from 'yet-another-react-lightbox/plugins';
 
 const CardWrapper = styled.div`
   perspective: 1000px;
@@ -38,7 +42,7 @@ const CardBodyBack = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 `;
 
 const StyledP = styled.p`
@@ -47,6 +51,7 @@ const StyledP = styled.p`
 
 function CardFlip({ project }) {
   const [showForm, setShowForm] = useState(false);
+  const [open, setOpen] = useState(false);
 
   return (
     <div className="col-md-6 col-lg-4">
@@ -71,7 +76,7 @@ function CardFlip({ project }) {
           {/* Back */}
           <CardBack>
             <div className="card h-100 d-flex justify-content-center align-items-center">
-              <CardBodyBack className="card-body text-center d-flex flex-column align-items-center justify-content-center gap-1">
+              <CardBodyBack className="card-body d-flex flex-column gap-1">
                 <h5 className="card-title">{project.title}</h5>
                 <StyledP className="card-text">
                   {project.longDescription}
@@ -93,49 +98,197 @@ function CardFlip({ project }) {
         title={project.title}
         onClose={() => setShowForm(false)}
       >
-        <h3>Project Overview</h3>
-        <h4>More about {project.companyName}</h4>
-        <p>{project.aboutCompany}</p>
-        {/* Challenges */}
-        <section>
-          <h4>{project.projectChallenges?.title}</h4>
-          <ul>
-            {project.projectChallenges?.challenges.map((ch) => (
-              <li>{ch}</li>
-            ))}
-          </ul>
-        </section>
-        {/* Solution */}
-        <section>
-          <h4>Solution</h4>
-          <p>{project.projectSolution}</p>
-        </section>
-        {/* Results */}
-        <section>
-          <h4>Results</h4>
-          <p>{project.projectResults?.generalText}</p>
-          <ul>
-            {project.projectResults?.listResults?.map((res) => (
-              <li>{res}</li>
-            ))}
-          </ul>
-        </section>
-        {/* Key Points */}
-        <section>
-          <h4>Key Points</h4>
-          <ul>
-            {project.projectKeyPoints?.map((point) => (
-              <li>{point}</li>
-            ))}
-          </ul>
-        </section>
-        {/* Live Project */}
-        <section>
-          <h4>Live Project</h4>
-          <a href={project.button1?.link} target="_blank">
-            {project.button1?.text}
-          </a>
-        </section>
+        {/* Websites & Web Apps */}
+        {project.category === 'websites' || project.category === 'Web Apps' ? (
+          <>
+            <h3>Project Overview</h3>
+            <h4>More about {project.companyName}</h4>
+            <p>{project.aboutCompany}</p>
+            {/* Challenges */}
+            <section>
+              <h4>{project.projectChallenges?.title}</h4>
+              <ul>
+                {project.projectChallenges?.challenges.map((ch) => (
+                  <li>{ch}</li>
+                ))}
+              </ul>
+            </section>
+            {/* Solution */}
+            <section>
+              <h4>Solution</h4>
+              <p>{project.projectSolution}</p>
+            </section>
+            {/* Results */}
+            <section>
+              <h4>Results</h4>
+              <p>{project.projectResults?.generalText}</p>
+              <ul>
+                {project.projectResults?.listResults?.map((res) => (
+                  <li>{res}</li>
+                ))}
+              </ul>
+            </section>
+            {/* Key Points */}
+            <section>
+              <h4>Key Points</h4>
+              <ul>
+                {project.projectKeyPoints?.map((point) => (
+                  <li>{point}</li>
+                ))}
+              </ul>
+            </section>
+            {/* Live Project */}
+            <section>
+              <h4>Live Project</h4>
+              <a href={project.button1?.link} target="_blank">
+                {project.button1?.text}
+              </a>
+            </section>
+          </>
+        ) : (
+          ''
+        )}
+        {/* Ads */}
+        {project.category === 'Ads' ? (
+          <>
+            <h3>Project Overview</h3>
+            <h4>More about {project.companyName}</h4>
+            <p>{project.aboutCompany}</p>
+            {/* Challenges */}
+            <section>
+              <h4>{project.projectChallenges?.title}</h4>
+              <ul>
+                {project.projectChallenges?.challenges.map((ch) => (
+                  <li>{ch}</li>
+                ))}
+              </ul>
+            </section>
+            {/* Solution */}
+            <section>
+              <h4>Solution</h4>
+              <p>{project.projectSolution}</p>
+            </section>
+            {/* Results */}
+            <section>
+              <h4>Results</h4>
+              <p>{project.projectResults?.generalText}</p>
+              <ul>
+                {project.projectResults?.listResults?.map((res) => (
+                  <li>{res}</li>
+                ))}
+              </ul>
+            </section>
+            {/* Key Points */}
+            <section>
+              <h4>Key Points</h4>
+              <ul>
+                {project.projectKeyPoints?.map((point) => (
+                  <li>{point}</li>
+                ))}
+              </ul>
+            </section>
+            {/* Full Image */}
+            <section>
+              <h4>Full Image</h4>
+              <a
+                href="#!"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setOpen(true);
+                }}
+              >
+                View Full Image
+              </a>
+
+              {/* Lightbox */}
+              <Lightbox
+                open={open}
+                close={() => setOpen(false)}
+                slides={[{ src: project.image }]}
+              />
+            </section>
+          </>
+        ) : (
+          ''
+        )}
+        {/* Reel */}
+        {project.category === 'Reel' ? (
+          <>
+            <h3>Project Overview</h3>
+            <h4>More about {project.companyName}</h4>
+            <p>{project.aboutCompany}</p>
+            {/* Challenges */}
+            <section>
+              <h4>{project.projectChallenges?.title}</h4>
+              <ul>
+                {project.projectChallenges?.challenges.map((ch) => (
+                  <li>{ch}</li>
+                ))}
+              </ul>
+            </section>
+            {/* Solution */}
+            <section>
+              <h4>Solution</h4>
+              <p>{project.projectSolution}</p>
+            </section>
+            {/* Results */}
+            <section>
+              <h4>Results</h4>
+              <p>{project.projectResults?.generalText}</p>
+              <ul>
+                {project.projectResults?.listResults?.map((res) => (
+                  <li>{res}</li>
+                ))}
+              </ul>
+            </section>
+            {/* Key Points */}
+            <section>
+              <h4>Key Points</h4>
+              <ul>
+                {project.projectKeyPoints?.map((point) => (
+                  <li>{point}</li>
+                ))}
+              </ul>
+            </section>
+            {/* Full Image */}
+            <section>
+              <a
+                href="#!"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setOpen(true);
+                }}
+              >
+                View Full Video
+              </a>
+
+              {/* Lightbox */}
+              <Lightbox
+                plugins={[Video]}
+                open={open}
+                close={() => setOpen(false)}
+                slides={[
+                  {
+                    type: 'video',
+                    width: 1080,
+                    height: 1920,
+                    poster: project.poster,
+                    sources: [
+                      {
+                        src: project.video,
+                        type: 'video/mp4',
+                      },
+                    ],
+                  },
+                  // ...
+                ]}
+                // ...
+              />
+            </section>
+          </>
+        ) : (
+          ''
+        )}
       </Modal>
     </div>
   );
