@@ -1,17 +1,31 @@
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
-import Header from '../../components/AdsContentCreation/Header';
+import Header from '../../components/Header';
 import Section1 from '../../components/AdsContentCreation/Section1';
 import Section2 from '../../components/AdsContentCreation/Section2';
 import Section3 from '../../components/AdsContentCreation/Section3';
 import Section4 from '../../components/AdsContentCreation/Section4';
 import CTA from '../../components/CTA';
+import bgImage from '../../assets/header_ads_content_creation.jpg';
+import SideButtons from '../../components/SideButtons';
+import WhatsAppButton from '../../components/WhatsAppButton';
 
 function AdsContentCreation() {
   return (
     <div>
       <Navigation />
-      <Header />
+      <Header
+        bgImage={bgImage}
+        title="Advertising & Content Creation"
+        text1="Modern businesses can't rely on good services alone — they need clear,
+          professional advertising that reaches the right audience at the right
+          moment. At Webvertize, we combine content creation, ad campaign
+          strategy and ongoing optimization to ensure your business gets noticed
+          where it matters most. Whether you need engaging visuals for your next
+          promotion, a high-performing Google Ads campaign, or a series of Meta
+          ads built to generate leads, we provide the creative and technical
+          support to help your business grow."
+      />
       <Section1 />
       <Section2 />
       <Section3 />
@@ -20,6 +34,8 @@ function AdsContentCreation() {
         title="Ready to Grow Through Better Advertising?"
         text="Book a call and let’s build campaigns that reach the right customers with the right message."
       />
+      <SideButtons />
+      <WhatsAppButton />
       <Footer />
     </div>
   );

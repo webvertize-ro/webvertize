@@ -3,9 +3,9 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Modal from './Modal';
 import Form from './Form';
 import toast from 'react-hot-toast';
+import ModalForm from './ModalForm';
 
 const StyledFormButton = styled.a`
   display: flex;
@@ -52,13 +52,13 @@ function FormButton() {
         <FontAwesomeIcon icon={faMessage} />
       </StyledFormButton>
 
-      <Modal
+      <ModalForm
         show={showForm}
         title="Contact Form"
         onClose={() => setShowForm(false)}
       >
         <Form onValidSubmit={handleValidSubmit} />
-      </Modal>
+      </ModalForm>
     </>
   );
 }

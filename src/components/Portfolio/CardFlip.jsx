@@ -6,6 +6,11 @@ import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
 import imgContent1 from '../../assets/portfolio/content_creation/content1.png';
 import { Video } from 'yet-another-react-lightbox/plugins';
+import {
+  faCheckSquare,
+  faSquareCheck,
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const CardWrapper = styled.div`
   perspective: 1000px;
@@ -47,6 +52,18 @@ const CardBodyBack = styled.div`
 
 const StyledP = styled.p`
   text-align: justify;
+`;
+
+const StyledUl = styled.ul`
+  list-style-type: none;
+`;
+
+const StyledButton = styled.a`
+  text-decoration: none;
+  background-color: #1b3c53;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  color: #fff;
 `;
 
 function CardFlip({ project }) {
@@ -97,6 +114,7 @@ function CardFlip({ project }) {
         show={showForm}
         title={project.title}
         onClose={() => setShowForm(false)}
+        logo={project.logo}
       >
         {/* Websites & Web Apps */}
         {project.category === 'websites' || project.category === 'Web Apps' ? (
@@ -107,11 +125,14 @@ function CardFlip({ project }) {
             {/* Challenges */}
             <section>
               <h4>{project.projectChallenges?.title}</h4>
-              <ul>
+              <StyledUl>
                 {project.projectChallenges?.challenges.map((ch) => (
-                  <li>{ch}</li>
+                  <li>
+                    <FontAwesomeIcon icon={faCheckSquare} />
+                    {ch}
+                  </li>
                 ))}
-              </ul>
+              </StyledUl>
             </section>
             {/* Solution */}
             <section>
@@ -122,27 +143,33 @@ function CardFlip({ project }) {
             <section>
               <h4>Results</h4>
               <p>{project.projectResults?.generalText}</p>
-              <ul>
+              <StyledUl>
                 {project.projectResults?.listResults?.map((res) => (
-                  <li>{res}</li>
+                  <li>
+                    <FontAwesomeIcon icon={faCheckSquare} />
+                    {res}
+                  </li>
                 ))}
-              </ul>
+              </StyledUl>
             </section>
             {/* Key Points */}
             <section>
               <h4>Key Points</h4>
-              <ul>
+              <StyledUl>
                 {project.projectKeyPoints?.map((point) => (
-                  <li>{point}</li>
+                  <li>
+                    <FontAwesomeIcon icon={faCheckSquare} />
+                    {point}
+                  </li>
                 ))}
-              </ul>
+              </StyledUl>
             </section>
             {/* Live Project */}
             <section>
               <h4>Live Project</h4>
-              <a href={project.button1?.link} target="_blank">
+              <StyledButton href={project.button1?.link} target="_blank">
                 {project.button1?.text}
-              </a>
+              </StyledButton>
             </section>
           </>
         ) : (
@@ -157,11 +184,14 @@ function CardFlip({ project }) {
             {/* Challenges */}
             <section>
               <h4>{project.projectChallenges?.title}</h4>
-              <ul>
+              <StyledUl>
                 {project.projectChallenges?.challenges.map((ch) => (
-                  <li>{ch}</li>
+                  <li>
+                    <FontAwesomeIcon icon={faCheckSquare} />
+                    {ch}
+                  </li>
                 ))}
-              </ul>
+              </StyledUl>
             </section>
             {/* Solution */}
             <section>
@@ -172,33 +202,40 @@ function CardFlip({ project }) {
             <section>
               <h4>Results</h4>
               <p>{project.projectResults?.generalText}</p>
-              <ul>
+              <StyledUl>
                 {project.projectResults?.listResults?.map((res) => (
-                  <li>{res}</li>
+                  <li>
+                    <FontAwesomeIcon icon={faCheckSquare} />
+                    {res}
+                  </li>
                 ))}
-              </ul>
+              </StyledUl>
             </section>
             {/* Key Points */}
             <section>
               <h4>Key Points</h4>
-              <ul>
+              <StyledUl>
                 {project.projectKeyPoints?.map((point) => (
-                  <li>{point}</li>
+                  <li>
+                    <FontAwesomeIcon icon={faCheckSquare} />
+                    {point}
+                  </li>
                 ))}
-              </ul>
+              </StyledUl>
             </section>
             {/* Full Image */}
             <section>
               <h4>Full Image</h4>
-              <a
+              <StyledButton
                 href="#!"
+                className="btn btn-success"
                 onClick={(e) => {
                   e.preventDefault();
                   setOpen(true);
                 }}
               >
                 View Full Image
-              </a>
+              </StyledButton>
 
               {/* Lightbox */}
               <Lightbox
@@ -220,11 +257,14 @@ function CardFlip({ project }) {
             {/* Challenges */}
             <section>
               <h4>{project.projectChallenges?.title}</h4>
-              <ul>
+              <StyledUl>
                 {project.projectChallenges?.challenges.map((ch) => (
-                  <li>{ch}</li>
+                  <li>
+                    <FontAwesomeIcon icon={faCheckSquare} />
+                    {ch}
+                  </li>
                 ))}
-              </ul>
+              </StyledUl>
             </section>
             {/* Solution */}
             <section>
@@ -235,32 +275,40 @@ function CardFlip({ project }) {
             <section>
               <h4>Results</h4>
               <p>{project.projectResults?.generalText}</p>
-              <ul>
+              <StyledUl>
                 {project.projectResults?.listResults?.map((res) => (
-                  <li>{res}</li>
+                  <li>
+                    <FontAwesomeIcon icon={faCheckSquare} />
+                    {res}
+                  </li>
                 ))}
-              </ul>
+              </StyledUl>
             </section>
             {/* Key Points */}
             <section>
               <h4>Key Points</h4>
-              <ul>
+              <StyledUl>
                 {project.projectKeyPoints?.map((point) => (
-                  <li>{point}</li>
+                  <li>
+                    <FontAwesomeIcon icon={faCheckSquare} />
+                    {point}
+                  </li>
                 ))}
-              </ul>
+              </StyledUl>
             </section>
             {/* Full Image */}
             <section>
-              <a
+              <h4>Full Video</h4>
+              <StyledButton
                 href="#!"
+                className="btn btn-success"
                 onClick={(e) => {
                   e.preventDefault();
                   setOpen(true);
                 }}
               >
                 View Full Video
-              </a>
+              </StyledButton>
 
               {/* Lightbox */}
               <Lightbox

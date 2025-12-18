@@ -1,9 +1,9 @@
 import styled from 'styled-components';
-import Modal from './Modal';
 import Form from './Form';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ctaImage from '../assets/CTA_image.jpg';
+import ModalForm from './ModalForm';
 
 const CTAWrapper = styled.div`
   background-color: #37353e;
@@ -102,20 +102,20 @@ function CTA({ title, text }) {
       <CTAWrapper>
         <CTAContainer className="container">
           <h3>{title}</h3>
-          <p className="fs-4">{text}</p>
+          <p className="fs-4 text-center">{text}</p>
           <StyledButton onClick={() => setShowForm(true)}>
             Schedule a call
           </StyledButton>
         </CTAContainer>
       </CTAWrapper>
 
-      <Modal
+      <ModalForm
         show={showForm}
         title="Schedule a Call"
         onClose={() => setShowForm(false)}
       >
         <Form onSubmit={handleSubmit}></Form>
-      </Modal>
+      </ModalForm>
     </>
   );
 }

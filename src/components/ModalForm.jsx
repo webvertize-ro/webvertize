@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Modal as BSModal } from 'bootstrap';
 
-function Modal({ show, onClose, title, children, logo }) {
+function ModalForm({ show, onClose, title, children, logo }) {
   const modalRef = useRef(null);
   const bsModal = useRef(null);
 
@@ -27,14 +27,11 @@ function Modal({ show, onClose, title, children, logo }) {
 
   return (
     <div className="modal fade" tabIndex="-1" ref={modalRef}>
-      <div className="modal-dialog modal-lg">
+      <div className="modal-dialog">
         <div className="modal-content">
           <div className="modal-header">
             <h5 className="modal-title">
-              <div className="d-flex align-items-center gap-2">
-                <div>
-                  <img src={logo} alt="" width="35" />
-                </div>
+              <div className="d-flex gap-2">
                 <div>{title}</div>
               </div>
             </h5>
@@ -47,4 +44,4 @@ function Modal({ show, onClose, title, children, logo }) {
   );
 }
 
-export default Modal;
+export default ModalForm;

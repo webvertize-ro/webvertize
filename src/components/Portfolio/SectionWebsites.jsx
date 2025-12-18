@@ -5,12 +5,15 @@ import imgWebApps2 from '../../assets/portfolio/web_apps/web_app2.jpg';
 import imgContent1 from '../../assets/portfolio/content_creation/content1.png';
 import imgContent2 from '../../assets/portfolio/content_creation/content2.png';
 import imgContent3 from '../../assets/portfolio/content_creation/reel_thumbs_up.png';
-import edionTransLogo from '../../assets/portfolio/websites/logos/ediontrans_logo_nobg.png';
 import fotoAddaLogo from '../../assets/portfolio/websites/logos/foto_adda_logo.svg';
 import CardFlip from './CardFlip';
 import styled from 'styled-components';
 import reelCerticorp from '../../assets/portfolio/content_creation/post4-reel.mp4';
 import reelPoster from '../../assets/portfolio/content_creation/reel_poster.png';
+import edionTransLogo from '../../assets/portfolio/logos/ediontrans_logo.svg';
+import certicorpLogo from '../../assets/portfolio/logos/certicorp_logo_v4.svg';
+import fixaziLogo from '../../assets/portfolio/logos/fixazi_logo2_nobg.png';
+import senorExpertLogo from '../../assets/portfolio/logos/senorexpert_logo.svg';
 
 const StyledSectionWebsites = styled.div`
   padding: 2.5rem 0 4rem;
@@ -21,7 +24,6 @@ function SectionWebsites() {
     {
       title: 'Edion Trans',
       companyName: 'Edion Trans',
-      logo: { edionTransLogo },
       aboutCompany:
         'Edion Trans is a regional transportation company providing both domestic and international transport services on predefined routes. In addition to passenger transport, the company also offers international parcel delivery services.',
       projectChallenges: {
@@ -56,6 +58,7 @@ function SectionWebsites() {
       button1: { text: 'Live preview', link: 'https://ediontrans.ro/' },
       image: imgWebsites1,
       category: 'websites',
+      logo: edionTransLogo,
     },
     {
       title: 'Studio Foto Adda',
@@ -94,6 +97,7 @@ function SectionWebsites() {
       button1: { text: 'Live preview', link: 'https://studiofotoaddagl.ro/' },
       image: imgWebsites2,
       category: 'websites',
+      logo: fotoAddaLogo,
     },
   ];
 
@@ -148,6 +152,7 @@ function SectionWebsites() {
       },
       image: imgWebApps1,
       category: 'Web Apps',
+      logo: senorExpertLogo,
     },
     {
       title: 'FixAzi',
@@ -201,6 +206,7 @@ function SectionWebsites() {
       },
       image: imgWebApps2,
       category: 'Web Apps',
+      logo: fixaziLogo,
     },
   ];
 
@@ -252,6 +258,7 @@ function SectionWebsites() {
 
       image: imgContent1,
       category: 'Ads',
+      logo: fixaziLogo,
     },
     {
       title: 'Promotional Poster for CERTICORP',
@@ -301,6 +308,7 @@ function SectionWebsites() {
 
       image: imgContent2,
       category: 'Ads',
+      logo: certicorpLogo,
     },
     {
       title: 'Promotional Short Video for CERTICORP',
@@ -352,6 +360,7 @@ function SectionWebsites() {
       video: reelCerticorp,
       poster: reelPoster,
       category: 'Reel',
+      logo: certicorpLogo,
     },
   ];
 
