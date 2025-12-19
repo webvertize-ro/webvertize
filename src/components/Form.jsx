@@ -88,7 +88,7 @@ function Form({ onValidSubmit, isLoading }) {
         className="d-flex align-items-center justify-content-center gap-2 btn btn-primary w-100"
       >
         {isLoading ? <div class="spinner-border" role="status"></div> : ''}
-        Submit
+        {isLoading ? 'Submitting...' : 'Submit'}
       </button>
     </StyledForm>
   );
