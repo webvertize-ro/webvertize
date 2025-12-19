@@ -2,6 +2,13 @@ import { useEffect, useState } from 'react';
 import Turnstile from './Turnstile';
 import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
+import styled from 'styled-components';
+
+const StyledForm = styled.form`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
 
 function Form({ onValidSubmit }) {
   const [turnstileToken, setTurnstileToken] = useState(null);
@@ -21,7 +28,7 @@ function Form({ onValidSubmit }) {
   }
 
   return (
-    <form onSubmit={handleSubmit(submitHandler)}>
+    <StyledForm onSubmit={handleSubmit(submitHandler)}>
       <div className="mb-3">
         <label htmlFor="name" className="form-label">
           Name:
@@ -51,14 +58,16 @@ function Form({ onValidSubmit }) {
         )}
       </div>
       <div className="mb-3">
-        <label htmlFor="message" className="form-label">
-          Message:
+        <label htmlFor="project-description" className="form-label">
+          Project Description:
         </label>
         <textarea
-          name="message"
+          name="project-description"
           id="form-message"
           className="form-control"
-          {...register('message', { required: 'Message is required' })}
+          {...register('project-description', {
+            required: 'Project Description is required!',
+          })}
         ></textarea>
         {errors?.message && (
           <small className="text-danger">{errors.message?.message}</small>
@@ -75,7 +84,7 @@ function Form({ onValidSubmit }) {
       <button type="submit" className="btn btn-primary w-100">
         Submit
       </button>
-    </form>
+    </StyledForm>
   );
 }
 

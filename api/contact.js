@@ -58,7 +58,7 @@ export default async function handler(req, res) {
     }
 
     // 2. Validate
-    if (!data.name || !data['email'] || !data['message']) {
+    if (!data.name || !data['email'] || !data['project-description']) {
       return res.status(400).json({ error: 'All fields are required!' });
     }
 
@@ -86,7 +86,7 @@ export default async function handler(req, res) {
         <h2>Somone filled out the form on the website and here are the details:</h2>
         <p><strong>Name: </strong> ${data.name}</p>
         <p><strong>Email: </strong> ${data.email}</p>
-        <p><strong>Message: </strong> ${data.message}</p>
+        <p><strong>Project Description: </strong> ${data['project-description']}</p>
       `,
     });
 
