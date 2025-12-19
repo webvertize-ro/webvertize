@@ -10,7 +10,7 @@ const StyledForm = styled.form`
   justify-content: center;
 `;
 
-function Form({ onValidSubmit }) {
+function Form({ onValidSubmit, isLoading }) {
   const [turnstileToken, setTurnstileToken] = useState(null);
 
   const {
@@ -39,7 +39,7 @@ function Form({ onValidSubmit }) {
           name="name"
           {...register('name', { required: 'Name is required' })}
         />
-        {errors?.message && (
+        {errors?.name && (
           <small className="text-danger">{errors.name?.message}</small>
         )}
       </div>
@@ -66,11 +66,13 @@ function Form({ onValidSubmit }) {
           id="form-message"
           className="form-control"
           {...register('project-description', {
-            required: 'Project Description is required!',
+            required: 'Project Description is required',
           })}
         ></textarea>
-        {errors?.message && (
-          <small className="text-danger">{errors.message?.message}</small>
+        {errors['project-description'] && (
+          <small className="text-danger">
+            {errors['project-description']?.message}
+          </small>
         )}
       </div>
       <input
@@ -81,7 +83,11 @@ function Form({ onValidSubmit }) {
       <div className="mb-3 d-flex justify-content-center">
         <Turnstile onVerify={setTurnstileToken} />
       </div>
-      <button type="submit" className="btn btn-primary w-100">
+      <button
+        type="submit"
+        className="d-flex align-items-center justify-content-center gap-2 btn btn-primary w-100"
+      >
+        {isLoading ? <div class="spinner-border" role="status"></div> : ''}
         Submit
       </button>
     </StyledForm>

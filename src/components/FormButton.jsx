@@ -21,8 +21,19 @@ const StyledFormButton = styled.a`
 function FormButton() {
   const navigate = useNavigate();
   const [showForm, setShowForm] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+
+  function handleLoading(bool) {
+    setIsLoading(bool);
+  }
+
+  function handleClose() {
+    setShowForm(false);
+    handleLoading(false);
+  }
 
   async function handleValidSubmit(data) {
+    handleLoading(true);
     const res = await fetch('/api/contact', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -30,18 +41,21 @@ function FormButton() {
     });
 
     if (res.ok) {
+      handleLoading(false);
       document.body.classList.remove('modal-open');
       document.querySelectorAll('.modal-backdrop').forEach((el) => el.remove());
       setShowForm(false);
       sessionStorage.setItem('formSubmitted', 'true');
       navigate('/thank-you');
     } else if (res.status === 429) {
+      handleLoading(false);
       document.body.classList.remove('modal-open');
       document.querySelectorAll('.modal-backdrop').forEach((el) => el.remove());
       setShowForm(false);
       sessionStorage.setItem('tooManyRequests', 'true');
       navigate('/too-many-requests');
     } else if (res.status === 400) {
+      handleLoading(false);
       toast.error('Captcha verification failed!');
     }
   }
@@ -55,9 +69,9 @@ function FormButton() {
       <ModalForm
         show={showForm}
         title="Contact Form"
-        onClose={() => setShowForm(false)}
+        onClose={() => handleClose()}
       >
-        <Form onValidSubmit={handleValidSubmit} />
+        <Form onValidSubmit={handleValidSubmit} isLoading={isLoading} />
       </ModalForm>
     </>
   );

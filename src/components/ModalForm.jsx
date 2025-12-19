@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Modal as BSModal } from 'bootstrap';
 
-function ModalForm({ show, onClose, title, children, logo }) {
+function ModalForm({ show, onClose, title, children, isLoading }) {
   const modalRef = useRef(null);
   const bsModal = useRef(null);
 
