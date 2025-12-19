@@ -1,5 +1,11 @@
+import AccordionFAQ from './AccordionFAQ';
+
 function MainContent() {
-  return <div>This is the main content of the Cookies page!</div>;
+  return (
+    <div>
+      <AccordionFAQ />
+    </div>
+  );
 }
 
 export default MainContent;
