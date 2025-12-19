@@ -10,7 +10,7 @@ const NavigationHeader = styled.header`
 
   @media (min-width: 1200px) {
     position: ${({ $isScrolled }) => ($isScrolled ? 'fixed' : 'unset')};
-    top: ${({ $isScrolled }) => ($isScrolled ? '0.6rem' : '0')};
+    top: ${({ $isScrolled }) => ($isScrolled ? '0.5rem' : '0')};
     width: 100%;
     z-index: 100;
     padding: ${({ $isScrolled }) => ($isScrolled ? '0.75rem 3rem' : '0')};
@@ -26,6 +26,7 @@ const StyledNav = styled.nav`
   height: 80px;
   padding: 0;
   border-radius: 1rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 
   @media (max-width: 576px) {
     height: unset;
