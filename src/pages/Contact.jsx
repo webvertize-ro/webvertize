@@ -2,12 +2,21 @@ import Footer from '../components/Footer';
 import Navigation from '../components/Navigation';
 import SideButtons from '../components/SideButtons';
 import WhatsAppButton from '../components/WhatsAppButton';
+import Header from '../components/Header';
+import contactHeaderImg from '../assets/contact_us_header.jpg';
+import MainSection from './Contact/MainSection';
 
 function Contact() {
   return (
     <div>
       <Navigation />
-      <p>This is the contact page!</p>
+      <Header
+        bgImage={contactHeaderImg}
+        title="Let's Discuss Your Digital Project"
+        text1="Whether you’re planning a new website, a custom web application or an advertising campaign, we’re here to listen and help you find the right solution for your business."
+        text2="Tell us about your goals, challenges or ideas and we’ll take it from there. We believe great digital projects start with clear communication, collaboration and a conversation that feels easy and transparent from the very beginning."
+      />
+      <MainSection />
       <SideButtons />
       <WhatsAppButton />
       <Footer />
