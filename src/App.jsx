@@ -15,6 +15,7 @@ import ContentCreation from './pages/Services/ContentCreation';
 import WebsitesPage from './pages/Services/WebsitesPage';
 import WebAppsPage from './pages/Services/WebAppsPage';
 import AdvertisingContentCreation from './pages/Services/AdsContentCreation';
+import Cookies from './pages/Cookies';
 import { Toaster } from 'react-hot-toast';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -38,6 +39,7 @@ function App() {
           path="/advertising-content-creation"
           element={<AdvertisingContentCreation />}
         />
+        <Route path="/cookies" element={<Cookies />} />
       </Routes>
 
       {/* react-hot-toast */}
