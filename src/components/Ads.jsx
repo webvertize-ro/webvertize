@@ -52,8 +52,8 @@ function Ads() {
               subtitle="Promotional images & Reels for ads"
               text="High-quaality  promotional content for Facebook and Google Ads, including professionally designed split-image posts and short video Reels that highlight your brand, services and calls to action."
               bgImage={contentCreationImg}
-              link1="View Case Studies"
-              link2="Explore Services"
+              link1="/portfolio"
+              link2="/advertising-content-creation"
             />
           </div>
           <div className="col-md-6 col-lg-4 mb-4">
@@ -63,7 +63,7 @@ function Ads() {
               subtitle="Strategic creation and ongoing management of Google Ads campaigns tailored to your business goals"
               text="We collaborate with you to design a high-performing Google Ads campaign from the ground up - selecting the right objectives and ensuring consistent optimizations and monitoring. We monitor performance, implement improvements and deliver clear monthly reports so you always know how your campaign is progressing."
               bgImage={googleAdsImage}
-              link3="Read more about campaign types"
+              link3="/advertising-content-creation"
             />
           </div>
           <div className="col-md-6 col-lg-4 mb-4">
@@ -73,7 +73,7 @@ function Ads() {
               subtitle="Engaging campaigns tailored to your business goals"
               text="Creating and managing Facebook Ads campaigns, including promotional content, ad copy, and performance monitoring to reach your audience effectively."
               bgImage={facebookAdsImage}
-              link3="Read more about campaign types"
+              link3="/advertising-content-creation"
             />
           </div>
         </div>

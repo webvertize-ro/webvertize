@@ -8,6 +8,7 @@ import { useState } from 'react';
 import Modal from './Modal';
 import Form from './Form';
 import { Link } from 'react-router-dom';
+import ModalForm from './ModalForm';
 
 const StyledFooter = styled.footer`
   padding: 2.5rem;
@@ -142,7 +143,7 @@ function Footer() {
                   </li>
                   <li>
                     <StyledFontAwesomeIcon icon={faCheckCircle} />
-                    <StyledRegularLink to="/services">
+                    <StyledRegularLink to="/websites">
                       Services
                     </StyledRegularLink>
                   </li>
@@ -162,13 +163,13 @@ function Footer() {
           </FooterRow>
         </div>
       </StyledFooter>
-      <Modal
+      <ModalForm
         show={showForm}
         title="Contact Form"
         onClose={() => setShowForm(false)}
       >
         <Form onSubmit={handleSubmit}></Form>
-      </Modal>
+      </ModalForm>
     </>
   );
 }

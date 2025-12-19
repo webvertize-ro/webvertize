@@ -5,10 +5,27 @@ import Logo from './Logo';
 import FacebookIcon from './FacebookIcon';
 import Dropdown from './Dropdown/Dropdown';
 
+const NavigationHeader = styled.header`
+  transition: all 0.3s ease-in-out;
+
+  @media (min-width: 1200px) {
+    position: ${({ $isScrolled }) => ($isScrolled ? 'fixed' : 'unset')};
+    top: ${({ $isScrolled }) => ($isScrolled ? '0.6rem' : '0')};
+    width: 100%;
+    z-index: 100;
+    padding: ${({ $isScrolled }) => ($isScrolled ? '0.75rem 3rem' : '0')};
+
+    ${({ $isScrolled }) =>
+      $isScrolled
+        ? `filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.15));`
+        : `filter: none`}
+  }
+`;
+
 const StyledNav = styled.nav`
   height: 80px;
   padding: 0;
-  /* padding: 1rem; */
+  border-radius: 1rem;
 
   @media (max-width: 576px) {
     height: unset;
@@ -65,6 +82,24 @@ const FacebookIconContainer = styled.div`
 function Navigation() {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
   const navRef = useRef(null);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const myBool = window.scrollY > 0;
+      setIsScrolled(myBool);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Run once on mount in case page is already scrolled
+    handleScroll();
+
+    // clean-up
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const handleNavCollapse = () => {
     setIsNavCollapsed(!isNavCollapsed);
@@ -100,62 +135,68 @@ function Navigation() {
   }, [isNavCollapsed]);
 
   return (
-    <StyledNav
-      className="navbar navbar-expand-lg navbar-light bg-light sticky-top"
-      ref={navRef}
-    >
-      <div className="container h-100">
-        <StyledLinkLogo className="navbar-brand" to="/">
-          <Logo />
-        </StyledLinkLogo>
-        <button
-          className="navbar-toggler"
-          type="button"
-          onClick={handleNavCollapse}
-          aria-controls="navbarSupportedContent"
-          aria-expanded={!isNavCollapsed}
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div
-          className={`${
-            isNavCollapsed ? 'collapse' : ''
-          } navbar-collapse h-100`}
-          id="navbarSupportedContent"
-        >
-          <StyledUl className="navbar-nav me-auto mb-2 mb-lg-0 ms-auto h-100">
-            <StyledLi className="nav-item">
-              <StyledLink className="nav-link" to="/" onClick={closeNav}>
-                Home
-              </StyledLink>
-            </StyledLi>
-            {/* Services dropdown */}
-            <StyledLi className="nav-item">
-              <Dropdown closeNav={closeNav} />
-            </StyledLi>
+    <NavigationHeader $isScrolled={isScrolled}>
+      <StyledNav
+        className="navbar navbar-expand-lg navbar-light bg-light sticky-top"
+        ref={navRef}
+      >
+        <div className="container h-100">
+          <StyledLinkLogo className="navbar-brand" to="/">
+            <Logo />
+          </StyledLinkLogo>
+          <button
+            className="navbar-toggler"
+            type="button"
+            onClick={handleNavCollapse}
+            aria-controls="navbarSupportedContent"
+            aria-expanded={!isNavCollapsed}
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div
+            className={`${
+              isNavCollapsed ? 'collapse' : ''
+            } navbar-collapse h-100`}
+            id="navbarSupportedContent"
+          >
+            <StyledUl className="navbar-nav me-auto mb-2 mb-lg-0 ms-auto h-100">
+              <StyledLi className="nav-item">
+                <StyledLink className="nav-link" to="/" onClick={closeNav}>
+                  Home
+                </StyledLink>
+              </StyledLi>
+              {/* Services dropdown */}
+              <StyledLi className="nav-item">
+                <Dropdown closeNav={closeNav} />
+              </StyledLi>
 
-            <StyledLi className="nav-item">
-              <StyledLink
-                className="nav-link"
-                to="/portfolio"
-                onClick={closeNav}
-              >
-                Portfolio
-              </StyledLink>
-            </StyledLi>
-            <StyledLi className="nav-item">
-              <StyledLink className="nav-link" to="/contact" onClick={closeNav}>
-                Contact
-              </StyledLink>
-            </StyledLi>
-          </StyledUl>
-          <FacebookIconContainer>
-            <FacebookIcon color="dark" />
-          </FacebookIconContainer>
+              <StyledLi className="nav-item">
+                <StyledLink
+                  className="nav-link"
+                  to="/portfolio"
+                  onClick={closeNav}
+                >
+                  Portfolio
+                </StyledLink>
+              </StyledLi>
+              <StyledLi className="nav-item">
+                <StyledLink
+                  className="nav-link"
+                  to="/contact"
+                  onClick={closeNav}
+                >
+                  Contact
+                </StyledLink>
+              </StyledLi>
+            </StyledUl>
+            <FacebookIconContainer>
+              <FacebookIcon color="dark" />
+            </FacebookIconContainer>
+          </div>
         </div>
-      </div>
-    </StyledNav>
+      </StyledNav>
+    </NavigationHeader>
   );
 }
 

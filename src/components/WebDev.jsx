@@ -43,7 +43,7 @@ function WebDev() {
               subtitle="Presentational websites & essential online presence"
               text="Delivering fast, modern and responsive mobile-friendly presentation websites tailored to your brand. Additional features can be integrated based on your business needs - such as live chats, interactive maps, image galleries, contact forms, admin dashboards, login funtionality and more."
               link1="/portfolio"
-              link2="/services"
+              link2="/websites"
               icon="websites-icon"
               bgImage={bgWebsitesImage}
               bgcolor={'rgba(110, 162, 193, 0.7)'}
@@ -57,7 +57,7 @@ function WebDev() {
               subtitle="Internal tools & custom business solutions"
               text="Custom internal applications designed for small and medium-sized businesses. Streamline your operations with tools built around your specific workflows—such as task management systems, ticketing platforms, live chat applications, inventory tracking, booking systems, and more."
               link1="/portfolio"
-              link2="/services"
+              link2="/web-apps"
               icon="web-app-icon"
               bgImage={bgWebAppsImage}
               bgcolor="rgba(199, 204, 210, 0.5)"
