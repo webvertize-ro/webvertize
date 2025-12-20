@@ -24,6 +24,7 @@ import featuresImg from '../../assets/features_capabilities.jpg';
 import { faListCheck } from '@fortawesome/free-solid-svg-icons/faListCheck';
 import Header from '../Header';
 import webAppsHeader from '../../assets/web_apps_header.jpg';
+import CookiePopup from '../Cookies/CookiePopup';
 
 const StyledSection = styled.section`
   display: flex;

@@ -9,6 +9,7 @@ import WhatsAppButton from '../components/WhatsAppButton';
 import OurProcess from '../components/OurProcess';
 import Header from '../components/Header';
 import homepageHeader from '../assets/homepage_header.jpg';
+import CookiePopup from '../components/Cookies/CookiePopup';
 
 function Home() {
   return (
@@ -38,6 +39,7 @@ function Home() {
       />
       <SideButtons />
       <WhatsAppButton />
+      <CookiePopup />
       <Footer />
     </div>
   );

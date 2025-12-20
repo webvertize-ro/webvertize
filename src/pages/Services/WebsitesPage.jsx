@@ -5,6 +5,7 @@ import Websites from '../../components/WebDevelopment/Websites';
 import CTA from '../../components/CTA';
 import SideButtons from '../../components/SideButtons';
 import WhatsAppButton from '../../components/WhatsAppButton';
+import CookiePopup from '../../components/Cookies/CookiePopup';
 
 function WebsitesPage() {
   return (
@@ -18,6 +19,7 @@ function WebsitesPage() {
       />
       <SideButtons />
       <WhatsAppButton />
+      <CookiePopup />
       <Footer />
     </div>
   );

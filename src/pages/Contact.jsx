@@ -5,6 +5,7 @@ import WhatsAppButton from '../components/WhatsAppButton';
 import Header from '../components/Header';
 import contactHeaderImg from '../assets/contact_us_header.jpg';
 import MainSection from './Contact/MainSection';
+import CookiePopup from '../components/Cookies/CookiePopup';
 
 function Contact() {
   return (
@@ -19,6 +20,7 @@ function Contact() {
       <MainSection />
       <SideButtons />
       <WhatsAppButton />
+      <CookiePopup />
       <Footer />
     </div>
   );

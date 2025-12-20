@@ -12,6 +12,7 @@ import featuresImg from '../../assets/features_capabilities.jpg';
 import websitesHeader from '../../assets/websites_header.jpg';
 import Header from '../Header';
 import webAppsHeader from '../../assets/web_apps_header.jpg';
+import CookiePopup from '../Cookies/CookiePopup';
 
 const StyledSection = styled.section`
   display: flex;

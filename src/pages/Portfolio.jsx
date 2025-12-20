@@ -6,6 +6,7 @@ import SideButtons from '../components/SideButtons';
 import bgImage from '../assets/portfolio/portfolio-header.jpg';
 import CTA from '../components/CTA';
 import WhatsAppButton from '../components/WhatsAppButton';
+import CookiePopup from '../components/Cookies/CookiePopup';
 
 function Portfolio() {
   return (
@@ -25,6 +26,7 @@ function Portfolio() {
       />
       <SideButtons />
       <WhatsAppButton />
+      <CookiePopup />
       <Footer />
     </div>
   );

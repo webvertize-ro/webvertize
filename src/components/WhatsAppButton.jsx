@@ -11,7 +11,7 @@ const WhatsAppButtonContainer = styled.div`
   position: fixed;
   bottom: 0.75rem;
   right: 2rem;
-  z-index: 9999;
+  z-index: 100;
 `;
 
 const StyledWhatsAppButton = styled.a`

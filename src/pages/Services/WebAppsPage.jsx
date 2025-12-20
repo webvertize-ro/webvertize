@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import CTA from '../../components/CTA';
 import SideButtons from '../../components/SideButtons';
 import WhatsAppButton from '../../components/WhatsAppButton';
+import CookiePopup from '../../components/Cookies/CookiePopup';
 
 function WebAppsPage() {
   return (
@@ -18,6 +19,7 @@ function WebAppsPage() {
       />
       <SideButtons />
       <WhatsAppButton />
+      <CookiePopup />
       <Footer />
     </div>
   );

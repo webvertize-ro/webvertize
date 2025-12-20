@@ -42,8 +42,8 @@ function AccordionFAQ() {
     <Accordion className="container">
       <h3>Cookie Information and FAQs</h3>
       <p className="fs-5">
-        Find below some general cookies information, their purpose and our
-        current usage.{' '}
+        Find below some general information about cookies, their purpose and our
+        current usage.
       </p>
       {faqs.map((el, index) => (
         <AccordionItem

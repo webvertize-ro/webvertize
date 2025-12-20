@@ -9,6 +9,7 @@ import CTA from '../../components/CTA';
 import bgImage from '../../assets/header_ads_content_creation.jpg';
 import SideButtons from '../../components/SideButtons';
 import WhatsAppButton from '../../components/WhatsAppButton';
+import CookiePopup from '../../components/Cookies/CookiePopup';
 
 function AdsContentCreation() {
   return (
@@ -36,6 +37,7 @@ function AdsContentCreation() {
       />
       <SideButtons />
       <WhatsAppButton />
+      <CookiePopup />
       <Footer />
     </div>
   );
