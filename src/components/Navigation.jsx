@@ -25,12 +25,16 @@ const NavigationHeader = styled.header`
 const StyledNav = styled.nav`
   height: 80px;
   padding: 0;
-  border-radius: 1rem;
+
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 
   @media (max-width: 576px) {
     height: unset;
     padding: 1rem;
+  }
+
+  @media (min-width: 1200px) {
+    border-radius: 1rem;
   }
 `;
 
@@ -136,9 +140,9 @@ function Navigation() {
   }, [isNavCollapsed]);
 
   return (
-    <NavigationHeader $isScrolled={isScrolled}>
+    <NavigationHeader $isScrolled={isScrolled} className="sticky-top">
       <StyledNav
-        className="navbar navbar-expand-lg navbar-light bg-light sticky-top"
+        className="navbar navbar-expand-lg navbar-light bg-light"
         ref={navRef}
       >
         <div className="container h-100">
