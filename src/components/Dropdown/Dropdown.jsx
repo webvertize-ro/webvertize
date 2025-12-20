@@ -40,7 +40,7 @@ const DropdownToggle = styled.a`
     background-color: rgb(39, 55, 77);
     color: #fff;
   }
-  @media (max-width: 576px) {
+  @media (max-width: 992px) {
     align-items: flex-start;
     justify-content: flex-start;
   }
@@ -128,9 +128,8 @@ const DropdownLink = styled(Link)`
 `;
 
 const StyledServicesSingle = styled.span`
-  @media (max-width: 576px) {
-    /* width: 100%; */
-  }
+  display: flex;
+  justify-content: flex-start;
 `;
 
 function Dropdown({ closeNav }) {

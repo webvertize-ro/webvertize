@@ -5,6 +5,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const StyledMainSection = styled.div`
   padding: 4rem 6rem;
+  @media (max-width: 576px) {
+    padding: 1.5rem 2.25rem;
+  }
+
+  @media (min-width: 576px) and (max-width: 768px) {
+    padding: 1.75rem 2.625rem;
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    padding: 2rem 3rem;
+  }
 `;
 
 const Text = styled.div`
@@ -28,7 +39,7 @@ function MainSection() {
     <StyledMainSection className="container">
       <div className="row">
         {/* Contact Form */}
-        <div className="col-md-6">
+        <div className="col-md-6 mb-4">
           <Text>
             <h3>Start the Conversation</h3>
             <p className="fs-5">

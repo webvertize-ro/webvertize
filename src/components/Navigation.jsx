@@ -28,7 +28,7 @@ const StyledNav = styled.nav`
 
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 
-  @media (max-width: 576px) {
+  @media (max-width: 992px) {
     height: unset;
     padding: 1rem;
   }
@@ -77,7 +77,7 @@ const StyledLi = styled.li`
   width: 100%;
   flex: 1;
   display: flex;
-  justify-content: center;
+  align-items: center;
 `;
 
 const FacebookIconContainer = styled.div`
