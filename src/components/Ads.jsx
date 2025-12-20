@@ -8,7 +8,6 @@ import facebookAdsImage from '../assets/facebook_ads_image.jpg';
 const StyledAds = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 3rem;
   margin-bottom: 4rem;
 
   @media (max-width: 576px) {
@@ -43,6 +42,10 @@ function Ads() {
       <AdsTitle>
         Advertisment: Content Creation and Ad Campaigns Management
       </AdsTitle>
+      <p className="fs-5">
+        Creative content and carefully managed ad campaigns designed to attract,
+        convert and scale.
+      </p>
       <div className="container">
         <div className="row d-flex align-items-stretch">
           <div className="col-md-6 col-lg-4 mb-4">

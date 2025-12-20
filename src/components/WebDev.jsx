@@ -9,7 +9,7 @@ const StyledWebDev = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 3rem;
+  /* gap: 3rem; */
   margin-bottom: 4rem;
 
   @media (max-width: 576px) {
@@ -34,7 +34,11 @@ const StyledWebDev = styled.div`
 function WebDev() {
   return (
     <StyledWebDev>
-      <h1>Web Development: Websites and Web Applications</h1>
+      <h1>Web Development - Websites and Web Applications</h1>
+      <p className="fs-5">
+        Modern web solutions designed to grow, streamline and support your
+        business.
+      </p>
       <div className="container">
         <div className="row">
           <div className="col-md-6">

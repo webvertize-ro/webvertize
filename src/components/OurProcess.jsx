@@ -2,6 +2,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 import styled from 'styled-components';
 import {
+  fa1,
+  fa2,
+  fa3,
+  fa4,
+  fa5,
   faBugSlash,
   faCode,
   faMagnifyingGlass,
@@ -19,6 +24,7 @@ const TabWrapper = styled.div`
   position: relative;
   z-index: 9;
   margin-bottom: 4rem;
+  border-radius: 2rem;
 
   &::after {
     content: '';
@@ -26,6 +32,7 @@ const TabWrapper = styled.div`
     inset: 0;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 2rem;
   }
 `;
 
@@ -33,7 +40,7 @@ const TabContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  padding: 3rem;
+  padding: 2rem;
 
   @media (max-width: 576px) {
     padding: 1.5rem;
@@ -47,11 +54,10 @@ const TabContainer = styled.div`
 const TabList = styled.div`
   display: flex;
   flex-direction: column;
-  flex: 1.25;
+  flex: 0.75;
   gap: 1rem;
   position: relative;
   z-index: 9;
-
   @media (max-width: 576px) {
     font-size: 12px;
   }
@@ -61,26 +67,37 @@ const TabList = styled.div`
   }
 `;
 
+const TabButtonIcon = styled.div`
+  flex: 1;
+`;
+
+const TabButtonText = styled.div`
+  flex: 3;
+  display: flex;
+  flex-direction: flex-start;
+`;
+
 const TabButton = styled.button`
   border: none;
-  border-radius: 50%;
-  padding: 1.5rem 0.5rem;
-  box-shadow: 0px 8px 0px #9e9e9e;
+  border-radius: 1rem;
+  padding: 1rem 0.3rem;
   background: ${({ active }) =>
     active
       ? 'linear-gradient(to bottom, #456882 0%, #456882 60%, #456882 100%)'
       : 'linear-gradient(to bottom, #eaeaea 0%, #d4d4d4 60%, #c4c4c4 100%)'};
   color: ${({ active }) => (active ? '#fff' : '#444')};
+  display: flex;
+  /* justify-content: center; */
 `;
 
 const TabPanel = styled.div`
   display: flex;
-  flex: 4;
+  flex: 3;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  padding: 0 10rem;
+  padding: 0 2.5rem;
   position: relative;
   z-index: 9;
   color: #fff;
@@ -131,41 +148,50 @@ const TabListTabPanel = styled.div`
   }
 `;
 
+const StyledH2 = styled.h2``;
+
+const Subtitle = styled.p``;
+
 const tabs = [
   {
     label: 'Discovery',
     content:
       'We begin by getting to know your business — your goals, audience, competitors, and what makes your brand unique. Together, we define what success means for this project and translate it into clear requirements. The outcome of this phase is a focused digital strategy that guides every design and development decision.',
     icon: faMagnifyingGlass,
-    color: '#3e5c76',
+    iconLabel: fa1,
+    color: '#fff',
   },
   {
     label: 'UX/UI Design',
     content:
       'Based on the strategy, we design the structure and visual identity of your website or application. This includes wireframes, layout, user flows and other design elements that reflect your brand and align with your business goals.',
     icon: faSitemap,
-    color: '#527a9a',
+    iconLabel: fa2,
+    color: '#fff',
   },
   {
     label: 'Development',
     content:
       'We bring the design to life by building a fast, responsive, and modern solution optimized for all devices. Whether it’s a presentational website or a full web application, we code using reliable technologies and integrate all required features as defined in the project scope.',
     icon: faCode,
-    color: '#699ec2',
+    iconLabel: fa3,
+    color: '#fff',
   },
   {
     label: 'Testing & Optimization',
     content:
       'Before launch, we carefully test everything - functionality, performance, accessibility and browser compatibility. We address issues, refine interactions, and optimize the experience so your product is ready for real users.',
     icon: faBugSlash,
-    color: '#4a7c9e',
+    iconLabel: fa4,
+    color: '#fff',
   },
   {
     label: 'Launch & Support',
     content:
       'Once everything meets expectations, we deploy the final product and provide post-launch support according to the agreed terms. We can assist with updates, optimizations, analytics, and improvements — ensuring your digital presence keeps growing.',
     icon: faRocket,
-    color: '#2c5a7a',
+    iconLabel: fa5,
+    color: '#fff',
   },
 ];
 
@@ -173,10 +199,14 @@ function OurProcess() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <TabWrapper>
+    <TabWrapper className="container">
       <TabContainer className="container">
         <TitleContainer>
-          <h2>Our Process - How we build your digital presence</h2>
+          <StyledH2>Our Process - How we build your digital presence</StyledH2>
+          <Subtitle className="fs-5">
+            A clear, step-by-step approach that turns ideas into reliable
+            digital solutions.
+          </Subtitle>
         </TitleContainer>
         <TabListTabPanel className="d-flex">
           <TabList>
@@ -186,7 +216,10 @@ function OurProcess() {
                 active={activeIndex === i}
                 onClick={() => setActiveIndex(i)}
               >
-                {tab.label}
+                <TabButtonIcon>
+                  <FontAwesomeIcon icon={tab.iconLabel} />
+                </TabButtonIcon>
+                <TabButtonText className="flex-3">{tab.label}</TabButtonText>
               </TabButton>
             ))}
           </TabList>

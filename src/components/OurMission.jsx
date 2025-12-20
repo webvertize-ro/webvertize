@@ -13,6 +13,10 @@ const StyledOurMission = styled.div`
   margin-bottom: 4rem;
 `;
 
+const StyledH2 = styled.h2``;
+
+const Subtitle = styled.p``;
+
 const Description = styled.div`
   display: flex;
   flex-direction: column;
@@ -35,8 +39,6 @@ const TitleContainer = styled.h2`
 
 const Title = styled.div``;
 
-const Subtitle = styled.div``;
-
 const StyledP = styled.p`
   text-align: justify;
 
@@ -51,6 +53,8 @@ const PillarsTitle = styled.h3`
     justify-content: center;
   }
 `;
+
+const SubtitleCorePrinciples = styled.p``;
 
 const PillarsRow = styled.div`
   display: flex;
@@ -69,6 +73,10 @@ const PillarsRow = styled.div`
 `;
 
 const Card = styled.div`
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
   @media (min-width: 768px) and (max-width: 992px) {
     margin-bottom: 0.25rem;
   }
@@ -77,26 +85,25 @@ const Card = styled.div`
 function OurMission() {
   return (
     <StyledOurMission>
+      <StyledH2>Our Mission</StyledH2>
+      <Subtitle className="fs-5">
+        Digital solutions designed to grow your business
+      </Subtitle>
       <Description>
-        <TitleContainer>
-          <Title>Our Mission</Title>
-          <Subtitle className="fs-6">
-            Digital solutions designed to grow your business
-          </Subtitle>
-        </TitleContainer>
-        <StyledP className="fs-5">
+        <TitleContainer></TitleContainer>
+        <StyledP className="fs-4">
           At Webvertize, our mission is to help businesses build the strong
           online presence they deserve. We do this by delivering high-quality
           websites, web applications, engaging content and performance-focused
           ad campaigns that support real business growth.
         </StyledP>
-        <StyledP className="fs-5">
+        <StyledP className="fs-4">
           We believe that digital transformation should be an enjoyable journey,
           not a stresssful one. Through dedication, transparency and a
           collaborative approach, we work side-by-side with you to understand
           your needs and provide solutions that create a measurable impact.
         </StyledP>
-        <StyledP className="fs-5">
+        <StyledP className="fs-4">
           Our goal is not to just complete a project - it is to build a
           long-term partnership where success is shared, milestones are
           celebrated together and your business evolves confidently in the
@@ -105,10 +112,13 @@ function OurMission() {
       </Description>
       <Pillars>
         <PillarsTitle>Our Core Principles</PillarsTitle>
+        <SubtitleCorePrinciples className="fs-5">
+          How we approach every project and partnership
+        </SubtitleCorePrinciples>
         <div className="container">
           <PillarsRow className="row d-flex align-items-stretch">
             <div className="col-sm-12 col-lg-3">
-              <Card className="card h-100">
+              <Card className="card h-100 text-white">
                 <div className="card-body">
                   <h5 className="card-title d-flex gap-2 align-items-center">
                     <FontAwesomeIcon icon={faChartLine} />
@@ -123,7 +133,7 @@ function OurMission() {
               </Card>
             </div>
             <div className="col-sm-12 col-lg-3">
-              <Card className="card h-100">
+              <Card className="card h-100 text-white">
                 <div className="card-body">
                   <h5 className="card-title d-flex gap-2 align-items-center">
                     <FontAwesomeIcon icon={faGears} />
@@ -138,7 +148,7 @@ function OurMission() {
               </Card>
             </div>
             <div className="col-sm-12 col-lg-3">
-              <Card className="card h-100">
+              <Card className="card h-100 text-white">
                 <div className="card-body">
                   <h5 className="card-title d-flex gap-2 align-items-center">
                     <FontAwesomeIcon icon={faHandshake} />
@@ -153,7 +163,7 @@ function OurMission() {
               </Card>
             </div>
             <div className="col-sm-12 col-lg-3">
-              <Card className="card h-100">
+              <Card className="card h-100 text-white">
                 <div className="card-body">
                   <h5 className="card-title d-flex gap-2 align-items-center">
                     <FontAwesomeIcon icon={faRocket} />

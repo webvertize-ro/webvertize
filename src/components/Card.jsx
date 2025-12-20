@@ -7,10 +7,12 @@ const StyledCard = styled.div`
   height: 100%;
   position: relative;
   padding: 5rem 1rem;
+  border: none;
   border-radius: 1rem;
   overflow: hidden;
   transition: all 0.4s ease-in-out;
-  cursor: pointer;
+  background-color: rgba(168, 187, 163, 0.25);
+  color: #fff;
 
   @media (max-width: 576px) {
     padding: 0;

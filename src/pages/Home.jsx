@@ -10,10 +10,21 @@ import OurProcess from '../components/OurProcess';
 import Header from '../components/Header';
 import homepageHeader from '../assets/homepage_header.jpg';
 import CookiePopup from '../components/Cookies/CookiePopup';
+import ScheduleACallButton from '../components/ScheduleACallButton';
+import styled from 'styled-components';
+
+const StyledHome = styled.div`
+  background-color: hsl(205, 52%, 16%, 0.9);
+  color: #fff;
+`;
+
+const OurProcessContainer = styled.div`
+  border-radius: 10px;
+`;
 
 function Home() {
   return (
-    <div>
+    <StyledHome>
       <Navigation />
       <Header
         title="Websites, Web Applications & Advertising Built for Real Business Growth"
@@ -27,7 +38,9 @@ function Home() {
       <div className="container">
         <Ads />
       </div>
+
       <OurProcess />
+
       <div className="container">
         <OurMission />
       </div>
@@ -41,7 +54,7 @@ function Home() {
       <WhatsAppButton />
       <CookiePopup />
       <Footer />
-    </div>
+    </StyledHome>
   );
 }
 
