@@ -94,7 +94,7 @@ const TabPanel = styled.div`
   display: flex;
   flex: 3;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   gap: 2rem;
   padding: 0 2.5rem;

@@ -33,7 +33,7 @@ const StyledSection3 = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding: 2rem;
 `;
 
@@ -71,7 +71,7 @@ const FeaturesImg = styled.img`
 const StyledUl = styled.ul`
   list-style-type: none;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   gap: 0.5rem;
   padding: 0;
 `;
@@ -89,7 +89,8 @@ function Websites() {
   return (
     <>
       <Header
-        title="Custom Websites That Make Your Business Stand Out"
+        title="Websites Built to Represent Your Business — Clearly and
+              Professionally"
         text1="Your business website is a reflection of your brand and a powerful tool to engage customers."
         text2="At Webvertize, we create websites that are visually appealing, easy to navigate and fully responsive, ensuring a seamless experience on any device. We collaborate with you every step of the way in order to build your online presence in an enjoyabale way."
         bgImage={websitesHeader}
@@ -100,7 +101,7 @@ function Websites() {
         <StyledSection>
           <div className="row">
             <h2 className="mb-3">
-              Custom Websites That Showcase Your Brand and Drive Results
+              Custom Websites Designed for Real Business Needs
             </h2>
             <div className="col-sm-12 col-xl-6 mb-4">
               <WebsitesImage src={websitesImg} className="img-fluid" />
@@ -118,12 +119,12 @@ function Websites() {
             </div>
           </div>
         </StyledSection>
-        {/* Features list */}
+        {/* Features & Capabilities */}
         <StyledSection2>
           <div className="row">
             <h2 className="mb-3">Features & Capabilities</h2>
             <div className="col-12 mb-4">
-              <StyledP className="fs-5">
+              <StyledP className="fs-5 mb-4">
                 We start with presentational websites that highlight your brand
                 and services and then enhance them with custom functionalities
                 according to your business needs. These functionalities can
@@ -131,9 +132,9 @@ function Websites() {
               </StyledP>
 
               <div>
-                <StyledUl className="fs-5">
+                <StyledUl className="fs-5 row">
                   <li>
-                    <div className="card">
+                    <div className="card rounded-4">
                       <div className="card-body">
                         <div className="card-title">
                           <div className="d-flex gap-2">
@@ -153,7 +154,7 @@ function Websites() {
                     </div>
                   </li>
                   <li>
-                    <div className="card">
+                    <div className="card rounded-4">
                       <div className="card-body">
                         <div className="card-title">
                           <div className="d-flex gap-2">
@@ -173,7 +174,7 @@ function Websites() {
                     </div>
                   </li>
                   <li>
-                    <div className="card">
+                    <div className="card rounded-4">
                       <div className="card-body">
                         <div className="card-title">
                           <div className="d-flex gap-2">
@@ -194,7 +195,7 @@ function Websites() {
                     </div>
                   </li>
                   <li>
-                    <div className="card">
+                    <div className="card rounded-4">
                       <div className="card-body">
                         <div className="card-title">
                           <div className="d-flex gap-2">
@@ -216,7 +217,7 @@ function Websites() {
                     </div>
                   </li>
                   <li>
-                    <div className="card">
+                    <div className="card rounded-4">
                       <div className="card-body">
                         <div className="card-title">
                           <div className="d-flex gap-2">

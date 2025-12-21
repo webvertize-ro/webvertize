@@ -118,18 +118,18 @@ function Card({
     >
       <CardBody className="card-body">
         {title && (
-          <h2 className="card-title d-flex align-items-center gap-2">
+          <h2 className="card-title d-flex align-items-center gap-2 fs-1">
             {getIcon() && <FontAwesomeIcon icon={getIcon()} />}
             {title}
           </h2>
         )}
 
         {subtitle && (
-          <CardTitle className="text-start card-subtitle mb-2">
+          <CardTitle className="text-start card-subtitle mb-2 fs-4">
             {subtitle}
           </CardTitle>
         )}
-        {text && <StyledP>{text}</StyledP>}
+        {text && <StyledP className="fs-5">{text}</StyledP>}
 
         {(link1 || link2 || link3) && (
           <div className="d-flex">

@@ -11,6 +11,7 @@ const StyledCookiePopup = styled.div`
   z-index: 100;
   background-color: #1b3c53;
   color: #fff;
+  border-top: 3px solid #fff;
   padding: 1.5rem;
 `;
 

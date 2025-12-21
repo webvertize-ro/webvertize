@@ -120,11 +120,11 @@ function OurMission() {
             <div className="col-sm-12 col-lg-3">
               <Card className="card h-100 text-white">
                 <div className="card-body">
-                  <h5 className="card-title d-flex gap-2 align-items-center">
+                  <h5 className="card-title d-flex align-items-center gap-3 fs-5">
                     <FontAwesomeIcon icon={faChartLine} />
                     Growth-Focused Strategy
                   </h5>
-                  <p className="card-text">
+                  <p className="card-text fs-6">
                     Our digital solutions are designed to support your business
                     goals - brand awareness, conversion rates, customer
                     relationships and more.

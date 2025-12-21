@@ -6,10 +6,16 @@ import CTA from '../../components/CTA';
 import SideButtons from '../../components/SideButtons';
 import WhatsAppButton from '../../components/WhatsAppButton';
 import CookiePopup from '../../components/Cookies/CookiePopup';
+import styled from 'styled-components';
+
+const StyledWebsitesPage = styled.div`
+  background-color: hsl(203, 53%, 13%, 0.9);
+  color: #fff;
+`;
 
 function WebsitesPage() {
   return (
-    <div>
+    <StyledWebsitesPage>
       <Navigation />
       <Websites />
       <ServicesStackedCards />
@@ -21,7 +27,7 @@ function WebsitesPage() {
       <WhatsAppButton />
       <CookiePopup />
       <Footer />
-    </div>
+    </StyledWebsitesPage>
   );
 }
 

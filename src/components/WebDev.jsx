@@ -35,7 +35,7 @@ function WebDev() {
   return (
     <StyledWebDev>
       <h1>Web Development - Websites and Web Applications</h1>
-      <p className="fs-5">
+      <p className="fs-4">
         Modern web solutions designed to grow, streamline and support your
         business.
       </p>

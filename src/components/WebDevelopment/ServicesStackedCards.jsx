@@ -19,7 +19,6 @@ const Section = styled.section`
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
   padding: 4rem 0;
 
   @media (max-width: 1200px) {
@@ -38,6 +37,8 @@ const SectionTitle = styled.h2`
   }
 `;
 
+const Subtitle = styled.p``;
+
 const CardsList = styled.ul`
   list-style: none;
   width: 75%;
@@ -51,7 +52,6 @@ const Card = styled.li`
   top: 6rem;
   transform-origin: center top;
   width: 100%;
-  height: 430px;
 
   border-radius: 1.5rem;
   padding: 2rem;
@@ -397,6 +397,9 @@ export default function ServicesStackedCards() {
       <SectionTitle>
         Our Process - How We Bring Your Project to Life
       </SectionTitle>
+      <Subtitle className="fs-5">
+        A transparent, step-by-step approach from idea to launch.
+      </Subtitle>
       <CardsList className="js-stack-cards">
         {steps.map((step, i) => (
           <Card key={i} bg={step.image} className="js-stack-cards__item">
@@ -410,8 +413,8 @@ export default function ServicesStackedCards() {
                   <div>
                     <FontAwesomeIcon icon={icons[i]} />
                   </div>
-                  <StyledLiInner>
-                    <strong className="fs-6">{item.itemTitle}</strong>:{' '}
+                  <StyledLiInner className="fs-5">
+                    <strong className="fs-5">{item.itemTitle}</strong>:{' '}
                     {item.itemText}
                   </StyledLiInner>
                 </StyledLi>
