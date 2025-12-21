@@ -56,7 +56,11 @@ const StyledSection4 = styled.section`
   padding: 2rem;
 `;
 
-const SectionTextContent = styled.div``;
+const SectionTextContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+`;
 
 const WebsAppsImage = styled.img`
   max-width: 600px;
@@ -117,9 +121,7 @@ function WebApps() {
         {/* Headline + intro paragraph */}
         <StyledSection>
           <div className="row">
-            <h2 className="mb-3">
-              Custom Web Applications Built for Your Business
-            </h2>
+            <h2 className="mb-3">Why Custom Web Applications Matter</h2>
             <div className="col-sm-12 col-xl-6 d-flex align-items-center justify-content-center">
               <WebsAppsImage src={webAppsImg} className="img-fluid" />
             </div>
@@ -134,10 +136,7 @@ function WebApps() {
                 <StyledP className="fs-5">
                   We design and build custom web applications tailored to the
                   way your business actually works - from internal management
-                  systems to customer-facing platforms. Our approach combines
-                  strategic planning, UX design and reliable development
-                  practices to deliver solutions that support operational growth
-                  rather than force workarounds.
+                  systems to customer-facing platforms.
                 </StyledP>
                 <StyledP className="fs-5">
                   Whether you need a task management platform for your team, an
@@ -156,7 +155,7 @@ function WebApps() {
           <div className="row">
             <h2 className="mb-3">Features & Capabilities</h2>
             <div className="col-12 mb-4">
-              <StyledP className="fs-5">
+              <StyledP className="fs-5 mb-4">
                 At Webvertize, every application we build combines technical
                 performance with usability and long-term reliability. Depending
                 on the needs of your business, our solution for you may include:
@@ -165,7 +164,7 @@ function WebApps() {
               <div>
                 <StyledUl className="fs-5">
                   <li>
-                    <div className="card">
+                    <div className="card rounded-4">
                       <div className="card-body">
                         <div className="card-title">
                           <div className="d-flex gap-2">
@@ -186,7 +185,7 @@ function WebApps() {
                     </div>
                   </li>
                   <li>
-                    <div className="card">
+                    <div className="card rounded-4">
                       <div className="card-body">
                         <div className="card-title">
                           <div className="d-flex gap-2">
@@ -207,7 +206,7 @@ function WebApps() {
                     </div>
                   </li>
                   <li>
-                    <div className="card">
+                    <div className="card rounded-4">
                       <div className="card-body">
                         <div className="card-title">
                           <div className="d-flex gap-2">
@@ -228,7 +227,7 @@ function WebApps() {
                     </div>
                   </li>
                   <li>
-                    <div className="card">
+                    <div className="card rounded-4">
                       <div className="card-body">
                         <div className="card-title">
                           <div className="d-flex gap-2">
@@ -249,7 +248,7 @@ function WebApps() {
                     </div>
                   </li>
                   <li>
-                    <div className="card">
+                    <div className="card rounded-4">
                       <div className="card-body">
                         <div className="card-title">
                           <div className="d-flex gap-2">
@@ -270,7 +269,7 @@ function WebApps() {
                     </div>
                   </li>
                   <li>
-                    <div className="card">
+                    <div className="card rounded-4">
                       <div className="card-body">
                         <div className="card-title">
                           <div className="d-flex gap-2">
@@ -291,7 +290,7 @@ function WebApps() {
                     </div>
                   </li>
                   <li>
-                    <div className="card">
+                    <div className="card rounded-4">
                       <div className="card-body">
                         <div className="card-title">
                           <div className="d-flex gap-2">
@@ -311,7 +310,7 @@ function WebApps() {
                     </div>
                   </li>
                   <li>
-                    <div className="card">
+                    <div className="card rounded-4">
                       <div className="card-body">
                         <div className="card-title">
                           <div className="d-flex gap-2">
@@ -341,7 +340,7 @@ function WebApps() {
           <div className="row">
             <h2 className="mb-3">Designed to Drive Results</h2>
             <div className="col-12 mb-4">
-              <StyledP className="fs-5">
+              <StyledP className="fs-5 mb-4">
                 A custom web application is not just a tool — it’s a lever for
                 operational change. Our applications are designed to:
               </StyledP>
@@ -349,7 +348,7 @@ function WebApps() {
               <div>
                 <StyledUl className="fs-5">
                   <li>
-                    <div className="card">
+                    <div className="card rounded-4">
                       <div className="card-body">
                         <div className="card-title">
                           <div className="d-flex gap-2">
@@ -369,7 +368,7 @@ function WebApps() {
                     </div>
                   </li>
                   <li>
-                    <div className="card">
+                    <div className="card rounded-4">
                       <div className="card-body">
                         <div className="card-title">
                           <div className="d-flex gap-2">
@@ -389,7 +388,7 @@ function WebApps() {
                     </div>
                   </li>
                   <li>
-                    <div className="card">
+                    <div className="card rounded-4">
                       <div className="card-body">
                         <div className="card-title">
                           <div className="d-flex gap-2">
@@ -410,7 +409,7 @@ function WebApps() {
                     </div>
                   </li>
                   <li>
-                    <div className="card">
+                    <div className="card rounded-4">
                       <div className="card-body">
                         <div className="card-title">
                           <div className="d-flex gap-2">
@@ -430,7 +429,7 @@ function WebApps() {
                     </div>
                   </li>
                   <li>
-                    <div className="card">
+                    <div className="card rounded-4">
                       <div className="card-body">
                         <div className="card-title">
                           <div className="d-flex gap-2">
@@ -450,7 +449,7 @@ function WebApps() {
                     </div>
                   </li>
                   <li>
-                    <div className="card">
+                    <div className="card rounded-4">
                       <div className="card-body">
                         <div className="card-title">
                           <div className="d-flex gap-2">
