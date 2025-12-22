@@ -79,7 +79,7 @@ function CardFlip({ project }) {
             <div className="card h-100 rounded-4">
               <img
                 src={project.image}
-                className="card-img-top rounded-4"
+                className="card-img-top rounded-top-4"
                 alt={project.title}
               />
               <div className="card-body">
