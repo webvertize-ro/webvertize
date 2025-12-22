@@ -1,4 +1,12 @@
 import styled from 'styled-components';
+import {
+  faPenNib,
+  faChartLine,
+  faComments,
+  faBullseye,
+  faHandshake,
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const ContentRow = styled.div`
   @media (max-width: 1200px) {
@@ -43,7 +51,7 @@ function Section4() {
           <Subtitle>Simple Process, Powerful Results</Subtitle>
         </TitleTotal>
 
-        <StyledP>
+        <StyledP className="fs-5">
           At Webvertize, we don't believe advertising should feel complicated,
           stressful or overwhelming. We approach each advertising project as a
           creative journey that we take together - one where ideas flow openly,
@@ -54,37 +62,54 @@ function Section4() {
         <StyledUl>
           <Item>
             <div class="card">
-              <div class="card-body">
-                High-quality creative made for your business
+              <div class="card-body d-flex gap-2 fs-5">
+                <div>
+                  <FontAwesomeIcon icon={faPenNib} />
+                </div>
+                <div>High-quality creative made for your business</div>
               </div>
             </div>
           </Item>
           <Item>
             <div class="card">
-              <div class="card-body">
-                Data-driven optimization across platforms
+              <div class="card-body d-flex gap-2 fs-5">
+                <div>
+                  <FontAwesomeIcon icon={faChartLine} />
+                </div>
+                <div>Data-driven optimization across platforms</div>
               </div>
             </div>
           </Item>
           <Item>
             <div class="card">
-              <div class="card-body">
-                Ongoing communication and clear reporting
+              <div class="card-body d-flex gap-2 fs-5">
+                <div>
+                  <FontAwesomeIcon icon={faComments} />
+                </div>
+                <div>Ongoing communication and clear reporting</div>
               </div>
             </div>
           </Item>
           <Item>
             <div class="card">
-              <div class="card-body">
-                Strategy tailored to your goals and budget
+              <div class="card-body d-flex gap-2 fs-5">
+                <div>
+                  <FontAwesomeIcon icon={faBullseye} />
+                </div>
+                <div>Strategy tailored to your goals and budget</div>
               </div>
             </div>
           </Item>
           <Item>
             <div class="card">
-              <div class="card-body">
-                A single partner for both creative assets and campaign
-                management
+              <div class="card-body d-flex gap-2 fs-5">
+                <div>
+                  <FontAwesomeIcon icon={faHandshake} />
+                </div>
+                <div>
+                  A single partner for both creative assets and campaign
+                  management
+                </div>
               </div>
             </div>
           </Item>

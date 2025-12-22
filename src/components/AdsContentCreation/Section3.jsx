@@ -1,4 +1,22 @@
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faEye,
+  faArrowUpRightFromSquare,
+  faComments,
+  faUserPlus,
+  faMobileScreenButton,
+  faCartShopping,
+  faImage,
+  faPlayCircle,
+  faImages,
+  faLayerGroup,
+  faMobileScreen,
+  faFilm,
+  faBookOpen,
+  faSquarePollVertical,
+  faCubes,
+} from '@fortawesome/free-solid-svg-icons';
 
 const StyledSection3 = styled.section`
   padding-bottom: 4rem;
@@ -32,22 +50,29 @@ function Section3() {
   return (
     <StyledSection3 className="container">
       <ContentRow className="row">
-        <TitleTotal>
+        <TitleTotal className="mb-4">
           <Title>Facebook & Instagram Ads</Title>
-          <Subtitle>Reach, Engage and Convert with Meta Advertising</Subtitle>
+          <Subtitle className="fs-6">
+            Reach, Engage and Convert with Meta Advertising
+          </Subtitle>
         </TitleTotal>
 
-        <p>
+        <p className="fs-5">
           Meta platforms offer highly targeted advertising options based on
-          intrests, behaviors and demographics.{' '}
+          intrests, behaviors and demographics.
         </p>
-        <h5>Campaign Objectives We Support</h5>
+        <h4>Campaign Objectives We Support</h4>
         <StyledUl>
           <li>
             <div class="card">
               <div class="card-body">
-                <div>
-                  <strong>Awareness</strong> - Maximize reach and recall
+                <div className="fs-5 d-flex gap-2">
+                  <div>
+                    <FontAwesomeIcon icon={faEye} />
+                  </div>
+                  <div>
+                    <strong>Awareness</strong> - Maximize reach and recall
+                  </div>
                 </div>
               </div>
             </div>
@@ -55,9 +80,14 @@ function Section3() {
           <li>
             <div class="card">
               <div class="card-body">
-                <div>
-                  <strong>Traffic</strong> - Drive visitors to sites or landing
-                  pages
+                <div className="fs-5 d-flex gap-2">
+                  <div>
+                    <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                  </div>
+                  <div>
+                    <strong>Traffic</strong> - Drive visitors to sites or
+                    landing pages
+                  </div>
                 </div>
               </div>
             </div>
@@ -65,9 +95,14 @@ function Section3() {
           <li>
             <div class="card">
               <div class="card-body">
-                <div>
-                  <strong>Engagement</strong> - Boost likes, comments and video
-                  views
+                <div className="fs-5 d-flex gap-2">
+                  <div>
+                    <FontAwesomeIcon icon={faComments} />
+                  </div>
+                  <div>
+                    <strong>Engagement</strong> - Boost likes, comments and
+                    video views
+                  </div>
                 </div>
               </div>
             </div>
@@ -75,24 +110,45 @@ function Section3() {
           <li>
             <div class="card">
               <div class="card-body">
-                <h5>
-                  Leads - Collect client details using instant forms or
-                  messaging
-                </h5>
+                <div className="fs-5 d-flex gap-2">
+                  <div>
+                    <FontAwesomeIcon icon={faUserPlus} />
+                  </div>
+                  <div>
+                    <strong>Leads</strong> - Collect client details using
+                    instant forms or messaging
+                  </div>
+                </div>
               </div>
             </div>
           </li>
           <li>
             <div class="card">
               <div class="card-body">
-                <h5>App Promotion - Increase installs and in-app activity</h5>
+                <div className="fs-5 d-flex gap-2">
+                  <div>
+                    <FontAwesomeIcon icon={faMobileScreenButton} />
+                  </div>
+                  <div>
+                    <strong>App Promotion</strong> - Increase installs and
+                    in-app activity
+                  </div>
+                </div>
               </div>
             </div>
           </li>
           <li>
             <div class="card">
               <div class="card-body">
-                <h5>Sales - Encourage direct purchases or conversions</h5>
+                <div className="fs-5 d-flex gap-2">
+                  <div>
+                    <FontAwesomeIcon icon={faCartShopping} />
+                  </div>
+                  <div>
+                    <strong>Sales</strong> - Encourage direct purchases or
+                    conversions
+                  </div>
+                </div>
               </div>
             </div>
           </li>
@@ -103,15 +159,42 @@ function Section3() {
         <h4>Available Ad Formats</h4>
         <div className="card">
           <StyledUl className="list-group list-group-flush">
-            <li className="list-group-item">Image Ads</li>
-            <li className="list-group-item">Video Ads/Reels</li>
-            <li className="list-group-item">Carousel Ads</li>
-            <li className="list-group-item">Collection Ads</li>
-            <li className="list-group-item">Instant Experience Ads</li>
-            <li className="list-group-item">Slideshow Ads</li>
-            <li className="list-group-item">Stories Ads</li>
-            <li className="list-group-item">Poll Ads</li>
-            <li className="list-group-item">Augmented Reality Ads</li>
+            <li className="list-group-item d-flex gap-2 align-items-center fs-5">
+              <FontAwesomeIcon icon={faImage} />
+              Image Ads
+            </li>
+            <li className="list-group-item d-flex gap-2 align-items-center fs-5">
+              <FontAwesomeIcon icon={faPlayCircle} />
+              Video Ads/Reels
+            </li>
+            <li className="list-group-item d-flex gap-2 align-items-center fs-5">
+              <FontAwesomeIcon icon={faImages} />
+              Carousel Ads
+            </li>
+            <li className="list-group-item d-flex gap-2 align-items-center fs-5">
+              <FontAwesomeIcon icon={faLayerGroup} />
+              Collection Ads
+            </li>
+            <li className="list-group-item d-flex gap-2 align-items-center fs-5">
+              <FontAwesomeIcon icon={faMobileScreen} />
+              Instant Experience Ads
+            </li>
+            <li className="list-group-item d-flex gap-2 align-items-center fs-5">
+              <FontAwesomeIcon icon={faFilm} />
+              Slideshow Ads
+            </li>
+            <li className="list-group-item d-flex gap-2 align-items-center fs-5">
+              <FontAwesomeIcon icon={faBookOpen} />
+              Stories Ads
+            </li>
+            <li className="list-group-item d-flex gap-2 align-items-center fs-5">
+              <FontAwesomeIcon icon={faSquarePollVertical} />
+              Poll Ads
+            </li>
+            <li className="list-group-item d-flex gap-2 align-items-center fs-5">
+              <FontAwesomeIcon icon={faCubes} />
+              Augmented Reality Ads
+            </li>
           </StyledUl>
         </div>
       </ContentRow>

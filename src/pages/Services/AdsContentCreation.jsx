@@ -10,10 +10,16 @@ import bgImage from '../../assets/header_ads_content_creation.jpg';
 import SideButtons from '../../components/SideButtons';
 import WhatsAppButton from '../../components/WhatsAppButton';
 import CookiePopup from '../../components/Cookies/CookiePopup';
+import styled from 'styled-components';
+
+const StyledAdsContentCreation = styled.div`
+  background-color: #2a566f;
+  color: #fff;
+`;
 
 function AdsContentCreation() {
   return (
-    <div>
+    <StyledAdsContentCreation>
       <Navigation />
       <Header
         bgImage={bgImage}
@@ -23,7 +29,7 @@ function AdsContentCreation() {
           moment. At Webvertize, we combine content creation, ad campaign
           strategy and ongoing optimization to ensure your business gets noticed
           where it matters most. Whether you need engaging visuals for your next
-          promotion, a high-performing Google Ads campaign, or a series of Meta
+          promotion, a high-performing Google Ads campaign or a series of Meta
           ads built to generate leads, we provide the creative and technical
           support to help your business grow."
       />
@@ -39,7 +45,7 @@ function AdsContentCreation() {
       <WhatsAppButton />
       <CookiePopup />
       <Footer />
-    </div>
+    </StyledAdsContentCreation>
   );
 }
 
