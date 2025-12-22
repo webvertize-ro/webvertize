@@ -61,7 +61,7 @@ function Section4() {
         </StyledP>
         <StyledUl>
           <Item>
-            <div class="card">
+            <div class="card rounded-4">
               <div class="card-body d-flex gap-2 fs-5">
                 <div>
                   <FontAwesomeIcon icon={faPenNib} />
@@ -71,7 +71,7 @@ function Section4() {
             </div>
           </Item>
           <Item>
-            <div class="card">
+            <div class="card rounded-4">
               <div class="card-body d-flex gap-2 fs-5">
                 <div>
                   <FontAwesomeIcon icon={faChartLine} />
@@ -81,7 +81,7 @@ function Section4() {
             </div>
           </Item>
           <Item>
-            <div class="card">
+            <div class="card rounded-4">
               <div class="card-body d-flex gap-2 fs-5">
                 <div>
                   <FontAwesomeIcon icon={faComments} />
@@ -91,7 +91,7 @@ function Section4() {
             </div>
           </Item>
           <Item>
-            <div class="card">
+            <div class="card rounded-4">
               <div class="card-body d-flex gap-2 fs-5">
                 <div>
                   <FontAwesomeIcon icon={faBullseye} />
@@ -101,7 +101,7 @@ function Section4() {
             </div>
           </Item>
           <Item>
-            <div class="card">
+            <div class="card rounded-4">
               <div class="card-body d-flex gap-2 fs-5">
                 <div>
                   <FontAwesomeIcon icon={faHandshake} />

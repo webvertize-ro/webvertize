@@ -64,8 +64,8 @@ function Section3() {
         <h4>Campaign Objectives We Support</h4>
         <StyledUl>
           <li>
-            <div class="card">
-              <div class="card-body">
+            <div className="card rounded-4">
+              <div className="card-body">
                 <div className="fs-5 d-flex gap-2">
                   <div>
                     <FontAwesomeIcon icon={faEye} />
@@ -78,8 +78,8 @@ function Section3() {
             </div>
           </li>
           <li>
-            <div class="card">
-              <div class="card-body">
+            <div className="card rounded-4">
+              <div className="card-body">
                 <div className="fs-5 d-flex gap-2">
                   <div>
                     <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
@@ -93,8 +93,8 @@ function Section3() {
             </div>
           </li>
           <li>
-            <div class="card">
-              <div class="card-body">
+            <div className="card rounded-4">
+              <div className="card-body">
                 <div className="fs-5 d-flex gap-2">
                   <div>
                     <FontAwesomeIcon icon={faComments} />
@@ -108,8 +108,8 @@ function Section3() {
             </div>
           </li>
           <li>
-            <div class="card">
-              <div class="card-body">
+            <div className="card rounded-4">
+              <div className="card-body">
                 <div className="fs-5 d-flex gap-2">
                   <div>
                     <FontAwesomeIcon icon={faUserPlus} />
@@ -123,8 +123,8 @@ function Section3() {
             </div>
           </li>
           <li>
-            <div class="card">
-              <div class="card-body">
+            <div className="card rounded-4">
+              <div className="card-body">
                 <div className="fs-5 d-flex gap-2">
                   <div>
                     <FontAwesomeIcon icon={faMobileScreenButton} />
@@ -138,7 +138,7 @@ function Section3() {
             </div>
           </li>
           <li>
-            <div class="card">
+            <div class="card rounded-4">
               <div class="card-body">
                 <div className="fs-5 d-flex gap-2">
                   <div>
@@ -157,7 +157,7 @@ function Section3() {
       {/* Campaign Types We Manage */}
       <ContentRow className="row">
         <h4>Available Ad Formats</h4>
-        <div className="card">
+        <div className="card rounded-4">
           <StyledUl className="list-group list-group-flush">
             <li className="list-group-item d-flex gap-2 align-items-center fs-5">
               <FontAwesomeIcon icon={faImage} />

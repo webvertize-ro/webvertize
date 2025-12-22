@@ -241,7 +241,7 @@ function Section2() {
         {/* Campaign Types We Manage */}
         <ContentRow className="row">
           <h4>Google Campaign Types We Manage</h4>
-          <div className="card">
+          <div className="card rounded-4">
             <StyledUl className="list-group list-group-flush fs-5 p-4">
               <li className="list-group-item d-flex gap-2">
                 <div>
