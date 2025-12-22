@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { Modal as BSModal } from 'bootstrap';
+import LogoImg from '../assets/logo_no_text_simple_final.png';
 
 function ModalForm({ show, onClose, title, children, isLoading }) {
   const modalRef = useRef(null);
@@ -31,7 +32,8 @@ function ModalForm({ show, onClose, title, children, isLoading }) {
         <div className="modal-content">
           <div className="modal-header">
             <h5 className="modal-title">
-              <div className="d-flex gap-2">
+              <div className="d-flex align-items-center gap-2">
+                <img src={LogoImg} width="35" alt="" />
                 <div>{title}</div>
               </div>
             </h5>
