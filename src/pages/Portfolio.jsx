@@ -7,10 +7,17 @@ import bgImage from '../assets/portfolio/portfolio-header.jpg';
 import CTA from '../components/CTA';
 import WhatsAppButton from '../components/WhatsAppButton';
 import CookiePopup from '../components/Cookies/CookiePopup';
+import BackToTop from '../components/BackToTop';
+import styled from 'styled-components';
+
+const StyledPortfolio = styled.div`
+  background-color: #2a4f68;
+  color: #fff;
+`;
 
 function Portfolio() {
   return (
-    <div>
+    <StyledPortfolio>
       <Navigation />
       <Header
         bgImage={bgImage}
@@ -25,10 +32,11 @@ function Portfolio() {
         text="Let’s chat about your ideas and turn them into a clear, well-designed digital solution. Schedule a call and we can start building it with you today!"
       />
       <SideButtons />
+      <BackToTop />
       <WhatsAppButton />
       <CookiePopup />
       <Footer />
-    </div>
+    </StyledPortfolio>
   );
 }
 

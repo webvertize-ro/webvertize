@@ -11,6 +11,7 @@ import SideButtons from '../../components/SideButtons';
 import WhatsAppButton from '../../components/WhatsAppButton';
 import CookiePopup from '../../components/Cookies/CookiePopup';
 import styled from 'styled-components';
+import BackToTop from '../../components/BackToTop';
 
 const StyledAdsContentCreation = styled.div`
   background-color: #2a566f;
@@ -42,6 +43,7 @@ function AdsContentCreation() {
         text="Book a call and let’s build campaigns that reach the right customers with the right message."
       />
       <SideButtons />
+      <BackToTop />
       <WhatsAppButton />
       <CookiePopup />
       <Footer />

@@ -120,9 +120,11 @@ function Header({ bgImage, title, text1, text2 }) {
           <StyledP className="fs-4 text-center">
             {text2 ? <strong>{text1}</strong> : text1} {text2}
           </StyledP>
-          <StyledButton onClick={() => setShowForm(true)}>
-            Schedule a Call
-          </StyledButton>
+          {title !== 'Webvertize Cookie Policy' && (
+            <StyledButton onClick={() => setShowForm(true)}>
+              Schedule a Call
+            </StyledButton>
+          )}
         </TextContent>
       </StyledHeader>
 

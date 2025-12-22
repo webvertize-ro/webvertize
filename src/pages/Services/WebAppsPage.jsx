@@ -7,6 +7,7 @@ import SideButtons from '../../components/SideButtons';
 import WhatsAppButton from '../../components/WhatsAppButton';
 import CookiePopup from '../../components/Cookies/CookiePopup';
 import styled from 'styled-components';
+import BackToTop from '../../components/BackToTop';
 
 const StyledWebAppsPage = styled.div`
   background-color: #1f465f;
@@ -26,6 +27,7 @@ function WebAppsPage() {
       <SideButtons />
       <WhatsAppButton />
       <CookiePopup />
+      <BackToTop />
       <Footer />
     </StyledWebAppsPage>
   );

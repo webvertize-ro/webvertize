@@ -30,12 +30,12 @@ function Form({ onValidSubmit, isLoading }) {
   return (
     <StyledForm onSubmit={handleSubmit(submitHandler)}>
       <div className="mb-3">
-        <label htmlFor="name" className="form-label">
+        <label htmlFor="name" className="form-label fs-5">
           Name:
         </label>
         <input
           type="text"
-          className="form-control"
+          className="form-control fs-5"
           name="name"
           {...register('name', { required: 'Name is required' })}
         />
@@ -44,12 +44,12 @@ function Form({ onValidSubmit, isLoading }) {
         )}
       </div>
       <div className="mb-3">
-        <label htmlFor="email" className="form-label">
+        <label htmlFor="email" className="form-label fs-5">
           Email:
         </label>
         <input
           type="email"
-          className="form-control"
+          className="form-control fs-5"
           name="email"
           {...register('email', { required: 'Email is required' })}
         />
@@ -58,13 +58,13 @@ function Form({ onValidSubmit, isLoading }) {
         )}
       </div>
       <div className="mb-3">
-        <label htmlFor="project-description" className="form-label">
+        <label htmlFor="project-description" className="form-label fs-5">
           Project Description:
         </label>
         <textarea
           name="project-description"
           id="form-message"
-          className="form-control"
+          className="form-control fs-5"
           {...register('project-description', {
             required: 'Project Description is required',
           })}
@@ -85,7 +85,7 @@ function Form({ onValidSubmit, isLoading }) {
       </div>
       <button
         type="submit"
-        className="d-flex align-items-center justify-content-center gap-2 btn btn-primary w-100"
+        className="d-flex align-items-center justify-content-center gap-2 btn btn-primary w-100 fs-5"
       >
         {isLoading ? <div class="spinner-border" role="status"></div> : ''}
         {isLoading ? 'Submitting...' : 'Submit'}

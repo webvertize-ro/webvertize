@@ -61,15 +61,15 @@ function MainSection() {
           </StyledP>
           <h4>What happens next</h4>
           <StyledUl>
-            <li>
+            <li className="fs-5">
               <FontAwesomeIcon icon={fa1} />
               We review your message.
             </li>
-            <li>
+            <li className="fs-5">
               <FontAwesomeIcon icon={fa2} />
               We reach out by email to schedule a call.
             </li>
-            <li>
+            <li className="fs-5">
               <FontAwesomeIcon icon={fa3} />
               We discuss your goals and see if we're a good fit.
             </li>
