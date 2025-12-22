@@ -19,6 +19,10 @@ const StyledSectionWebsites = styled.div`
   padding: 2.5rem 0 4rem;
 `;
 
+const StyledP = styled.p`
+  margin-top: -12px;
+`;
+
 function SectionWebsites() {
   const websites = [
     {
@@ -382,29 +386,29 @@ function SectionWebsites() {
   return (
     <StyledSectionWebsites className="container">
       <section className="mb-4">
-        <h3>Websites - Creative & Functional</h3>
-        <p>
+        <h2>Websites - Creative & Functional</h2>
+        <StyledP className="fs-5">
           Discover our portfolio of responsive, user-friendly websites designed
           to elevate the online presence of your business.
-        </p>
+        </StyledP>
         <div className="container">{renderCards(websites)}</div>
       </section>
 
       <section className="mb-4">
-        <h3>Web Applications - Efficient & Scalable</h3>
-        <p>
+        <h2>Web Applications - Efficient & Scalable</h2>
+        <StyledP className="fs-5">
           Explore our internal tools and web apps that streamline business
           proccesses and improve productivity.
-        </p>
+        </StyledP>
         <div className="container">{renderCards(webApps)}</div>
       </section>
 
       <section className="mb-4">
-        <h3>Content Creation - Engaging & Impactful</h3>
-        <p>
+        <h2>Content Creation - Engaging & Impactful</h2>
+        <StyledP className="fs-5">
           Browse our advertising content, graphics and media projects designed
           to captivate your audience.
-        </p>
+        </StyledP>
         <div className="container">{renderCards(content)}</div>
       </section>
     </StyledSectionWebsites>

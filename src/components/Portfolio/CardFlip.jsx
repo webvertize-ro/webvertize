@@ -76,10 +76,10 @@ function CardFlip({ project }) {
         <CardInner className="card-flip-inner">
           {/* Front */}
           <CardFace>
-            <div className="card h-100">
+            <div className="card h-100 rounded-4">
               <img
                 src={project.image}
-                className="card-img-top"
+                className="card-img-top rounded-4"
                 alt={project.title}
               />
               <div className="card-body">
@@ -92,7 +92,7 @@ function CardFlip({ project }) {
 
           {/* Back */}
           <CardBack>
-            <div className="card h-100 d-flex justify-content-center align-items-center">
+            <div className="card h-100 d-flex justify-content-center align-items-center rounded-4">
               <CardBodyBack className="card-body d-flex flex-column gap-1">
                 <h5 className="card-title">{project.title}</h5>
                 <StyledP className="card-text">
