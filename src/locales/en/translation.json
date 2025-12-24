@@ -1,0 +1,831 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "websites": "Websites",
+    "web-apps": "Web Apps",
+    "advertising-content-creation": "Content Creation & Ads",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "logo": {
+    "logoText": "Web Development & Ads"
+  },
+  "homepage": {
+    "header": {
+      "title": "Websites, Web Applications & Advertising Built for Real Business Growth",
+      "text1": "At Webvertize, we help businesses build a strong, professional online presence through custom websites, web applications and performance-driven advertising. From modern presentation websites to tailored internal tools and strategic ad campaigns, we deliver digital solutions aligned with your business goals.",
+      "text2": "We believe the journey to digital success should be enjoyable and collaborative — not stressful. That’s why we work closely with you at every step, from strategy and design to development, launch and ongoing optimization, delivering reliable solutions that support your business long-term.",
+      "buttonText": "Schedule a Call"
+    },
+    "webdev": {
+      "title": "Web Development - Websites and Web Applications",
+      "subtitle": "Modern web solutions designed to grow, streamline and support your business.",
+      "websitesCard": {
+        "title": "Websites",
+        "subtitle": "Presentational websites & essential online presence",
+        "text": "Delivering fast, modern and responsive mobile-friendly presentation websites tailored to your brand. Additional features can be integrated based on your business needs - such as live chats, interactive maps, image galleries, contact forms, admin dashboards, login funtionality and more.",
+        "caseStudiesBtn": "View Case Studies",
+        "exploreServicesBtn": "Explore Services"
+      },
+      "webAppsCard": {
+        "title": "Web Applications",
+        "subtitle": "Internal tools & custom business solutions",
+        "text": "Custom internal applications designed for small and medium-sized businesses. Streamline your operations with tools built around your specific workflows—such as task management systems, ticketing platforms, live chat applications, inventory tracking, booking systems, and more.",
+        "caseStudiesBtn": "View Case Studies",
+        "exploreServicesBtn": "Explore Services"
+      }
+    },
+    "ads": {
+      "title": "Advertisment: Content Creation and Ad Campaigns Management",
+      "subtitle": "Creative content and carefully managed ad campaigns designed to attract, convert and scale.",
+      "contentCreationCard": {
+        "title": "Content Creation",
+        "subtitle": "Promotional images & Reels for ads",
+        "text": "High-quaality promotional content for Facebook and Google Ads, including professionally designed split-image posts and short video Reels that highlight your brand, services and calls to action.",
+        "caseStudiesBtn": "View Case Studies",
+        "exploreServicesBtn": "Explore Services"
+      },
+      "googleAdsCard": {
+        "title": "Google Ads Campaigns",
+        "subtitle": "Strategic creation and ongoing management of Google Ads campaigns tailored to your business goals",
+        "text": "We collaborate with you to design a high-performing Google Ads campaign from the ground up - selecting the right objectives and ensuring consistent optimizations and monitoring. We monitor performance, implement improvements and deliver clear monthly reports so you always know how your campaign is progressing.",
+        "readMoreBtn": "Read More About Campaign Types"
+      },
+      "facebookAdsCard": {
+        "title": "Facebook Ads Campaigns",
+        "subtitle": "Engaging campaigns tailored to your business goals",
+        "text": "Creating and managing Facebook Ads campaigns, including promotional content, ad copy, and performance monitoring to reach your audience effectively.",
+        "readMoreBtn": "Read More About Campaign Types"
+      }
+    },
+    "ourProcess": {
+      "title": "Our Process - How we build your digital presence",
+      "subtitle": "A clear, step-by-step approach that turns ideas into reliable digital solutions.",
+      "tabsLabel": {
+        "tab1": "Discovery",
+        "tab2": "UX/UI Design",
+        "tab3": "Development",
+        "tab4": "Testing & Optimization",
+        "tab5": "Launch & Support"
+      },
+      "tabsText": {
+        "text1": "We begin by getting to know your business — your goals, audience, competitors, and what makes your brand unique. Together, we define what success means for this project and translate it into clear requirements. The outcome of this phase is a focused digital strategy that guides every design and development decision.",
+        "text2": "Based on the strategy, we design the structure and visual identity of your website or application. This includes wireframes, layout, user flows and other design elements that reflect your brand and align with your business goals.",
+        "text3": "We bring the design to life by building a fast, responsive, and modern solution optimized for all devices. Whether it’s a presentational website or a full web application, we code using reliable technologies and integrate all required features as defined in the project scope.",
+        "text4": "Before launch, we carefully test everything - functionality, performance, accessibility and browser compatibility. We address issues, refine interactions, and optimize the experience so your product is ready for real users.",
+        "text5": "Once everything meets expectations, we deploy the final product and provide post-launch support according to the agreed terms. We can assist with updates, optimizations, analytics, and improvements — ensuring your digital presence keeps growing."
+      }
+    },
+    "ourMission": {
+      "title": "Our Mission",
+      "subtitle": "Digital solutions designed to grow your business",
+      "textContent": {
+        "text1": "At Webvertize, our mission is to help businesses build the strong online presence they deserve. We do this by delivering high-quality websites, web applications, engaging content and performance-focused ad campaigns that support real business growth.",
+        "text2": "We believe that digital transformation should be an enjoyable journey, not a stresssful one. Through dedication, transparency and a collaborative approach, we work side-by-side with you to understand your needs and provide solutions that create a measurable impact.",
+        "text3": "Our goal is not to just complete a project - it is to build a long-term partnership where success is shared, milestones are celebrated together and your business evolves confidently in the digital world."
+      }
+    },
+    "ourCorePrinciples": {
+      "title": "Our Core Principles",
+      "subtitle": "How we approach every project and partnership",
+      "cards": {
+        "card1": {
+          "cardTitle": "Growth-Focused Strategy",
+          "cardText": "Our digital solutions are designed to support your business goals - brand awareness, conversion rates, customer relationships and more."
+        },
+        "card2": {
+          "cardTitle": "Efficiency Through Technology",
+          "cardText": "We streamline business processes through web applications, automation and modern tools that help your business operate more efficiently."
+        },
+        "card3": {
+          "cardTitle": "Long-Term Partnerships",
+          "cardText": "We believe great results come from long-term collaborations - not one-time deliveries. We work side-by-side with your business, adapting our solutions as your goals evolve."
+        },
+        "card4": {
+          "cardTitle": "Your Digital Presence, Elevated",
+          "cardText": "From websites to ads and branded content, we help you build a professional presence that reflects who you are and attracts the right customers."
+        }
+      }
+    }
+  },
+  "websites": {
+    "websitesIntro": {
+      "title": "Custom Websites Designed for Real Business Needs",
+      "text": "At Webvertize, we specialize in building fast, modern and responsive websites tailored to your brand and business goals. Our websites are designed to not only look professional, but also to deliver a seamless experience to your visitors on any device, whether it's a desktop, tablet or mobile phone."
+    },
+    "websitesFeatures": {
+      "title": "Features & Capabilities",
+      "subtitle": "We start with presentational websites that highlight your brand and services and then enhance them with custom functionalities according to your business needs. These functionalities can include:",
+      "featuresList": {
+        "feature1": {
+          "title": "Live chat",
+          "text": "Live chat integration to communicate directly with your customers."
+        },
+        "feature2": {
+          "title": "Product Presentations",
+          "text": "Interactive product presentations and image galleries to showcase offerings."
+        },
+        "feature3": {
+          "title": "Forms",
+          "text": "Contact forms and submissions that are securely stored in databases."
+        },
+        "feature4": {
+          "title": "Login functionality",
+          "text": "User login functionality and admin dashboards for managing content."
+        },
+        "feature5": {
+          "title": "Maps and other interactive elements",
+          "text": "Maps, embedded media or other interactive elements tailored to your business."
+        }
+      }
+    },
+    "websitesResults": {
+      "title": "Designed to Drive Results",
+      "textContent": {
+        "text1": "All of our websites are cross-browser compatible, fully optimized for speed and designed with accessibility and SEO best practices in mind.",
+        "text2": "We see your website as a powerful tool to connect with customers, generate leads and grow your business. Every project is a collaboration: we work closely with you to define your objectives, refine the design and deliver a website that truly represents your brand.",
+        "text3": "Whether you need a simple presentation site or a more complex solution with integrated tools, Webvertize delivers websites that are both beautiful and functional, giving you a strong foundation for your online growth."
+      }
+    }
+  },
+  "CTA": {
+    "home": {
+      "title": "Let's build your digital presence together",
+      "text": "Book a discovery call, share your goalse and start shaping you next step in the digital world.",
+      "buttonText": "Schedule a Call"
+    },
+    "websites": {
+      "title": "Your Next Customers Are Searching Online",
+      "text": "Let’s build a website that helps them find—and choose—you. Book a call to get started.",
+      "buttonText": "Schedule a Call"
+    },
+    "web-apps": {
+      "title": "The Right Tools Can Change Everything",
+      "text": "Let's build an app that fits the workflow of your business.",
+      "buttonText": "Schedule a Call"
+    },
+    "content-creation-ads": {
+      "title": "Ready to Grow Through Better Advertising?",
+      "text": "Book a call and let’s build campaigns that reach the right customers with the right message.",
+      "buttonText": "Schedule a Call"
+    },
+    "portfolio": {
+      "title": "Want to start a project?",
+      "text": "Let’s chat about your ideas and turn them into a clear, well-designed digital solution. Schedule a call and we can start building it with you today!",
+      "buttonText": "Schedule a Call"
+    }
+  },
+  "servicesStackedCards": {
+    "title": "Our Process - How We Bring Your Project to Life",
+    "subtitle": "A transparent, step-by-step approach from idea to launch.",
+    "objective": "Objective",
+    "cards": {
+      "card1": {
+        "title": "Discovery",
+        "objective": "Understand your business, goals, audience and competition to create a solid foundation for your project.",
+        "list": {
+          "item1": {
+            "itemTitle": "Start",
+            "itemText": "We start by learning everything about your business - your objectives, target customers, unique value propositions and competitors."
+          },
+          "item2": {
+            "itemTitle": "Deliverables",
+            "itemText": "Clear project brief, success criteria, digital strategy document."
+          },
+          "item3": {
+            "itemTitle": "Tools & Methods",
+            "itemText": "Questions, strategy workshops, competitor research and analytics review."
+          },
+          "item4": {
+            "itemTitle": "Client Role",
+            "itemText": "Provide business insights, answer questions, share branding materials or information about past campaigns."
+          },
+          "item5": {
+            "itemTitle": "Timeline Expectation",
+            "itemText": "Typically 1-2 weeks, depending on project complexity."
+          },
+          "item6": {
+            "itemTitle": "Value",
+            "itemText": "Ensures that all the decisions in design and development are aligned with your business goals, saving time and preventing misalignment later."
+          }
+        }
+      },
+      "card2": {
+        "title": "UX/UI Design",
+        "objective": "Define the structure and visual identity of your website or app to ensure usability and brand alignment.",
+        "list": {
+          "item1": {
+            "itemTitle": "Start",
+            "itemText": "Based on the Discovery phase, we create wireframes, user flows and visual mockups that reflect your brand and your audience's needs."
+          },
+          "item2": {
+            "itemTitle": "Deliverables",
+            "itemText": "Wireframes, interactive prototypes, style guide, design assets"
+          },
+          "item3": {
+            "itemTitle": "Tools & Methods",
+            "itemText": "Figma, Adobe XD and design workshops."
+          },
+          "item4": {
+            "itemTitle": "Client Role",
+            "itemText": "Review and approve wireframes and mockups and provide feedback on visual preferences."
+          },
+          "item5": {
+            "itemTitle": "Timeline Expectation",
+            "itemText": "2-3 weeks for a standard website; more for complex web applications."
+          },
+          "item6": {
+            "itemTitle": "Value",
+            "itemText": "Helps you visualize your product early, reduces risk of costly changes during development and ensures usability and accessibility."
+          }
+        }
+      },
+      "card3": {
+        "title": "Development",
+        "objective": "Turn designs into a fully functional, responsive, and high-performance digital product.",
+        "list": {
+          "item1": {
+            "itemTitle": "Start",
+            "itemText": "We translate designs into clean, optimized code, integrating required functionality, animations and third-party tools."
+          },
+          "item2": {
+            "itemTitle": "Deliverables",
+            "itemText": "Fully functional website or web app, including CMS setup if applicable, initial content upload."
+          },
+          "item3": {
+            "itemTitle": "Tools & Methods",
+            "itemText": "HTML, CSS, JavaScript (React, Vue, etc.), Bootstrap, APIs, version control (Git)."
+          },
+          "item4": {
+            "itemTitle": "Client Role",
+            "itemText": "Provide final content and approve major development milestones."
+          },
+          "item5": {
+            "itemTitle": "Timeline Expectation",
+            "itemText": "Usually 3–6 weeks depending on complexity. We provide regular progress updates along the way."
+          },
+          "item6": {
+            "itemTitle": "Value",
+            "itemText": "You get a modern, scalable and performant solution built with best practices."
+          }
+        }
+      },
+      "card4": {
+        "title": "Testing & Optimization",
+        "objective": "Ensure quality, performance and compatibility across devices and browsers.",
+        "list": {
+          "item1": {
+            "itemTitle": "Start",
+            "itemText": "We conduct extensive testing, including functional testing, responsiveness, accessibility, speed optimization and SEO checks."
+          },
+          "item2": {
+            "itemTitle": "Deliverables",
+            "itemText": "Test reports, bug fixes, optimization recommendations."
+          },
+          "item3": {
+            "itemTitle": "Tools & Methods",
+            "itemText": "Browser testing (Chrome, Safari, Firefox), Lighthouse audits, automated and manual QA tests."
+          },
+          "item4": {
+            "itemTitle": "Client Role",
+            "itemText": "Participate in User Acceptance Testing (UAT) and provide feedback on final functionality."
+          },
+          "item5": {
+            "itemTitle": "Timeline Expectation",
+            "itemText": "1–2 weeks; may vary for complex applications."
+          },
+          "item6": {
+            "itemTitle": "Value",
+            "itemText": "Guarantees a smooth, reliable and user-friendly experience for the users of the digital product."
+          }
+        }
+      },
+      "card5": {
+        "title": "Launch & Support",
+        "objective": "Deploy your product live and provide ongoing support to ensure continued success.",
+        "list": {
+          "item1": {
+            "itemTitle": "Start",
+            "itemText": "We deploy the product to your hosting environment, configure analytics and monitor performance in the initial weeks."
+          },
+          "item2": {
+            "itemTitle": "Deliverables",
+            "itemText": "Live website/web app, training for CMS (if applicable), documentation, post-launch support period."
+          },
+          "item3": {
+            "itemTitle": "Tools & Methods",
+            "itemText": "Hosting setup, monitoring tools, analytics integration, optional maintenance agreements."
+          },
+          "item4": {
+            "itemTitle": "Client Role",
+            "itemText": "Approve final launch, communicate any post-launch updates needed."
+          },
+          "item5": {
+            "itemTitle": "Timeline Expectation",
+            "itemText": "Launch typically 1–2 days after testing; support period as agreed."
+          },
+          "item6": {
+            "itemTitle": "Value",
+            "itemText": "You can confidently go live knowing everything works, and you have a partner to help with improvements and updates."
+          }
+        }
+      }
+    }
+  },
+  "webapps": {
+    "webAppsIntro": {
+      "title": "Why Custom Web Applications Matter",
+      "text": {
+        "text1": "Modern businesses rely on digital tools to operate efficiently and while most ready-made software can work for general needs, it rarely fits the unique workflow, structure and priorities of your organization.",
+        "text2": "We design and build custom web applications tailored to the way your business actually works - from internal management systems to customer-facing platforms.",
+        "text3": "Whether you need a task management platform for your team, an internal dashboard for tracking daily operations, a custom ticketing tool for client interactions or an integrated live chat system that connects departments, our applications are built to simplify complexity, reduce repetitive work and unlock new scalability opportunities."
+      }
+    },
+    "webAppsFeatures": {
+      "title": "Features & Capabilities",
+      "subtitle": "At Webvertize, every application we build combines technical performance with usability and long-term reliability. Depending on the needs of your business, our solution for you may include:",
+      "list": {
+        "item1": {
+          "title": "Custom Dashboards & Interfaces",
+          "text": "Interfaces designed around your workflow, not the other way around, enabling faster onboarding and improved productivity."
+        },
+        "item2": {
+          "title": "Role-based Access & Permissions",
+          "text": "Dedicated interfaces for managers, operators, temmates and customers in order to keep the right information in the right hands."
+        },
+        "item3": {
+          "title": "Database Integration",
+          "text": "Structured, secure and scalable databases that store your data, make it searchable and support reporting."
+        },
+        "item4": {
+          "title": "Form Workflows & Data Input",
+          "text": "Dynamic forms, validation, user submissions, attachments and internal approval flows that automate manual work."
+        },
+        "item5": {
+          "title": "Ticketing & Support Systems",
+          "text": "Centralize communication, manage requests, track progress and gather insights on recurring issues and needs."
+        },
+        "item6": {
+          "title": "Live Chat & Real-Time Features",
+          "text": "Real-time messaging between employees, support staff and customers - integrated into your existing processes."
+        },
+        "item7": {
+          "title": "Authentication & User Management",
+          "text": "Password-protected access, login systems, account creation or SSO based on your business needs."
+        },
+        "item8": {
+          "title": "Analytics & Reporting",
+          "text": "Make informed decisions through operational metrics, usage logs and performance reports tailored to your KPIs."
+        }
+      }
+    },
+    "webAppsResults": {
+      "title": "Designed to Drive Results",
+      "subtitle": "A custom web application is not just a tool — it’s a lever for operational change. Our applications are designed to:",
+      "list": {
+        "item1": {
+          "title": "Save Time",
+          "text": "Automate repetitive manual tasks and centralize information into one unified platform."
+        },
+        "item2": {
+          "title": "Improve Accuracy",
+          "text": "Minimize mistakes with data validation, structured forms and clear workflows."
+        },
+        "item3": {
+          "title": "Increase Visibility",
+          "text": "Real-time dashboards help you understand what’s happening across teams or departments."
+        },
+        "item4": {
+          "title": "Support Growth",
+          "text": "Custom tools adapt as your processes get more complex — without forcing you into new software."
+        },
+        "item5": {
+          "title": "Strengthen Teams",
+          "text": "Better tools improve communication, reduce friction, and align everybody around shared goals."
+        },
+        "item6": {
+          "title": "Enhance Customer Experience",
+          "text": "Ticketing, live chat, portals, and automated flows create a smoother experience for your clients."
+        }
+      }
+    }
+  },
+  "AdsContentCreation": {
+    "section1": {
+      "title": "Content Creation for Ads",
+      "subtitle": "High-Quality Visuals Designed for Performance",
+      "text": "Our ad creatives are built to capture attention, communicate value and support measurable results across modern advertising platforms.",
+      "title2": "What We Create",
+      "list": {
+        "item1": {
+          "title": "Split-Image Promotional Graphics",
+          "subtitle": "Split-image promotional graphics are multi-section visuals designed to communicate several ideas in a single, cohesive frame.",
+          "listInner": {
+            "itemInner1": "Highlighting multiple services in one frame",
+            "itemInner2": "Showing before and after results",
+            "itemInner3": "Presenting promotions or seasonal offers for products and services",
+            "itemInner4": "Increasing clarity, trust and brand awareness for your business",
+            "buttonText": "View Projects"
+          }
+        },
+        "item2": {
+          "title": "Promotional Reels (Short Videos)",
+          "subtitle": "Reels are currently one of the most effective content formats for reaching new audiences. Short-form videos optimized for Facebook and Instagram include:",
+          "listInner": {
+            "itemInner1": "Concise explanations of services",
+            "itemInner2": "Benefit-focused messaging",
+            "itemInner3": "Includes branding (logo, colors, tagline)",
+            "itemInner4": "Ends with a strong call-to-action",
+            "buttonText": "View Projects"
+          }
+        },
+        "item3": {
+          "title": "Ad-Ready Visuals for Google Ads",
+          "subtitle": "Clean, high-quality image assets that follow Google's recommended formats to improve visibility and click-through rates.",
+          "listInner": {
+            "itemInner1": "Text Assets",
+            "itemInner2": "Image Assets",
+            "itemInner3": "Video Assets",
+            "buttonText": "View Projects"
+          }
+        }
+      }
+    },
+    "section2": {
+      "title": "Google Ads Campaigns",
+      "subtitle": "Search-Driven Advertising With Measurable Results",
+      "description": "Google Ads campaigns are most effective when they are built on clear goals, precise targeting and ongoing optimization. We work with you to design a campaign structure tailored to the objectives of your business, continuously refine performance and provide transparent reporting so you always understand how your investment is working for you.",
+      "ourProcess": {
+        "title": "Our Process",
+        "list": {
+          "item1": {
+            "item1Title": "Account setup using your own Google profile (you retain full ownership)",
+            "item1Text": "We begin by helping you set up your Google Ads account (using your own Google profile so you maintain full ownership). Once everything is in place, we give our account the approapriate management access and start shaping a strategy built on clarity, relevance and ongoing optimization."
+          },
+          "item2": {
+            "item2Title": "Strategy development based on goals and budget",
+            "item2Text": "Before launching the campaign, we clarify your objectives (whether it's driving leads, phone calls, sales, or website visits) and align these with an appropriate monthly budget. We then develop a campaign structure tailored to your market, services, and target audience."
+          },
+          "item3": {
+            "item3Title": "Daily performance monitoring",
+            "item3Text": "After launch, we keep a close eye on your campaigns every day. We track performance indicators, check search trends and look for early signals that help us make fast, informed adjustments."
+          },
+          "item4": {
+            "item4Title": "Continuous bid, keyword and targeting optimizations",
+            "item4Text": "Your campaigns evolve constantly. We refine bods, update keywords, adjust match types, improve targeting and test new variations to maintain efficiency and relevance. This ensures your ads adapt to real-time behavior and market conditions."
+          },
+          "item5": {
+            "item5Title": "Notifications and assistance with billing thresholds",
+            "item5Text": "We monitor billing thresholds to make sure your ads never stop running unexpectedly. When payments are approaching or action is required, we notify you immediately and guide you through what needs to be done."
+          },
+          "item6": {
+            "item6Title": "Implementation of conversion tracking when needed",
+            "item6Text": "Some campaigns require additional tracking to measure results accurately. When needed, we set up conversion tracking for form submissions, calls, or other website actions—giving you clear insights into what’s working and what needs improvement."
+          },
+          "item7": {
+            "item7Title": "Monthly performance reports for complete transparency",
+            "item7Text": "Each month, you receive a concise and easy-to-understand performance report. We highlight what changed, how your budget was spent, and how the campaign is progressing toward your goals. You always know exactly where your investment is going."
+          }
+        }
+      },
+      "campaignTypes": {
+        "title": "Google Campaign Types We Manage",
+        "list": {
+          "item1": {
+            "title": "Search Campaigns",
+            "text": "Text-based ads shown on Google Search."
+          },
+          "item2": {
+            "title": "Display Campaigns",
+            "text": "Image/banner ads across millions of websites."
+          },
+          "item3": {
+            "title": "Shopping Campaigns",
+            "text": "Product listings with images and prices."
+          },
+          "item4": {
+            "title": "Video Campaigns",
+            "text": "YouTube and Google video partner ads."
+          },
+          "item5": {
+            "title": "App Campaigns",
+            "text": "Mobile app install and engagement ads."
+          },
+          "item6": {
+            "title": "Performance Max",
+            "text": "Multi-channel AI-driven campaign across all Google properties."
+          },
+          "item7": {
+            "title": "Demand Gen",
+            "text": "Visually rich ads on Discover, YouTube, and Gmail."
+          },
+          "item8": {
+            "title": "Local Services Ads",
+            "text": "High-intent ads for service-area businesses."
+          },
+          "item9": {
+            "title": "Hotel/Travel Campaigns",
+            "text": "Specialized ads for the travel industry."
+          },
+          "item10": {
+            "title": "Smart Campaigns",
+            "text": "Simplified, automated campaigns for smaller budgets."
+          }
+        }
+      }
+    },
+    "section3": {
+      "title": "Facebook & Instagram Ads",
+      "subtitle": "Reach, Engage and Convert with Meta Advertising",
+      "description": "Meta platforms offer highly targeted advertising options based on intrests, behaviors and demographics.",
+      "campaignObjectives": {
+        "title": "Campaign Objectives We Support",
+        "list": {
+          "item1": {
+            "title": "Awareness",
+            "text": "Maximize reach and recall"
+          },
+          "item2": {
+            "title": "Traffic ",
+            "text": "Drive visitors to sites or landing pages"
+          },
+          "item3": {
+            "title": "Engagement",
+            "text": "Boost likes, comments and video views"
+          },
+          "item4": {
+            "title": "Leads",
+            "text": "Collect client details using instant forms or messaging"
+          },
+          "item5": {
+            "title": "App Promotion",
+            "text": "Increase installs and in-app activity"
+          },
+          "item6": {
+            "title": "Sales",
+            "text": "Encourage direct purchases or conversions"
+          }
+        }
+      },
+      "adFormats": {
+        "title": "Available Ad Formats",
+        "list": {
+          "item1": "Image Ads",
+          "item2": "Video Ads/Reels",
+          "item3": "Carousel Ads",
+          "item4": "Collection Ads",
+          "item5": "Instant Experience Ads",
+          "item6": "Slideshow Ads",
+          "item7": "Stories Ads",
+          "item8": "Poll Ads",
+          "item9": "Augmented Reality Ads"
+        }
+      }
+    },
+    "section4": {
+      "title": "Why Work With Webvertize",
+      "subtitle": "Simple Process, Powerful Results",
+      "description": "At Webvertize, we don't believe advertising should feel complicated, stressful or overwhelming. We approach each advertising project as a creative journey that we take together - one where ideas flow openly, experimentation is ecouraged and the process itself becomes engaging and even fun. Great campaigns come from great teamwork and we make sure that teamwork feels natural, energizing and genuinely enjoyable.",
+      "list": {
+        "item1": "High-quality creative made for your business",
+        "item2": "Data-driven optimization across platforms",
+        "item3": "Ongoing communication and clear reporting",
+        "item4": "Strategy tailored to your goals and budget",
+        "item5": "A single partner for both creative assets and campaign management"
+      }
+    }
+  },
+  "portfolio": {
+    "websites": {
+      "title": "Websites - Creative & Functional",
+      "subtitle": "Discover our portfolio of responsive, user-friendly websites designed to elevate the online presence of your business.",
+      "cards": {
+        "card1": {
+          "card1Front": {
+            "title": "Edion Trans",
+            "description": "Presentational website for a regional transportation company",
+            "badge": "websites"
+          },
+          "card1Back": {
+            "title": "Edion Trans",
+            "description": "A modern, presentational website featuring interactive route maps, validated contact forms with email delivery, Google Review integration, and a comprehensive FAQ section.",
+            "btnText": "Full Project Details"
+          },
+          "card1Modal": {
+            "title": "Project Overview",
+            "more": {
+              "title": "More about",
+              "description": "Edion Trans is a regional transportation company providing both domestic and international transport services on predefined routes. In addition to passenger transport, the company also offers international parcel delivery services."
+            },
+            "challenges": {
+              "title": "Project Challenges",
+              "list": {
+                "item1": "Limited existing content and digital assets",
+                "item2": "Defining the most relevant features for users and the business",
+                "item3": "Creating a clean, professional design that clearly presents services and routes"
+              }
+            },
+            "solution": {
+              "title": "Solution",
+              "description": "We followed a structured, step-by-step process to build the website from the ground up. First, we gathered and organized all essential information from Edion Trans, including business details, contact data, service workflows, visual assets and Google Business Profile information. Based on this, we implemented key functionalities such as interactive route maps and validated contact forms with email delivery. Finally, we designed a modern and intuitive interface to present the content clearly and consistently."
+            },
+            "results": {
+              "title": "Results",
+              "description": "The result is a fast, responsive, and user-friendly website that significantly improves Edion Trans’ online presence and supports their day-to-day operations:",
+              "list": {
+                "item1": "Enables visitors to submit inquiries through validated forms, with collected data delivered directly via email",
+                "item2": "Visually presents transportation routes using interactive maps with location markers",
+                "item3": "Allows customers to leave Google Reviews directly from the website",
+                "item4": "Provides quick access to contact details and essential information through a dedicated contact page and a structured FAQ section"
+              }
+            },
+            "keyPoints": {
+              "title": "Key Points",
+              "item1": "First impressions matter. A clear and professional website builds trust and credibility, helping potential customers feel confident in choosing Edion Trans.",
+              "item2": "Functionality-first approach. Every project starts by identifying real business needs before design and content decisions are made, ensuring practical and effective solutions.",
+              "item3": "Strong technical foundation. The website is built to scale easily, supporting future needs such as Google Ads landing pages, conversion tracking, and additional features."
+            },
+            "liveProject": {
+              "title": "Live Project",
+              "btnText": "Live preview"
+            }
+          }
+        },
+        "card2": {
+          "card2Front": {
+            "title": "Studio Foto Adda",
+            "description": "Presentational website for a local photography studio",
+            "badge": "websites"
+          },
+          "card2Back": {
+            "title": "Studio Foto Adda",
+            "description": "A performance-optimized presentational website featuring lazy-loaded image galleries, clear service presentation, and a validated contact form that sends inquiries directly via email.",
+            "btnText": "Full Project Details"
+          },
+          "card2Modal": {
+            "title": "Project Overview",
+            "more": {
+              "title": "More about ",
+              "description": "Studio Foto Adda is a local photography studio offering both in-studio photography services and on-location coverage for events, portraits, and special occasions."
+            },
+            "challenges": {
+              "title": "Project Challenges",
+              "list": {
+                "item1": "Lack of structured content for presenting services and portfolio",
+                "item2": "Optimizing image-heavy pages without compromising performance",
+                "item3": "Implementing an effective lazy-loading strategy for large image galleries",
+                "item4": "Choosing a clean and elegant design to highlight visual content"
+              }
+            },
+            "solution": {
+              "title": "Solution",
+              "description": "We approached the project with performance and visual clarity as top priorities. First, we implemented lazy-loading for images using the Intersection Observer API to ensure fast initial load times. Next, we structured and created the website content to clearly present services and photographic work. Finally, we designed a clean and minimalist interface that allows the imagery to remain the main focus."
+            },
+            "results": {
+              "title": "Results",
+              "description": "The result is a modern, fast, and mobile-friendly website that strengthens Studio Foto Adda’s online presence and showcases their work effectively:",
+              "list": {
+                "item1": "High-performance image galleries with lazy-loaded photos",
+                "item2": "Clear presentation of services and photographic portfolio",
+                "item3": "Easy access to contact information and inquiry forms",
+                "item4": "Improved user experience across desktop and mobile devices"
+              }
+            },
+            "keyPoints": {
+              "title": "Key Points",
+              "item1": "Visual storytelling matters. For creative businesses, a website must highlight work while staying fast and responsive.",
+              "item2": "Performance-first approach. Optimizing image loading significantly improves user experience and perceived quality.",
+              "item3": "Timeless design. A simple and elegant layout keeps the focus on the content and ensures long-term relevance."
+            },
+            "liveProject": {
+              "title": "Live Project",
+              "btnText": "Live preview"
+            }
+          }
+        }
+      }
+    },
+    "web-apps": {
+      "title": "Web Applications - Efficient & Scalable",
+      "subtitle": "Explore our internal tools and web apps that streamline business proccesses and improve productivity.",
+      "cards": {
+        "card1": {
+          "card1Front": {
+            "title": "Senorexpert",
+            "shortDescription": "Custom web application for a local accounting firm.",
+            "category": "Web Apps"
+          },
+          "card1Back": {
+            "longDescription": "A secure, database-driven web application featuring a client portal, document upload system, and an admin dashboard for managing users, content, and accounting workflows.",
+            "btnText": "Full Project Details"
+          },
+          "card1Modal": {
+            "title": "Project Overview",
+            "more": {
+              "title": "More about ",
+              "description": "Senorexpert is a local accounting firm in Galați providing comprehensive financial and accounting services for small and medium-sized businesses. With over 20 years of professional experience, the firm offers general accounting, tax reporting and compliance, payroll and HR services, financial consulting, and company formation support."
+            },
+            "challenges": {
+              "title": "Project Challenges",
+              "list": {
+                "item1": "Lack of structured digital content to clearly present services and pricing",
+                "item2": "Identifying functionalities that bring real operational value, not just presentation",
+                "item3": "Replacing manual document exchange with a secure digital workflow",
+                "item4": "Implementing a secure authentication system for clients and admins",
+                "item5": "Building an admin dashboard with role-based access control",
+                "item6": "Allowing adminis to manage parts of the website's content"
+              }
+            },
+            "solution": {
+              "title": "Solution",
+              "description": "We designed and developed a custom web application that combines a professional presentation website with a secure client portal. The project started with implementing validated forms and email delivery, followed by building a database-driven system to manage dynamic content such as services and pricing. We then developed a role-based admin dashboard that allows administrators to manage users, documents and website content. Finally, we implemented the client-facing interface, ensuring a modern, intuitive, and mobile-friendly user experience."
+            },
+            "results": {
+              "title": "Results",
+              "description": "The final application streamlined Senorexpert’s internal workflows and significantly improved client interaction: ",
+              "list": {
+                "item1": "Business process optimization. Web applications can dramatically reduce manual work and operational friction.",
+                "item2": "Functionality-driven development. Every feature was built to solve a real, day-to-day business problem.",
+                "item3": "Scalable architecture. The application is designed to evolve with future business needs."
+              }
+            },
+            "keyPoints": {
+              "title": "Key Points",
+              "item1": "",
+              "item2": "",
+              "item3": ""
+            },
+            "liveProject": {
+              "title": "Live Project",
+              "btnText": "Live preview"
+            }
+          }
+        },
+        "card2": {
+          "card2Front": {
+            "title": "",
+            "shortDescription": "",
+            "category": ""
+          },
+          "card2Back": {
+            "longDescription": "",
+            "btnText": ""
+          },
+          "card2Modal": {
+            "title": "",
+            "more": {
+              "title": "",
+              "description": ""
+            },
+            "challenges": {
+              "title": "",
+              "list": {
+                "item1": "",
+                "item2": "",
+                "item3": "",
+                "item4": ""
+              }
+            },
+            "solution": {
+              "title": "Solution",
+              "description": ""
+            },
+            "results": {
+              "title": "Results",
+              "description": "",
+              "list": {
+                "item1": "",
+                "item2": "",
+                "item3": "",
+                "item4": ""
+              }
+            },
+            "keyPoints": {
+              "title": "Key Points",
+              "item1": "",
+              "item2": "",
+              "item3": ""
+            },
+            "liveProject": {
+              "title": "Live Project",
+              "btnText": "Live preview"
+            }
+          }
+        }
+      }
+    }
+  },
+  "footer": {
+    "quickLinks": {
+      "title": "Quick Links",
+      "link1": "Schedule a Call",
+      "link2": "Home",
+      "link3": "Services",
+      "link4": "Contact"
+    },
+    "socialMedia": {
+      "title": "Social Media"
+    }
+  }
+}

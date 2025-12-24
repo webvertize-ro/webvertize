@@ -13,6 +13,8 @@ import CookiePopup from '../components/Cookies/CookiePopup';
 import ScheduleACallButton from '../components/ScheduleACallButton';
 import styled from 'styled-components';
 import BackToTop from '../components/BackToTop';
+import OurPrinciples from '../components/OurPrinciples';
+import { useTranslation } from 'react-i18next';
 
 const StyledHome = styled.div`
   background-color: hsl(205, 52%, 16%, 0.9);
@@ -24,6 +26,8 @@ const OurProcessContainer = styled.div`
 `;
 
 function Home() {
+  const { t } = useTranslation();
+
   return (
     <StyledHome>
       <Navigation />
@@ -45,12 +49,11 @@ function Home() {
       <div className="container">
         <OurMission />
       </div>
-      <CTA
-        title={"Let's build your digital presence together"}
-        text={
-          'Book a discovery call, share your goalse and start shaping you next step in the digital world.'
-        }
-      />
+
+      <div className="container">
+        <OurPrinciples />
+      </div>
+      <CTA title={'CTA.home.title'} text={'CTA.home.text'} />
       <SideButtons />
       <WhatsAppButton />
       <BackToTop />

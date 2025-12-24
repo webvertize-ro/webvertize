@@ -9,6 +9,7 @@ import Modal from './Modal';
 import Form from './Form';
 import { Link } from 'react-router-dom';
 import ModalForm from './ModalForm';
+import { useTranslation } from 'react-i18next';
 
 const StyledFooter = styled.footer`
   padding: 2.5rem;
@@ -82,6 +83,7 @@ const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
 function Footer() {
   const navigate = useNavigate();
   const [showForm, setShowForm] = useState(false);
+  const { t } = useTranslation();
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -129,34 +131,38 @@ function Footer() {
             </LogoWrapper>
             <QuickLinksWrapper className="col-md-4 d-flex">
               <div>
-                <h3>Quick Links</h3>
+                <h3>{t('footer.quickLinks.title')}</h3>
                 <StyledUl>
                   <li>
                     <StyledFontAwesomeIcon icon={faCheckCircle} />
                     <StyledLink onClick={() => setShowForm(true)}>
-                      Schedule a call
+                      {t('footer.quickLinks.link1')}
                     </StyledLink>
                   </li>
                   <li>
                     <StyledFontAwesomeIcon icon={faCheckCircle} />
-                    <StyledRegularLink to="/">Home</StyledRegularLink>
-                  </li>
-                  <li>
-                    <StyledFontAwesomeIcon icon={faCheckCircle} />
-                    <StyledRegularLink to="/websites">
-                      Services
+                    <StyledRegularLink to="/">
+                      {t('footer.quickLinks.link2')}
                     </StyledRegularLink>
                   </li>
                   <li>
                     <StyledFontAwesomeIcon icon={faCheckCircle} />
-                    <StyledRegularLink to="/contact">Contact</StyledRegularLink>
+                    <StyledRegularLink to="/websites">
+                      {t('footer.quickLinks.link3')}
+                    </StyledRegularLink>
+                  </li>
+                  <li>
+                    <StyledFontAwesomeIcon icon={faCheckCircle} />
+                    <StyledRegularLink to="/contact">
+                      {t('footer.quickLinks.link4')}
+                    </StyledRegularLink>
                   </li>
                 </StyledUl>
               </div>
             </QuickLinksWrapper>
             <SocialMediaWrapper className="col-md-4 d-flex">
               <div>
-                <h3>Social Media</h3>
+                <h3>{t('footer.socialMedia.title')}</h3>
                 <FacebookIcon color="light" />
               </div>
             </SocialMediaWrapper>

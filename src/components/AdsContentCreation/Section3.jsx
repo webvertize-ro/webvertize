@@ -17,9 +17,11 @@ import {
   faSquarePollVertical,
   faCubes,
 } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from 'react-i18next';
 
 const StyledSection3 = styled.section`
   padding-bottom: 4rem;
+  /* border: 1px solid white; */
 `;
 
 const ContentRow = styled.div`
@@ -47,21 +49,20 @@ const StyledUl = styled.ul`
 `;
 
 function Section3() {
+  const { t } = useTranslation();
+
   return (
     <StyledSection3 className="container">
       <ContentRow className="row">
         <TitleTotal className="mb-4">
-          <Title>Facebook & Instagram Ads</Title>
+          <Title>{t('AdsContentCreation.section3.title')}</Title>
           <Subtitle className="fs-6">
-            Reach, Engage and Convert with Meta Advertising
+            {t('AdsContentCreation.section3.subtitle')}
           </Subtitle>
         </TitleTotal>
 
-        <p className="fs-5">
-          Meta platforms offer highly targeted advertising options based on
-          intrests, behaviors and demographics.
-        </p>
-        <h4>Campaign Objectives We Support</h4>
+        <p className="fs-5">{t('AdsContentCreation.section3.description')}</p>
+        <h4>{t('AdsContentCreation.section3.campaignObjectives.title')}</h4>
         <StyledUl>
           <li>
             <div className="card rounded-4">
@@ -71,7 +72,15 @@ function Section3() {
                     <FontAwesomeIcon icon={faEye} />
                   </div>
                   <div>
-                    <strong>Awareness</strong> - Maximize reach and recall
+                    <strong>
+                      {t(
+                        'AdsContentCreation.section3.campaignObjectives.list.item1.title'
+                      )}
+                    </strong>{' '}
+                    -{' '}
+                    {t(
+                      'AdsContentCreation.section3.campaignObjectives.list.item1.text'
+                    )}
                   </div>
                 </div>
               </div>
@@ -85,8 +94,15 @@ function Section3() {
                     <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                   </div>
                   <div>
-                    <strong>Traffic</strong> - Drive visitors to sites or
-                    landing pages
+                    <strong>
+                      {t(
+                        'AdsContentCreation.section3.campaignObjectives.list.item2.title'
+                      )}
+                    </strong>{' '}
+                    -{' '}
+                    {t(
+                      'AdsContentCreation.section3.campaignObjectives.list.item2.text'
+                    )}
                   </div>
                 </div>
               </div>
@@ -100,8 +116,15 @@ function Section3() {
                     <FontAwesomeIcon icon={faComments} />
                   </div>
                   <div>
-                    <strong>Engagement</strong> - Boost likes, comments and
-                    video views
+                    <strong>
+                      {t(
+                        'AdsContentCreation.section3.campaignObjectives.list.item3.title'
+                      )}
+                    </strong>{' '}
+                    -{' '}
+                    {t(
+                      'AdsContentCreation.section3.campaignObjectives.list.item3.text'
+                    )}
                   </div>
                 </div>
               </div>
@@ -115,8 +138,15 @@ function Section3() {
                     <FontAwesomeIcon icon={faUserPlus} />
                   </div>
                   <div>
-                    <strong>Leads</strong> - Collect client details using
-                    instant forms or messaging
+                    <strong>
+                      {t(
+                        'AdsContentCreation.section3.campaignObjectives.list.item4.title'
+                      )}
+                    </strong>{' '}
+                    -{' '}
+                    {t(
+                      'AdsContentCreation.section3.campaignObjectives.list.item4.text'
+                    )}
                   </div>
                 </div>
               </div>
@@ -130,8 +160,15 @@ function Section3() {
                     <FontAwesomeIcon icon={faMobileScreenButton} />
                   </div>
                   <div>
-                    <strong>App Promotion</strong> - Increase installs and
-                    in-app activity
+                    <strong>
+                      {t(
+                        'AdsContentCreation.section3.campaignObjectives.list.item5.title'
+                      )}
+                    </strong>{' '}
+                    -{' '}
+                    {t(
+                      'AdsContentCreation.section3.campaignObjectives.list.item5.text'
+                    )}
                   </div>
                 </div>
               </div>
@@ -145,8 +182,15 @@ function Section3() {
                     <FontAwesomeIcon icon={faCartShopping} />
                   </div>
                   <div>
-                    <strong>Sales</strong> - Encourage direct purchases or
-                    conversions
+                    <strong>
+                      {t(
+                        'AdsContentCreation.section3.campaignObjectives.list.item6.title'
+                      )}
+                    </strong>{' '}
+                    -{' '}
+                    {t(
+                      'AdsContentCreation.section3.campaignObjectives.list.item6.text'
+                    )}
                   </div>
                 </div>
               </div>
@@ -156,44 +200,44 @@ function Section3() {
       </ContentRow>
       {/* Campaign Types We Manage */}
       <ContentRow className="row">
-        <h4>Available Ad Formats</h4>
+        <h4>{t('AdsContentCreation.section3.adFormats.title')}</h4>
         <div className="card rounded-4">
           <StyledUl className="list-group list-group-flush">
             <li className="list-group-item d-flex gap-2 align-items-center fs-5">
               <FontAwesomeIcon icon={faImage} />
-              Image Ads
+              {t('AdsContentCreation.section3.adFormats.list.item1')}
             </li>
             <li className="list-group-item d-flex gap-2 align-items-center fs-5">
               <FontAwesomeIcon icon={faPlayCircle} />
-              Video Ads/Reels
+              {t('AdsContentCreation.section3.adFormats.list.item2')}
             </li>
             <li className="list-group-item d-flex gap-2 align-items-center fs-5">
               <FontAwesomeIcon icon={faImages} />
-              Carousel Ads
+              {t('AdsContentCreation.section3.adFormats.list.item3')}
             </li>
             <li className="list-group-item d-flex gap-2 align-items-center fs-5">
               <FontAwesomeIcon icon={faLayerGroup} />
-              Collection Ads
+              {t('AdsContentCreation.section3.adFormats.list.item4')}
             </li>
             <li className="list-group-item d-flex gap-2 align-items-center fs-5">
               <FontAwesomeIcon icon={faMobileScreen} />
-              Instant Experience Ads
+              {t('AdsContentCreation.section3.adFormats.list.item5')}
             </li>
             <li className="list-group-item d-flex gap-2 align-items-center fs-5">
               <FontAwesomeIcon icon={faFilm} />
-              Slideshow Ads
+              {t('AdsContentCreation.section3.adFormats.list.item6')}
             </li>
             <li className="list-group-item d-flex gap-2 align-items-center fs-5">
               <FontAwesomeIcon icon={faBookOpen} />
-              Stories Ads
+              {t('AdsContentCreation.section3.adFormats.list.item7')}
             </li>
             <li className="list-group-item d-flex gap-2 align-items-center fs-5">
               <FontAwesomeIcon icon={faSquarePollVertical} />
-              Poll Ads
+              {t('AdsContentCreation.section3.adFormats.list.item8')}
             </li>
             <li className="list-group-item d-flex gap-2 align-items-center fs-5">
               <FontAwesomeIcon icon={faCubes} />
-              Augmented Reality Ads
+              {t('AdsContentCreation.section3.adFormats.list.item9')}
             </li>
           </StyledUl>
         </div>

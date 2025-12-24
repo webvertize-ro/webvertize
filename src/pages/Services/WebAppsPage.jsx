@@ -8,6 +8,12 @@ import WhatsAppButton from '../../components/WhatsAppButton';
 import CookiePopup from '../../components/Cookies/CookiePopup';
 import styled from 'styled-components';
 import BackToTop from '../../components/BackToTop';
+import WebAppsFeatures from '../../components/WebDevelopment/WebAppsFeatures';
+import WebAppsIntro from '../../components/WebDevelopment/WebAppsIntro';
+import Header from '../../components/Header';
+import webAppsHeader from '../../assets/web_apps_header.jpg';
+import WebAppsResults from '../../components/WebDevelopment/WebAppsResults';
+import { useTranslation } from 'react-i18next';
 
 const StyledWebAppsPage = styled.div`
   background-color: #1f465f;
@@ -15,15 +21,21 @@ const StyledWebAppsPage = styled.div`
 `;
 
 function WebAppsPage() {
+  const { t } = useTranslation();
   return (
     <StyledWebAppsPage>
       <Navigation />
-      <WebApps />
-      <ServicesStackedCards />
-      <CTA
-        title="The Right Tools Can Change Everything"
-        text="Let's build an app that fits the workflow of your business."
+      <Header
+        title="Custom Web Applications Built Around Your Workflow"
+        text1="Webvertize steps in when off-the-shelf software doesn't quite fit, providing the flexibility your business needs to operate efficiently."
+        text2="We design and develop tailored solutions that start from your existing work flow - not the other way around. From internal dashboards and process automation to customer-facing platforms, we work closely with you to build reliable, scalable tools that simplify operations and support your long-term growth."
+        bgImage={webAppsHeader}
       />
+      <WebAppsIntro />
+      <WebAppsFeatures />
+      <WebAppsResults />
+      <ServicesStackedCards />
+      <CTA title="CTA.web-apps.title" text="CTA.web-apps.text" />
       <SideButtons />
       <WhatsAppButton />
       <CookiePopup />

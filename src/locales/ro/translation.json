@@ -1,0 +1,722 @@
+{
+  "nav": {
+    "home": "Acasă",
+    "services": "Servicii",
+    "websites": "Website-uri",
+    "web-apps": "Aplicații Web",
+    "advertising-content-creation": "Publicitate & Creare de Conținut",
+    "portfolio": "Portofoliu",
+    "contact": "Contact"
+  },
+  "logo": {
+    "logoText": "Dezvoltare Web și Publicitate"
+  },
+  "homepage": {
+    "header": {
+      "title": "Website-uri, Aplicații Web și Publicitate pentru Afacerea Ta",
+      "text1": "La Webvertize, ajutăm afacerile să-și construiască o prezență online puternică și profesionistă prin website-uri personalizate, aplicații web și campanii de publicitate orientate spre performanță. De la website-uri moderne de prezentare la instrumente interne personalizate și campanii publicitare strategice, oferim soluții digitale aliniate obiectivelor afacerii tale.",
+      "text2": "Credem că drumul către succesul digital trebuie să fie plăcut și colaborativ — nu stresant. De aceea lucrăm îndeaproape cu tine la fiecare pas, de la strategie și design, până la dezvoltare, lansare și optimizare continuă, oferind soluții fiabile care susțin afacerea ta pe termen lung.",
+      "buttonText": "Programează o întâlnire"
+    },
+    "webdev": {
+      "title": "Dezvoltare web – website-uri și aplicații web",
+      "subtitle": "Soluții web moderne, concepute pentru a susține, optimiza și dezvolta afacerea ta.",
+      "websitesCard": {
+        "title": "Website-uri",
+        "subtitle": "Website-uri de prezentare și o prezență online esențială",
+        "text": "Livrăm website-uri de prezentare rapide, moderne și responsive, optimizate pentru dispozitive mobile și adaptate identității brandului tău. Funcționalități suplimentare pot fi integrate în funcție de nevoile afacerii tale — precum chat-uri live, hărți interactive, galerii de imagini, formulare de contact, panouri de administrare, funcționalități de autentificare și multe altele.",
+        "caseStudiesBtn": "Vezi studii de caz",
+        "exploreServicesBtn": "Descoperă serviciile"
+      },
+      "webAppsCard": {
+        "title": "Aplicații Web",
+        "subtitle": "Instrumente interne și soluții personalizate pentru afaceri",
+        "text": "Aplicații interne personalizate, concepute pentru întreprinderi mici și mijlocii. Optimizează-ți operațiunile cu instrumente construite în jurul fluxurilor tale de lucru specifice — precum sisteme de management al sarcinilor, platforme de ticketing, aplicații de chat live, sisteme de gestiune a stocurilor, sisteme de programări și multe altele.",
+        "caseStudiesBtn": "Vezi studii de caz",
+        "exploreServicesBtn": "Descoperă serviciile"
+      }
+    },
+    "ads": {
+      "title": "Publicitate: Creare de Conținut și Managementul Campaniilor",
+      "subtitle": "Conținut creativ și campanii publicitare gestionate cu atenție, concepute pentru a atrage, converti și scala.",
+      "contentCreationCard": {
+        "title": "Creare de Conținut",
+        "subtitle": "Imagini promoționale și Reels pentru reclame",
+        "text": "Conținut promoțional de înaltă calitate pentru Facebook și Google Ads, incluzând postări cu imagini compuse profesional și clipuri video scurte de tip Reels, concepute pentru a evidenția brandul tău, serviciile oferite și apelurile la acțiune.",
+        "caseStudiesBtn": "Vezi studii de caz",
+        "exploreServicesBtn": "Descoperă serviciile"
+      },
+      "googleAdsCard": {
+        "title": "Campanii Google Ads",
+        "subtitle": "Creare strategică și administrare continuă a campaniilor Google Ads, adaptate obiectivelor afacerii tale",
+        "text": "Colaborăm cu tine pentru a construi o campanie Google Ads performantă de la zero — alegând obiectivele potrivite și asigurând optimizare și monitorizare constantă. Urmărim performanța, implementăm îmbunătățiri și livrăm rapoarte lunare clare, astfel încât să știi mereu cum evoluează campania ta.",
+        "readMoreBtn": "Mai multe despre tipurile de campanii"
+      },
+      "facebookAdsCard": {
+        "title": "Campanii Facebook Ads",
+        "subtitle": "Campanii atractive, adaptate obiectivelor afacerii tale",
+        "text": "Crearea și administrarea campaniilor Facebook Ads, incluzând conținut promoțional, texte publicitare și monitorizarea performanței, pentru a ajunge eficient la publicul tău.",
+        "readMoreBtn": "Citește mai multe despre tipurile de campanii"
+      }
+    },
+    "ourProcess": {
+      "title": "Procesul nostru – Cum construim prezența ta digitală",
+      "subtitle": "O abordare clară, pas cu pas, care transformă ideile în soluții digitale fiabile.",
+      "tabsLabel": {
+        "tab1": "Descoperire",
+        "tab2": "Design UX/UI",
+        "tab3": "Dezvoltare",
+        "tab4": "Testare și Optimizare",
+        "tab5": "Lansare și Suport"
+      },
+      "tabsText": {
+        "text1": "Începem prin a înțelege în profunzime afacerea ta — obiectivele, publicul țintă, concurența și ceea ce face brandul tău unic. Împreună definim ce înseamnă succesul pentru acest proiect și îl transformăm în cerințe clare. Rezultatul acestei etape este o strategie digitală bine definită, care ghidează fiecare decizie de design și dezvoltare.",
+        "text2": "Pe baza strategiei stabilite, realizăm structura și identitatea vizuală a website-ului sau aplicației tale. Aceasta include wireframe-uri, layout-uri, fluxuri de utilizare și alte elemente de design care reflectă brandul tău și sunt aliniate obiectivelor de business.",
+        "text3": "Aducem designul la viață prin dezvoltarea unei soluții rapide, responsive și moderne, optimizate pentru toate dispozitivele. Fie că este vorba de un website de prezentare sau de o aplicație web completă, folosim tehnologii fiabile și integrăm toate funcționalitățile stabilite în cadrul proiectului.",
+        "text4": "Înainte de lansare, testăm cu atenție fiecare aspect — funcționalitatea, performanța, accesibilitatea și compatibilitatea cu diferite browsere. Corectăm eventualele probleme, rafinăm interacțiunile și optimizăm experiența, astfel încât produsul să fie pregătit pentru utilizatori reali.",
+        "text5": "După ce totul îndeplinește așteptările, lansăm produsul final și oferim suport post-lansare conform termenilor agreați. Te putem ajuta cu actualizări, optimizări, analiză de date și îmbunătățiri continue — asigurând creșterea constantă a prezenței tale digitale."
+      }
+    },
+    "ourMission": {
+      "title": "Misiunea noastră",
+      "subtitle": "Soluții digitale concepute pentru a-ți dezvolta afacerea",
+      "textContent": {
+        "text1": "La Webvertize, misiunea noastră este să ajutăm afacerile să își construiască prezența online puternică pe care o merită. Facem acest lucru prin livrarea de website-uri de înaltă calitate, aplicații web, conținut atractiv și campanii publicitare orientate spre performanță, care susțin creșterea reală a afacerii.",
+        "text2": "Credem că transformarea digitală ar trebui să fie o experiență plăcută, nu una stresantă. Prin dedicare, transparență și o abordare colaborativă, lucrăm alături de tine pentru a-ți înțelege nevoile și a oferi soluții care generează un impact măsurabil.",
+        "text3": "Scopul nostru nu este doar finalizarea unui proiect — ci construirea unui parteneriat pe termen lung, în care succesul este împărtășit, obiectivele sunt atinse împreună, iar afacerea ta evoluează cu încredere în mediul digital."
+      }
+    },
+    "ourCorePrinciples": {
+      "title": "Principiile noastre de bază",
+      "subtitle": "Modul în care abordăm fiecare proiect și parteneriat",
+      "cards": {
+        "card1": {
+          "cardTitle": "Strategie orientată spre creștere",
+          "cardText": "Soluțiile noastre digitale sunt concepute pentru a susține obiectivele afacerii tale — notorietatea brandului, ratele de conversie, relațiile cu clienții și nu numai."
+        },
+        "card2": {
+          "cardTitle": "Eficiență prin tehnologie",
+          "cardText": "Optimizăm procesele de business prin aplicații web, automatizări și instrumente moderne care ajută afacerea ta să funcționeze mai eficient."
+        },
+        "card3": {
+          "cardTitle": "Parteneriate pe termen lung",
+          "cardText": "Credem că rezultatele excelente vin din colaborări pe termen lung — nu din livrări punctuale. Lucrăm alături de afacerea ta, adaptând soluțiile pe măsură ce obiectivele tale evoluează."
+        },
+        "card4": {
+          "cardTitle": "Prezența ta digitală, dusă la nivelul următor",
+          "cardText": "De la website-uri la reclame și conținut de brand, te ajutăm să construiești o prezență profesională care reflectă identitatea ta și atrage clienții potriviți."
+        }
+      }
+    }
+  },
+  "websites": {
+    "websitesIntro": {
+      "title": "Website-uri personalizate, create pentru nevoile reale ale afacerii tale",
+      "text": "La Webvertize, suntem specializați în dezvoltarea de website-uri rapide, moderne și responsive, adaptate brandului și obiectivelor tale de business. Website-urile noastre nu sunt concepute doar pentru a arăta profesional, ci și pentru a oferi o experiență fluentă vizitatorilor tăi, indiferent de dispozitivul folosit — desktop, tabletă sau telefon mobil."
+    },
+    "websitesFeatures": {
+      "title": "Funcționalități și capabilități",
+      "subtitle": "Începem cu website-uri de prezentare care evidențiază brandul și serviciile tale, apoi le extindem cu funcționalități personalizate, în funcție de nevoile afacerii tale. Aceste funcționalități pot include:",
+      "featuresList": {
+        "feature1": {
+          "title": "Chat live",
+          "text": "Integrare chat live pentru a comunica direct cu clienții tăi."
+        },
+        "feature2": {
+          "title": "Prezentări de produse",
+          "text": "Prezentări interactive de produse și galerii de imagini pentru a evidenția ofertele tale."
+        },
+        "feature3": {
+          "title": "Formulare",
+          "text": "Formulare de contact și trimiterea solicitărilor, stocate în siguranță în baze de date."
+        },
+        "feature4": {
+          "title": "Funcționalitate de autentificare",
+          "text": "Autentificare pentru utilizatori și panouri de administrare pentru gestionarea conținutului."
+        },
+        "feature5": {
+          "title": "Hărți și alte elemente interactive",
+          "text": "Hărți, media încorporată sau alte elemente interactive adaptate afacerii tale."
+        }
+      }
+    },
+    "websitesResults": {
+      "title": "Concepute pentru a genera rezultate",
+      "textContent": {
+        "text1": "Toate website-urile noastre sunt compatibile cu toate browserele, complet optimizate pentru viteză și realizate respectând cele mai bune practici de accesibilitate și SEO.",
+        "text2": "Considerăm website-ul tău un instrument puternic pentru a conecta cu clienții, a genera lead-uri și a dezvolta afacerea ta. Fiecare proiect este o colaborare: lucrăm îndeaproape cu tine pentru a defini obiectivele, a rafina designul și a livra un website care să reprezinte cu adevărat brandul tău.",
+        "text3": "Indiferent dacă ai nevoie de un site simplu de prezentare sau de o soluție mai complexă cu instrumente integrate, Webvertize livrează website-uri care sunt atât atractive, cât și funcționale, oferindu-ți o bază solidă pentru creșterea online."
+      }
+    }
+  },
+  "CTA": {
+    "home": {
+      "title": "Hai să construim împreună prezența ta digitală",
+      "text": "Programează un apel de descoperire, spune-ne obiectivele tale și fă următorul pas în lumea digitală.",
+      "buttonText": "Programează o discuție"
+    },
+    "websites": {
+      "title": "Următorii tăi clienți te caută online",
+      "text": "Hai să construim un website care să îi ajute să te găsească — și să te aleagă. Programează un apel pentru a începe.",
+      "buttonText": "Programează o discuție"
+    },
+    "web-apps": {
+      "title": "Instrumentele potrivite pot schimba totul",
+      "text": "Hai să construim o aplicație care să se potrivească fluxului de lucru al afacerii tale.",
+      "buttonText": "Programează o discuție"
+    },
+    "content-creation-ads": {
+      "title": "Ești gata să crești prin publicitate mai eficientă?",
+      "text": "Programează un apel și hai să construim campanii care ajung la clienții potriviți, cu mesajul potrivit.",
+      "buttonText": "Programează o discuție"
+    },
+    "portfolio": {
+      "title": "Vrei să începem un proiect?",
+      "text": "Hai să discutăm ideile tale și să le transformăm într-o soluție digitală clară și bine construită. Programează un apel și putem începe chiar de astăzi.",
+      "buttonText": "Programează o discuție"
+    }
+  },
+  "servicesStackedCards": {
+    "title": "Procesul nostru – Cum dăm viață proiectului tău",
+    "subtitle": "O abordare transparentă, pas cu pas, de la idee până la lansare.",
+    "objective": "Obiectiv",
+    "cards": {
+      "card1": {
+        "title": "Descoperire",
+        "objective": "Înțelegerea afacerii tale, a obiectivelor, a publicului și a concurenței pentru a crea o bază solidă pentru proiectul tău.",
+        "list": {
+          "item1": {
+            "itemTitle": "Început",
+            "itemText": "Începem prin a învăța totul despre afacerea ta – obiective, clienți țintă, propuneri unice de valoare și concurență."
+          },
+          "item2": {
+            "itemTitle": "Rezultate livrabile",
+            "itemText": "Brief clar de proiect, criterii de succes, document de strategie digitală."
+          },
+          "item3": {
+            "itemTitle": "Instrumente și metode",
+            "itemText": "Întrebări, workshop-uri de strategie, cercetare a concurenței și analiza datelor."
+          },
+          "item4": {
+            "itemTitle": "Rolul clientului",
+            "itemText": "Furnizarea de informații despre afacere, răspunsuri la întrebări, materiale de branding sau detalii despre campanii anterioare."
+          },
+          "item5": {
+            "itemTitle": "Estimarea duratei",
+            "itemText": "De obicei 1–2 săptămâni, în funcție de complexitatea proiectului."
+          },
+          "item6": {
+            "itemTitle": "Valoare",
+            "itemText": "Asigură că toate deciziile de design și dezvoltare sunt aliniate obiectivelor tale, economisind timp și prevenind eventuale nealinieri ulterioare."
+          }
+        }
+      },
+      "card2": {
+        "title": "Design UX/UI",
+        "objective": "Definirea structurii și identității vizuale a website-ului sau aplicației pentru a asigura utilizabilitatea și alinierea cu brandul.",
+        "list": {
+          "item1": {
+            "itemTitle": "Început",
+            "itemText": "Pe baza fazei de Descoperire, creăm wireframe-uri, fluxuri de utilizatori și mockup-uri vizuale care reflectă brandul tău și nevoile publicului țintă."
+          },
+          "item2": {
+            "itemTitle": "Rezultate livrabile",
+            "itemText": "Wireframe-uri, prototipuri interactive, ghid de stil, resurse de design."
+          },
+          "item3": {
+            "itemTitle": "Instrumente și metode",
+            "itemText": "Figma, Adobe XD și workshop-uri de design."
+          },
+          "item4": {
+            "itemTitle": "Rolul clientului",
+            "itemText": "Revizuirea și aprobarea wireframe-urilor și mockup-urilor, oferind feedback privind preferințele vizuale."
+          },
+          "item5": {
+            "itemTitle": "Estimarea duratei",
+            "itemText": "2–3 săptămâni pentru un website standard; mai mult pentru aplicații web complexe."
+          },
+          "item6": {
+            "itemTitle": "Valoare",
+            "itemText": "Ajută la vizualizarea produsului timpuriu, reduce riscul modificărilor costisitoare în dezvoltare și asigură utilizabilitatea și accesibilitatea."
+          }
+        }
+      },
+      "card3": {
+        "title": "Dezvoltare",
+        "objective": "Transformarea designurilor într-un produs digital complet funcțional, responsive și performant.",
+        "list": {
+          "item1": {
+            "itemTitle": "Început",
+            "itemText": "Transpunem designurile în cod curat și optimizat, integrând funcționalitățile necesare, animațiile și instrumentele terțe."
+          },
+          "item2": {
+            "itemTitle": "Rezultate livrabile",
+            "itemText": "Website sau aplicație web complet funcțională, inclusiv configurarea CMS dacă este cazul și încărcarea conținutului inițial."
+          },
+          "item3": {
+            "itemTitle": "Instrumente și metode",
+            "itemText": "HTML, CSS, JavaScript (React, Vue etc.), Bootstrap, API-uri, controlul versiunilor (Git)."
+          },
+          "item4": {
+            "itemTitle": "Rolul clientului",
+            "itemText": "Furnizarea conținutului final și aprobarea etapelor majore de dezvoltare."
+          },
+          "item5": {
+            "itemTitle": "Estimarea duratei",
+            "itemText": "De obicei 3–6 săptămâni, în funcție de complexitate. Oferim actualizări regulate de progres."
+          },
+          "item6": {
+            "itemTitle": "Valoare",
+            "itemText": "Primești o soluție modernă, scalabilă și performantă construită conform celor mai bune practici."
+          }
+        }
+      },
+      "card4": {
+        "title": "Testare & Optimizare",
+        "objective": "Asigurarea calității, performanței și compatibilității pe toate dispozitivele și browserele.",
+        "list": {
+          "item1": {
+            "itemTitle": "Început",
+            "itemText": "Realizăm teste extinse, inclusiv teste funcționale, responsive, accesibilitate, optimizare viteză și verificări SEO."
+          },
+          "item2": {
+            "itemTitle": "Rezultate livrabile",
+            "itemText": "Rapoarte de testare, corectarea erorilor, recomandări de optimizare."
+          },
+          "item3": {
+            "itemTitle": "Instrumente și metode",
+            "itemText": "Testare în browsere (Chrome, Safari, Firefox), audituri Lighthouse, teste QA manuale și automate."
+          },
+          "item4": {
+            "itemTitle": "Rolul clientului",
+            "itemText": "Participarea la User Acceptance Testing (UAT) și oferirea de feedback asupra funcționalității finale."
+          },
+          "item5": {
+            "itemTitle": "Estimarea duratei",
+            "itemText": "1–2 săptămâni; poate varia pentru aplicații complexe."
+          },
+          "item6": {
+            "itemTitle": "Valoare",
+            "itemText": "Garantează o experiență fluidă, fiabilă și prietenoasă pentru utilizatori."
+          }
+        }
+      },
+      "card5": {
+        "title": "Lansare & Suport",
+        "objective": "Implementarea produsului live și oferirea de suport continuu pentru succesul constant.",
+        "list": {
+          "item1": {
+            "itemTitle": "Început",
+            "itemText": "Implementăm produsul pe mediul tău de hosting, configurăm analytics și monitorizăm performanța în săptămânile inițiale."
+          },
+          "item2": {
+            "itemTitle": "Rezultate livrabile",
+            "itemText": "Website/aplicație live, instruire CMS (dacă este cazul), documentație, perioada de suport post-lansare."
+          },
+          "item3": {
+            "itemTitle": "Instrumente și metode",
+            "itemText": "Configurare hosting, instrumente de monitorizare, integrare analytics, acorduri opționale de mentenanță."
+          },
+          "item4": {
+            "itemTitle": "Rolul clientului",
+            "itemText": "Aprobarea lansării finale și comunicarea oricăror actualizări necesare post-lansare."
+          },
+          "item5": {
+            "itemTitle": "Estimarea duratei",
+            "itemText": "Lansarea are loc de obicei 1–2 zile după testare; perioada de suport conform acordului."
+          },
+          "item6": {
+            "itemTitle": "Valoare",
+            "itemText": "Poți lansa cu încredere, știind că totul funcționează și că ai un partener pentru îmbunătățiri și actualizări."
+          }
+        }
+      }
+    }
+  },
+  "webapps": {
+    "webAppsIntro": {
+      "title": "De ce contează aplicațiile web personalizate",
+      "text": {
+        "text1": "Afac­erile moderne se bazează pe instrumente digitale pentru a funcționa eficient, iar deși majoritatea soluțiilor software standard pot acoperi nevoi generale, acestea se potrivesc rareori fluxurilor de lucru, structurii și priorităților unice ale organizației tale.",
+        "text2": "Proiectăm și dezvoltăm aplicații web personalizate, adaptate modului real în care funcționează afacerea ta — de la sisteme interne de management până la platforme orientate către clienți.",
+        "text3": "Fie că ai nevoie de o platformă de gestionare a sarcinilor pentru echipa ta, un dashboard intern pentru monitorizarea operațiunilor zilnice, un sistem de ticketing personalizat pentru interacțiunea cu clienții sau un sistem de chat live integrat care conectează departamentele, aplicațiile noastre sunt construite pentru a simplifica complexitatea, a reduce munca repetitivă și a deschide noi oportunități de scalare."
+      }
+    },
+    "webAppsFeatures": {
+      "title": "Funcționalități & capabilități",
+      "subtitle": "La Webvertize, fiecare aplicație pe care o dezvoltăm îmbină performanța tehnică cu ușurința în utilizare și fiabilitatea pe termen lung. În funcție de nevoile afacerii tale, soluția noastră poate include:",
+      "list": {
+        "item1": {
+          "title": "Dashboard-uri și interfețe personalizate",
+          "text": "Interfețe create în jurul fluxurilor tale de lucru, nu invers, pentru o integrare mai rapidă și o productivitate crescută."
+        },
+        "item2": {
+          "title": "Acces și permisiuni pe roluri",
+          "text": "Interfețe dedicate pentru manageri, operatori, membri ai echipei și clienți, astfel încât informația potrivită să ajungă la persoanele potrivite."
+        },
+        "item3": {
+          "title": "Integrare cu baze de date",
+          "text": "Baze de date structurate, sigure și scalabile, care stochează informațiile tale, le fac ușor de căutat și susțin rapoartele."
+        },
+        "item4": {
+          "title": "Fluxuri de formulare și introducere date",
+          "text": "Formulare dinamice, validări, trimiteri de date, atașamente și fluxuri interne de aprobare care automatizează munca manuală."
+        },
+        "item5": {
+          "title": "Sisteme de ticketing și suport",
+          "text": "Centralizează comunicarea, gestionează solicitările, urmărește progresul și obține informații valoroase despre problemele recurente."
+        },
+        "item6": {
+          "title": "Chat live și funcționalități în timp real",
+          "text": "Mesagerie în timp real între angajați, echipa de suport și clienți, integrată direct în procesele tale existente."
+        },
+        "item7": {
+          "title": "Autentificare și management utilizatori",
+          "text": "Acces securizat prin parolă, sisteme de autentificare, creare de conturi sau SSO, în funcție de nevoile afacerii tale."
+        },
+        "item8": {
+          "title": "Analiză și raportare",
+          "text": "Ia decizii informate pe baza indicatorilor operaționali, jurnalelor de utilizare și rapoartelor de performanță adaptate KPI-urilor tale."
+        }
+      }
+    },
+    "webAppsResults": {
+      "title": "Concepute pentru a genera rezultate",
+      "subtitle": "O aplicație web personalizată nu este doar un instrument — este un factor de schimbare operațională. Aplicațiile noastre sunt concepute pentru a:",
+      "list": {
+        "item1": {
+          "title": "Economisi timp",
+          "text": "Automatizează sarcinile manuale repetitive și centralizează informațiile într-o singură platformă unificată."
+        },
+        "item2": {
+          "title": "Îmbunătăți acuratețea",
+          "text": "Reduce erorile prin validarea datelor, formulare structurate și fluxuri de lucru clare."
+        },
+        "item3": {
+          "title": "Crește vizibilitatea",
+          "text": "Dashboard-urile în timp real te ajută să înțelegi ce se întâmplă în cadrul echipelor sau departamentelor."
+        },
+        "item4": {
+          "title": "Susține creșterea",
+          "text": "Instrumentele personalizate se adaptează pe măsură ce procesele tale devin mai complexe, fără a te forța să schimbi software-ul."
+        },
+        "item5": {
+          "title": "Consolida echipele",
+          "text": "Instrumentele mai bune îmbunătățesc comunicarea, reduc fricțiunile și aliniază toți membrii echipei în jurul obiectivelor comune."
+        },
+        "item6": {
+          "title": "Îmbunătăți experiența clienților",
+          "text": "Sistemele de ticketing, chat-ul live, portalurile și fluxurile automatizate creează o experiență mai fluentă pentru clienții tăi."
+        }
+      }
+    }
+  },
+  "AdsContentCreation": {
+    "section1": {
+      "title": "Creare de Conținut pentru Reclame",
+      "subtitle": "Vizualuri de Înaltă Calitate, Concepute pentru Performanță",
+      "text": "Materialele noastre creative pentru reclame sunt realizate pentru a capta atenția, a comunica valoarea și a susține rezultate măsurabile pe platformele moderne de publicitate.",
+      "title2": "Ce Creăm",
+      "list": {
+        "item1": {
+          "title": "Grafice Promoționale cu Imagine Împărțită",
+          "subtitle": "Graficele promoționale cu imagine împărțită sunt vizualuri structurate pe mai multe secțiuni, concepute pentru a transmite mai multe idei într-un singur cadru coerent.",
+          "listInner": {
+            "itemInner1": "Evidențierea mai multor servicii într-un singur vizual",
+            "itemInner2": "Prezentarea rezultatelor de tip «înainte și după»",
+            "itemInner3": "Promovarea ofertelor sau a campaniilor sezoniere pentru produse și servicii",
+            "itemInner4": "Creșterea clarității, încrederii și notorietății brandului tău",
+            "buttonText": "Vezi Proiecte"
+          }
+        },
+        "item2": {
+          "title": "Reels Promoționale (Videoclipuri Scurte)",
+          "subtitle": "Reels sunt în prezent unul dintre cele mai eficiente formate de conținut pentru a ajunge la audiențe noi. Videoclipurile scurte optimizate pentru Facebook și Instagram includ:",
+          "listInner": {
+            "itemInner1": "Explicații concise ale serviciilor",
+            "itemInner2": "Mesaje axate pe beneficii",
+            "itemInner3": "Integrarea identității vizuale (logo, culori, slogan)",
+            "itemInner4": "Încheiere cu un apel clar la acțiune",
+            "buttonText": "Vezi Proiecte"
+          }
+        },
+        "item3": {
+          "title": "Vizualuri Optimizate pentru Google Ads",
+          "subtitle": "Materiale vizuale curate, de înaltă calitate, realizate conform formatelor recomandate de Google pentru a îmbunătăți vizibilitatea și rata de click.",
+          "listInner": {
+            "itemInner1": "Asset-uri de Text",
+            "itemInner2": "Asset-uri Vizuale",
+            "itemInner3": "Asset-uri Video",
+            "buttonText": "Vezi Proiecte"
+          }
+        }
+      }
+    },
+    "section2": {
+      "title": "Campanii Google Ads",
+      "subtitle": "Publicitate Bazată pe Căutări, cu Rezultate Măsurabile",
+      "description": "Campaniile Google Ads sunt cele mai eficiente atunci când sunt construite pe obiective clare, targetare precisă și optimizare continuă. Lucrăm împreună cu tine pentru a crea o structură de campanie adaptată obiectivelor afacerii tale, rafinăm constant performanța și oferim rapoarte transparente, astfel încât să înțelegi întotdeauna cum funcționează investiția ta.",
+      "ourProcess": {
+        "title": "Procesul Nostru",
+        "list": {
+          "item1": {
+            "item1Title": "Configurarea contului folosind propriul tău profil Google (păstrezi controlul complet)",
+            "item1Text": "Începem prin a te ajuta să îți configurezi contul Google Ads folosind propriul profil Google, astfel încât să deții controlul total asupra acestuia. După configurare, acordăm accesul de administrare necesar și începem să construim o strategie bazată pe claritate, relevanță și optimizare continuă."
+          },
+          "item2": {
+            "item2Title": "Dezvoltarea strategiei în funcție de obiective și buget",
+            "item2Text": "Înainte de lansarea campaniei, clarificăm obiectivele tale (generare de lead-uri, apeluri telefonice, vânzări sau vizite pe website) și le aliniem cu un buget lunar adecvat. Apoi dezvoltăm o structură de campanie adaptată pieței tale, serviciilor oferite și publicului țintă."
+          },
+          "item3": {
+            "item3Title": "Monitorizarea zilnică a performanței",
+            "item3Text": "După lansare, monitorizăm zilnic campaniile tale. Urmărim indicatorii de performanță, analizăm tendințele de căutare și identificăm semnale timpurii care ne permit să facem ajustări rapide și informate."
+          },
+          "item4": {
+            "item4Title": "Optimizări continue ale ofertelor, cuvintelor-cheie și targetării",
+            "item4Text": "Campaniile tale sunt într-o evoluție constantă. Ajustăm ofertele, actualizăm cuvintele-cheie, modificăm tipurile de potrivire, îmbunătățim targetarea și testăm variații noi pentru a menține eficiența și relevanța. Astfel, reclamele se adaptează comportamentului real al utilizatorilor și condițiilor din piață."
+          },
+          "item5": {
+            "item5Title": "Notificări și asistență privind pragurile de facturare",
+            "item5Text": "Monitorizăm pragurile de facturare pentru a ne asigura că reclamele tale nu se opresc neașteptat. Atunci când se apropie plățile sau este necesară o acțiune din partea ta, te notificăm imediat și te ghidăm pas cu pas."
+          },
+          "item6": {
+            "item6Title": "Implementarea urmăririi conversiilor, atunci când este necesar",
+            "item6Text": "Anumite campanii necesită setări suplimentare pentru a măsura corect rezultatele. Atunci când este nevoie, implementăm urmărirea conversiilor pentru formulare, apeluri sau alte acțiuni pe website, oferindu-ți o imagine clară asupra a ceea ce funcționează și a aspectelor ce pot fi îmbunătățite."
+          },
+          "item7": {
+            "item7Title": "Rapoarte lunare de performanță pentru transparență totală",
+            "item7Text": "În fiecare lună primești un raport de performanță clar și ușor de înțeles. Evidențiem ce s-a schimbat, cum a fost cheltuit bugetul și cum evoluează campania în raport cu obiectivele tale. Știi întotdeauna exact unde se duce investiția ta."
+          }
+        }
+      },
+      "campaignTypes": {
+        "title": "Tipuri de Campanii Google pe care le Gestionăm",
+        "list": {
+          "item1": {
+            "title": "Campanii de Căutare",
+            "text": "Reclame text afișate în rezultatele Google Search."
+          },
+          "item2": {
+            "title": "Campanii Display",
+            "text": "Reclame vizuale (imagini / bannere) afișate pe milioane de website-uri."
+          },
+          "item3": {
+            "title": "Campanii Shopping",
+            "text": "Listări de produse cu imagini și prețuri."
+          },
+          "item4": {
+            "title": "Campanii Video",
+            "text": "Reclame video pe YouTube și în rețeaua de parteneri Google."
+          },
+          "item5": {
+            "title": "Campanii pentru Aplicații",
+            "text": "Reclame pentru instalarea și utilizarea aplicațiilor mobile."
+          },
+          "item6": {
+            "title": "Performance Max",
+            "text": "Campanii multi-canal bazate pe inteligență artificială, active pe toate proprietățile Google."
+          },
+          "item7": {
+            "title": "Demand Gen",
+            "text": "Reclame vizuale atractive afișate în Discover, YouTube și Gmail."
+          },
+          "item8": {
+            "title": "Local Services Ads",
+            "text": "Reclame cu intenție ridicată pentru afaceri locale bazate pe servicii."
+          },
+          "item9": {
+            "title": "Campanii pentru Hoteluri / Turism",
+            "text": "Reclame specializate dedicate industriei de turism."
+          },
+          "item10": {
+            "title": "Campanii Smart",
+            "text": "Campanii simplificate și automatizate, potrivite pentru bugete mai mici."
+          }
+        }
+      }
+    },
+    "section3": {
+      "title": "Reclame Facebook & Instagram",
+      "subtitle": "Atinge, Implică și Convertește prin Publicitate Meta",
+      "description": "Platformele Meta oferă opțiuni avansate de publicitate, cu targetare precisă bazată pe interese, comportamente și date demografice.",
+      "campaignObjectives": {
+        "title": "Obiectivele de Campanie pe care le Susținem",
+        "list": {
+          "item1": {
+            "title": "Notorietate",
+            "text": "Maximizarea acoperirii și a gradului de memorare a brandului"
+          },
+          "item2": {
+            "title": "Trafic",
+            "text": "Direcționarea utilizatorilor către website-uri sau pagini de destinație"
+          },
+          "item3": {
+            "title": "Interacțiune",
+            "text": "Creșterea aprecierilor, comentariilor și a vizualizărilor video"
+          },
+          "item4": {
+            "title": "Lead-uri",
+            "text": "Colectarea datelor clienților prin formulare instant sau mesagerie"
+          },
+          "item5": {
+            "title": "Promovare Aplicații",
+            "text": "Creșterea numărului de instalări și a activității în aplicație"
+          },
+          "item6": {
+            "title": "Vânzări",
+            "text": "Încurajarea achizițiilor directe sau a conversiilor"
+          }
+        }
+      },
+      "adFormats": {
+        "title": "Formate de Reclame Disponibile",
+        "list": {
+          "item1": "Reclame cu Imagine",
+          "item2": "Reclame Video / Reels",
+          "item3": "Reclame Carousel",
+          "item4": "Reclame Collection",
+          "item5": "Reclame Instant Experience",
+          "item6": "Reclame Slideshow",
+          "item7": "Reclame Stories",
+          "item8": "Reclame cu Poll",
+          "item9": "Reclame cu Realitate Augmentată"
+        }
+      }
+    },
+    "section4": {
+      "title": "De Ce Să Lucrezi cu Webvertize",
+      "subtitle": "Proces Simplu, Rezultate Puternice",
+      "description": "La Webvertize, credem că publicitatea nu ar trebui să fie complicată, stresantă sau copleșitoare. Abordăm fiecare proiect de advertising ca pe o călătorie creativă pe care o parcurgem împreună — una în care ideile circulă liber, experimentarea este încurajată, iar procesul devine implicant și chiar plăcut. Campaniile reușite se construiesc prin colaborare solidă, iar noi ne asigurăm că această colaborare este naturală, energizantă și cu adevărat plăcută.",
+      "list": {
+        "item1": "Materiale creative de înaltă calitate, realizate pentru afacerea ta",
+        "item2": "Optimizare bazată pe date, pe toate platformele",
+        "item3": "Comunicare constantă și rapoarte clare",
+        "item4": "Strategie adaptată obiectivelor și bugetului tău",
+        "item5": "Un singur partener pentru materiale creative și managementul campaniilor"
+      }
+    }
+  },
+  "portfolio": {
+    "websites": {
+      "title": "Website-uri – Creative & Funcționale",
+      "subtitle": "Descoperă portofoliul nostru de website-uri responsive, ușor de utilizat, create pentru a îmbunătăți prezența online a afacerii tale.",
+      "cards": {
+        "card1": {
+          "card1Front": {
+            "title": "Edion Trans",
+            "description": "Website de prezentare pentru o companie regională de transport",
+            "badge": "website-uri"
+          },
+          "card1Back": {
+            "title": "Edion Trans",
+            "description": "Un website modern de prezentare, care include hărți interactive de traseu, formulare de contact validate cu trimitere prin email, integrare Google Reviews și o secțiune FAQ completă.",
+            "btnText": "Detalii Complete despre Proiect"
+          },
+          "card1Modal": {
+            "title": "Prezentare Generală a Proiectului",
+            "more": {
+              "title": "Mai multe despre",
+              "description": "Edion Trans este o companie regională de transport care oferă servicii de transport intern și internațional pe rute prestabilite. Pe lângă transportul de pasageri, compania oferă și servicii de livrare internațională de colete."
+            },
+            "challenges": {
+              "title": "Provocările Proiectului",
+              "list": {
+                "item1": "Conținut și materiale digitale existente limitate",
+                "item2": "Definirea celor mai relevante funcționalități pentru utilizatori și pentru business",
+                "item3": "Crearea unui design curat și profesionist care să prezinte clar serviciile și traseele"
+              }
+            },
+            "solution": {
+              "title": "Soluția",
+              "description": "Am urmat un proces structurat, pas cu pas, pentru a construi website-ul de la zero. Mai întâi, am colectat și organizat toate informațiile esențiale de la Edion Trans, inclusiv detalii despre companie, date de contact, fluxuri de servicii, materiale vizuale și informații din Google Business Profile. Pe baza acestora, am implementat funcționalități-cheie precum hărți interactive de traseu și formulare de contact validate, cu livrarea datelor prin email. În final, am realizat o interfață modernă și intuitivă, care prezintă conținutul într-un mod clar și coerent."
+            },
+            "results": {
+              "title": "Rezultate",
+              "description": "Rezultatul este un website rapid, responsive și ușor de utilizat, care îmbunătățește semnificativ prezența online a companiei Edion Trans și susține activitatea zilnică a acesteia:",
+              "list": {
+                "item1": "Permite vizitatorilor să trimită solicitări prin formulare validate, cu datele colectate livrate direct prin email",
+                "item2": "Prezintă vizual traseele de transport prin hărți interactive cu marcatori de locație",
+                "item3": "Permite clienților să lase recenzii Google direct de pe website",
+                "item4": "Oferă acces rapid la datele de contact și informațiile esențiale printr-o pagină de contact dedicată și o secțiune FAQ bine structurată"
+              }
+            },
+            "keyPoints": {
+              "title": "Puncte Cheie",
+              "item1": "Prima impresie contează. Un website clar și profesionist construiește încredere și credibilitate, ajutând potențialii clienți să aleagă cu încredere Edion Trans.",
+              "item2": "Abordare orientată pe funcționalitate. Fiecare proiect începe prin identificarea nevoilor reale ale businessului, înainte de deciziile de design și conținut, pentru a livra soluții practice și eficiente.",
+              "item3": "Bază tehnică solidă. Website-ul este construit pentru a putea fi extins cu ușurință, susținând nevoi viitoare precum pagini de destinație pentru Google Ads, urmărirea conversiilor și funcționalități suplimentare."
+            },
+            "liveProject": {
+              "title": "Proiect Live",
+              "btnText": "Previzualizare Live"
+            }
+          }
+        },
+        "card2": {
+          "card2Front": {
+            "title": "Studio Foto Adda",
+            "description": "Website de prezentare pentru un studio foto local",
+            "badge": "website-uri"
+          },
+          "card2Back": {
+            "title": "Studio Foto Adda",
+            "description": "Un website de prezentare optimizat pentru performanță, care include galerii foto cu încărcare progresivă (lazy-loading), o prezentare clară a serviciilor și un formular de contact validat, cu trimiterea solicitărilor direct prin email.",
+            "btnText": "Detalii Complete despre Proiect"
+          },
+          "card2Modal": {
+            "title": "Prezentare Generală a Proiectului",
+            "more": {
+              "title": "Mai multe despre",
+              "description": "Studio Foto Adda este un studio foto local care oferă servicii de fotografie atât în studio, cât și la locație, pentru evenimente, portrete și ocazii speciale."
+            },
+            "challenges": {
+              "title": "Provocările Proiectului",
+              "list": {
+                "item1": "Lipsa unui conținut structurat pentru prezentarea serviciilor și a portofoliului",
+                "item2": "Optimizarea paginilor cu multe imagini fără a compromite performanța",
+                "item3": "Implementarea unei strategii eficiente de încărcare progresivă (lazy-loading) pentru galerii foto mari",
+                "item4": "Alegerea unui design curat și elegant care să pună în valoare conținutul vizual"
+              }
+            },
+            "solution": {
+              "title": "Soluția",
+              "description": "Am abordat proiectul având ca priorități performanța și claritatea vizuală. În primul rând, am implementat încărcarea progresivă a imaginilor folosind Intersection Observer API, pentru a asigura timpi rapizi de încărcare inițială. Apoi, am structurat și creat conținutul website-ului pentru a prezenta clar serviciile și lucrările fotografice. În final, am realizat o interfață curată și minimalistă, care permite imaginilor să rămână elementul principal."
+            },
+            "results": {
+              "title": "Rezultate",
+              "description": "Rezultatul este un website modern, rapid și optimizat pentru mobil, care consolidează prezența online a Studio Foto Adda și le pune în valoare munca:",
+              "list": {
+                "item1": "Galerii foto performante, cu imagini încărcate progresiv",
+                "item2": "Prezentare clară a serviciilor și a portofoliului fotografic",
+                "item3": "Acces facil la informațiile de contact și la formularele de solicitare",
+                "item4": "Experiență de utilizare îmbunătățită pe desktop și dispozitive mobile"
+              }
+            },
+            "keyPoints": {
+              "title": "Puncte Cheie",
+              "item1": "Povestea vizuală contează. Pentru afacerile creative, website-ul trebuie să pună în valoare lucrările, păstrând în același timp performanța și responsivitatea.",
+              "item2": "Abordare orientată pe performanță. Optimizarea încărcării imaginilor îmbunătățește semnificativ experiența utilizatorilor și calitatea percepută.",
+              "item3": "Design atemporal. Un layout simplu și elegant menține focusul pe conținut și asigură relevanță pe termen lung."
+            },
+            "liveProject": {
+              "title": "Proiect Live",
+              "btnText": "Previzualizare Live"
+            }
+          }
+        }
+      }
+    }
+  },
+  "footer": {
+    "quickLinks": {
+      "title": "Linkuri rapide",
+      "link1": "Programează un apel",
+      "link2": "Acasă",
+      "link3": "Servicii",
+      "link4": "Contact"
+    },
+    "socialMedia": {
+      "title": "Rețele sociale"
+    }
+  }
+}

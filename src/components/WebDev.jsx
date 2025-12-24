@@ -2,6 +2,7 @@ import Card from './Card';
 import styled from 'styled-components';
 import bgWebsitesImage from '../assets/websites_image.jpg';
 import bgWebAppsImage from '../assets/web_apps_image.jpg';
+import { useTranslation } from 'react-i18next';
 
 const StyledWebDev = styled.div`
   padding-top: 5rem;
@@ -9,7 +10,6 @@ const StyledWebDev = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  /* gap: 3rem; */
   margin-bottom: 4rem;
 
   @media (max-width: 576px) {
@@ -32,20 +32,19 @@ const StyledWebDev = styled.div`
 `;
 
 function WebDev() {
+  const { t } = useTranslation();
+
   return (
     <StyledWebDev>
-      <h1>Web Development - Websites and Web Applications</h1>
-      <p className="fs-4">
-        Modern web solutions designed to grow, streamline and support your
-        business.
-      </p>
+      <h1>{t('homepage.webdev.title')}</h1>
+      <p className="fs-4">{t('homepage.webdev.subtitle')}</p>
       <div className="container">
         <div className="row">
           <div className="col-md-6">
             <Card
-              title="Websites"
-              subtitle="Presentational websites & essential online presence"
-              text="Delivering fast, modern and responsive mobile-friendly presentation websites tailored to your brand. Additional features can be integrated based on your business needs - such as live chats, interactive maps, image galleries, contact forms, admin dashboards, login funtionality and more."
+              title="homepage.webdev.websitesCard.title"
+              subtitle="homepage.webdev.websitesCard.subtitle"
+              text="homepage.webdev.websitesCard.text"
               link1="/portfolio"
               link2="/websites"
               icon="websites-icon"
@@ -53,13 +52,15 @@ function WebDev() {
               bgcolor={'rgba(110, 162, 193, 0.7)'}
               overlayOpacity={0.35}
               blur={5}
+              caseStudiesBtn="homepage.webdev.websitesCard.caseStudiesBtn"
+              exploreServicesBtn="homepage.webdev.websitesCard.exploreServicesBtn"
             />
           </div>
           <div className="col-md-6">
             <Card
-              title="Web Applications"
-              subtitle="Internal tools & custom business solutions"
-              text="Custom internal applications designed for small and medium-sized businesses. Streamline your operations with tools built around your specific workflows—such as task management systems, ticketing platforms, live chat applications, inventory tracking, booking systems, and more."
+              title="homepage.webdev.webAppsCard.title"
+              subtitle="homepage.webdev.webAppsCard.subtitle"
+              text="homepage.webdev.webAppsCard.text"
               link1="/portfolio"
               link2="/web-apps"
               icon="web-app-icon"
@@ -67,6 +68,8 @@ function WebDev() {
               bgcolor="rgba(199, 204, 210, 0.5)"
               overlayOpacity={0.35}
               blur={5}
+              caseStudiesBtn="homepage.webdev.webAppsCard.caseStudiesBtn"
+              exploreServicesBtn="homepage.webdev.webAppsCard.exploreServicesBtn"
             />
           </div>
         </div>

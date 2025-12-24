@@ -11,6 +11,7 @@ import {
   faSquareCheck,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useTranslation } from 'react-i18next';
 
 const CardWrapper = styled.div`
   perspective: 1000px;
@@ -69,6 +70,7 @@ const StyledButton = styled.a`
 function CardFlip({ project }) {
   const [showForm, setShowForm] = useState(false);
   const [open, setOpen] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <div className="col-md-6 col-lg-4">
@@ -84,8 +86,8 @@ function CardFlip({ project }) {
               />
               <div className="card-body">
                 <h5 className="card-title">{project.title}</h5>
-                <p className="card-text">{project.shortDescription}</p>
-                <div className="text-muted">{project.category}</div>
+                <p className="card-text">{t(project.shortDescription)}</p>
+                <div className="text-muted">{t(project.category)}</div>
               </div>
             </div>
           </CardFace>
@@ -96,14 +98,14 @@ function CardFlip({ project }) {
               <CardBodyBack className="card-body d-flex flex-column gap-1">
                 <h5 className="card-title">{project.title}</h5>
                 <StyledP className="card-text">
-                  {project.longDescription}
+                  {t(project.longDescription)}
                 </StyledP>
                 {/* This will open a modal */}
                 <button
                   onClick={() => setShowForm(true)}
                   className="btn btn-primary btn-sm"
                 >
-                  Full Project Details
+                  {t('portfolio.websites.cards.card1.card1Back.btnText')}
                 </button>
               </CardBodyBack>
             </div>
@@ -117,58 +119,74 @@ function CardFlip({ project }) {
         logo={project.logo}
       >
         {/* Websites & Web Apps */}
-        {project.category === 'websites' || project.category === 'Web Apps' ? (
+        {project.categoryInner === 'websites' ||
+        project.categoryInner === 'Web Apps' ? (
           <>
-            <h3>Project Overview</h3>
-            <h4>More about {project.companyName}</h4>
-            <p>{project.aboutCompany}</p>
+            <h3>{t('portfolio.websites.cards.card1.card1Modal.title')}</h3>
+            <h4>
+              {t('portfolio.websites.cards.card1.card1Modal.more.title')}{' '}
+              {project.companyName}
+            </h4>
+            <p>{t(project.aboutCompany)}</p>
             {/* Challenges */}
             <section>
-              <h4>{project.projectChallenges?.title}</h4>
+              <h4>{t(project.projectChallenges?.title)}</h4>
               <StyledUl>
                 {project.projectChallenges?.challenges.map((ch) => (
                   <li>
                     <FontAwesomeIcon icon={faCheckSquare} />
-                    {ch}
+                    {t(ch)}
                   </li>
                 ))}
               </StyledUl>
             </section>
             {/* Solution */}
             <section>
-              <h4>Solution</h4>
-              <p>{project.projectSolution}</p>
+              <h4>
+                {t('portfolio.websites.cards.card1.card1Modal.solution.title')}
+              </h4>
+              <p>{t(project.projectSolution)}</p>
             </section>
             {/* Results */}
             <section>
-              <h4>Results</h4>
-              <p>{project.projectResults?.generalText}</p>
+              <h4>
+                {t('portfolio.websites.cards.card1.card1Modal.results.title')}
+              </h4>
+              <p>{t(project.projectResults?.generalText)}</p>
               <StyledUl>
                 {project.projectResults?.listResults?.map((res) => (
                   <li>
                     <FontAwesomeIcon icon={faCheckSquare} />
-                    {res}
+                    {t(res)}
                   </li>
                 ))}
               </StyledUl>
             </section>
             {/* Key Points */}
             <section>
-              <h4>Key Points</h4>
+              <h4>
+                {t('portfolio.websites.cards.card1.card1Modal.keyPoints.title')}
+              </h4>
               <StyledUl>
                 {project.projectKeyPoints?.map((point) => (
                   <li>
                     <FontAwesomeIcon icon={faCheckSquare} />
-                    {point}
+                    {t(point)}
                   </li>
                 ))}
               </StyledUl>
             </section>
             {/* Live Project */}
             <section>
-              <h4>Live Project</h4>
+              <h4>
+                {t(
+                  'portfolio.websites.cards.card1.card1Modal.liveProject.title'
+                )}
+              </h4>
               <StyledButton href={project.button1?.link} target="_blank">
-                {project.button1?.text}
+                {t(
+                  'portfolio.websites.cards.card1.card1Modal.liveProject.btnText'
+                )}
               </StyledButton>
             </section>
           </>

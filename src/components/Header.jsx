@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import ModalForm from './ModalForm';
 import Form from './Form';
 import ScheduleACallButton from './ScheduleACallButton';
+import { useTranslation } from 'react-i18next';
 
 const StyledHeader = styled.header`
   position: relative;
@@ -78,6 +79,7 @@ const StyledButton = styled.button`
 function Header({ bgImage, title, text1, text2 }) {
   const navigate = useNavigate();
   const [showForm, setShowForm] = useState(false);
+  const { t } = useTranslation();
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -117,13 +119,18 @@ function Header({ bgImage, title, text1, text2 }) {
     <>
       <StyledHeader $bgImage={bgImage}>
         <TextContent className="container">
-          <Title>{title}</Title>
+          <Title>{t('homepage.header.title')}</Title>
           <StyledP className="fs-4 text-center">
-            {text2 ? <strong>{text1}</strong> : text1} {text2}
+            {t('homepage.header.tex2') ? (
+              <strong>{t('homepage.header.text1')}</strong>
+            ) : (
+              t('homepage.header.text1')
+            )}{' '}
+            {t('homepage.header.text2')}
           </StyledP>
           {title !== 'Webvertize Cookie Policy' && (
             <StyledButton onClick={() => setShowForm(true)}>
-              Schedule a Call
+              {t('homepage.header.buttonText')}
             </StyledButton>
           )}
         </TextContent>

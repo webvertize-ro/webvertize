@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
+import { useTranslation } from 'react-i18next';
 
 const DropdownContainer = styled.li`
   position: relative;
@@ -135,6 +136,7 @@ const StyledServicesSingle = styled.span`
 function Dropdown({ closeNav }) {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
+  const { t, i18n } = useTranslation();
 
   const toggleDropdown = (e) => {
     e.stopPropagation();
@@ -166,18 +168,21 @@ function Dropdown({ closeNav }) {
   const dropdownOptions = [
     {
       id: 1,
+      labelKey: 'nav.websites',
       label: 'Websites',
       value: 'websites',
       dest: '/websites',
     },
     {
       id: 2,
+      labelKey: 'nav.web-apps',
       label: 'Web Applications',
       value: 'web-applications',
       dest: '/web-apps',
     },
     {
       id: 3,
+      labelKey: 'nav.advertising-content-creation',
       label: 'Advertising & Content Creation',
       value: 'advertising-content-creation',
       dest: '/advertising-content-creation',
@@ -192,7 +197,7 @@ function Dropdown({ closeNav }) {
         role="button"
       >
         <StyledServicesSingle className="services-single">
-          Services
+          {t('nav.services')}
         </StyledServicesSingle>
         {isOpen ? (
           <FontAwesomeIcon icon={faChevronUp} />
@@ -212,7 +217,7 @@ function Dropdown({ closeNav }) {
               onClick={handleItemClick}
               className="dropdown-item"
             >
-              {option.label}
+              {t(option.labelKey)}
             </DropdownLink>
           </DropdownItem>
         ))}

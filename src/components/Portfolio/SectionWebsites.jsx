@@ -14,6 +14,7 @@ import edionTransLogo from '../../assets/portfolio/logos/ediontrans_logo.svg';
 import certicorpLogo from '../../assets/portfolio/logos/certicorp_logo_v4.svg';
 import fixaziLogo from '../../assets/portfolio/logos/fixazi_logo2_nobg.png';
 import senorExpertLogo from '../../assets/portfolio/logos/senorexpert_logo.svg';
+import { useTranslation } from 'react-i18next';
 
 const StyledSectionWebsites = styled.div`
   padding: 2.5rem 0 4rem;
@@ -29,79 +30,78 @@ function SectionWebsites() {
       title: 'Edion Trans',
       companyName: 'Edion Trans',
       aboutCompany:
-        'Edion Trans is a regional transportation company providing both domestic and international transport services on predefined routes. In addition to passenger transport, the company also offers international parcel delivery services.',
+        'portfolio.websites.cards.card1.card1Modal.more.description',
       projectChallenges: {
-        title: 'Project Challenges',
+        title: 'portfolio.websites.cards.card1.card1Modal.challenges.title',
         challenges: [
-          'Limited existing content and digital assets',
-          'Defining the most relevant features for users and the business',
-          'Creating a clean, professional design that clearly presents services and routes',
+          'portfolio.websites.cards.card1.card1Modal.challenges.list.item1',
+          'portfolio.websites.cards.card1.card1Modal.challenges.list.item2',
+          'portfolio.websites.cards.card1.card1Modal.challenges.list.item3',
         ],
       },
       projectSolution:
-        'We followed a structured, step-by-step process to build the website from the ground up. First, we gathered and organized all essential information from Edion Trans, including business details, contact data, service workflows, visual assets and Google Business Profile information. Based on this, we implemented key functionalities such as interactive route maps and validated contact forms with email delivery. Finally, we designed a modern and intuitive interface to present the content clearly and consistently.',
+        'portfolio.websites.cards.card1.card1Modal.solution.description',
       projectResults: {
         generalText:
-          'The result is a fast, responsive, and user-friendly website that significantly improves Edion Trans’ online presence and supports their day-to-day operations:',
+          'portfolio.websites.cards.card1.card1Modal.results.description',
         listResults: [
-          'Enables visitors to submit inquiries through validated forms, with collected data delivered directly via email',
-          'Visually presents transportation routes using interactive maps with location markers',
-          'Allows customers to leave Google Reviews directly from the website',
-          'Provides quick access to contact details and essential information through a dedicated contact page and a structured FAQ section',
+          'portfolio.websites.cards.card1.card1Modal.results.list.item1',
+          'portfolio.websites.cards.card1.card1Modal.results.list.item2',
+          'portfolio.websites.cards.card1.card1Modal.results.list.item3',
+          'portfolio.websites.cards.card1.card1Modal.results.list.item4',
         ],
       },
       projectKeyPoints: [
-        'First impressions matter. A clear and professional website builds trust and credibility, helping potential customers feel confident in choosing Edion Trans.',
-        'Functionality-first approach. Every project starts by identifying real business needs before design and content decisions are made, ensuring practical and effective solutions.',
-        'Strong technical foundation. The website is built to scale easily, supporting future needs such as Google Ads landing pages, conversion tracking, and additional features.',
+        'portfolio.websites.cards.card1.card1Modal.keyPoints.item1',
+        'portfolio.websites.cards.card1.card1Modal.keyPoints.item2',
+        'portfolio.websites.cards.card1.card1Modal.keyPoints.item3',
       ],
-      shortDescription:
-        'Presentational website for a regional transportation company',
-      longDescription:
-        'A modern, presentational website featuring interactive route maps, validated contact forms with email delivery, Google Review integration, and a comprehensive FAQ section.',
+      shortDescription: 'portfolio.websites.cards.card1.card1Front.description',
+      longDescription: 'portfolio.websites.cards.card1.card1Back.description',
       button1: { text: 'Live preview', link: 'https://ediontrans.ro/' },
       image: imgWebsites1,
-      category: 'websites',
+      category: 'portfolio.websites.cards.card1.card1Front.badge',
       logo: edionTransLogo,
+      categoryInner: 'websites',
     },
     {
       title: 'Studio Foto Adda',
       companyName: 'Studio Foto Adda',
       aboutCompany:
-        'Studio Foto Adda is a local photography studio offering both in-studio photography services and on-location coverage for events, portraits, and special occasions.',
+        'portfolio.websites.cards.card2.card2Modal.more.description',
       projectChallenges: {
-        title: 'Project Challenges',
+        title: 'portfolio.websites.cards.card2.card2Modal.challenges.title',
         challenges: [
-          'Lack of structured content for presenting services and portfolio',
-          'Optimizing image-heavy pages without compromising performance',
-          'Implementing an effective lazy-loading strategy for large image galleries',
-          'Choosing a clean and elegant design to highlight visual content',
+          'portfolio.websites.cards.card2.card2Modal.challenges.list.item1',
+          'portfolio.websites.cards.card2.card2Modal.challenges.list.item2',
+          'portfolio.websites.cards.card2.card2Modal.challenges.list.item3',
+          'portfolio.websites.cards.card2.card2Modal.challenges.list.item4',
         ],
       },
       projectSolution:
-        'We approached the project with performance and visual clarity as top priorities. First, we implemented lazy-loading for images using the Intersection Observer API to ensure fast initial load times. Next, we structured and created the website content to clearly present services and photographic work. Finally, we designed a clean and minimalist interface that allows the imagery to remain the main focus.',
+        'portfolio.websites.cards.card2.card2Modal.solution.description',
       projectResults: {
         generalText:
-          'The result is a modern, fast, and mobile-friendly website that strengthens Studio Foto Adda’s online presence and showcases their work effectively:',
+          'portfolio.websites.cards.card2.card2Modal.results.description',
         listResults: [
-          'High-performance image galleries with lazy-loaded photos',
-          'Clear presentation of services and photographic portfolio',
-          'Easy access to contact information and inquiry forms',
-          'Improved user experience across desktop and mobile devices',
+          'portfolio.websites.cards.card2.card2Modal.results.list.item1',
+          'portfolio.websites.cards.card2.card2Modal.results.list.item2',
+          'portfolio.websites.cards.card2.card2Modal.results.list.item3',
+          'portfolio.websites.cards.card2.card2Modal.results.list.item4',
         ],
       },
       projectKeyPoints: [
-        'Visual storytelling matters. For creative businesses, a website must highlight work while staying fast and responsive.',
-        'Performance-first approach. Optimizing image loading significantly improves user experience and perceived quality.',
-        'Timeless design. A simple and elegant layout keeps the focus on the content and ensures long-term relevance.',
+        'portfolio.websites.cards.card2.card2Modal.keyPoints.item1',
+        'portfolio.websites.cards.card2.card2Modal.keyPoints.item2',
+        'portfolio.websites.cards.card2.card2Modal.keyPoints.item3',
       ],
-      shortDescription: 'Presentational website for a local photography studio',
-      longDescription:
-        'A performance-optimized presentational website featuring lazy-loaded image galleries, clear service presentation, and a validated contact form that sends inquiries directly via email.',
+      shortDescription: 'portfolio.websites.cards.card2.card2Front.description',
+      longDescription: 'portfolio.websites.cards.card2.card2Back.description',
       button1: { text: 'Live preview', link: 'https://studiofotoaddagl.ro/' },
       image: imgWebsites2,
-      category: 'websites',
+      category: 'portfolio.websites.cards.card2.card2Front.badge',
       logo: fotoAddaLogo,
+      categoryInner: 'websites',
     },
   ];
 
@@ -127,7 +127,7 @@ function SectionWebsites() {
       projectResults: {
         generalText:
           'The final application streamlined Senorexpert’s internal workflows and significantly improved client interaction:',
-        lisstResults: [
+        listResults: [
           'Eliminated the need for physical document delivery',
           'Centralized accounting documents in a secure digital platform',
           'Improved efficiency in client–accountant communication',
@@ -157,6 +157,7 @@ function SectionWebsites() {
       image: imgWebApps1,
       category: 'Web Apps',
       logo: senorExpertLogo,
+      categoryInner: 'web-apps',
     },
     {
       title: 'FixAzi',
@@ -211,6 +212,7 @@ function SectionWebsites() {
       image: imgWebApps2,
       category: 'Web Apps',
       logo: fixaziLogo,
+      categoryInner: 'web-apps',
     },
   ];
 
@@ -368,6 +370,8 @@ function SectionWebsites() {
     },
   ];
 
+  const { t } = useTranslation();
+
   const renderCards = (projects) => (
     <div className="row g-4">
       {projects.map((project, index) => (
@@ -386,11 +390,8 @@ function SectionWebsites() {
   return (
     <StyledSectionWebsites className="container">
       <section className="mb-4">
-        <h2>Websites - Creative & Functional</h2>
-        <StyledP className="fs-5">
-          Discover our portfolio of responsive, user-friendly websites designed
-          to elevate the online presence of your business.
-        </StyledP>
+        <h2>{t('portfolio.websites.title')}</h2>
+        <StyledP className="fs-5">{t('portfolio.websites.subtitle')}</StyledP>
         <div className="container">{renderCards(websites)}</div>
       </section>
 

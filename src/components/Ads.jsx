@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import contentCreationImg from '../assets/content_creation_image.jpg';
 import googleAdsImage from '../assets/google_ads_image.jpg';
 import facebookAdsImage from '../assets/facebook_ads_image.jpg';
+import { useTranslation } from 'react-i18next';
 
 const StyledAds = styled.div`
   display: flex;
@@ -37,34 +38,34 @@ const AdsTitle = styled.h2`
 `;
 
 function Ads() {
+  const { t } = useTranslation();
+
   return (
     <StyledAds>
-      <AdsTitle>
-        Advertisment: Content Creation and Ad Campaigns Management
-      </AdsTitle>
-      <p className="fs-5">
-        Creative content and carefully managed ad campaigns designed to attract,
-        convert and scale.
-      </p>
+      <AdsTitle>{t('homepage.ads.title')}</AdsTitle>
+      <p className="fs-5">{t('homepage.ads.subtitle')}</p>
       <div className="container">
         <div className="row d-flex align-items-stretch">
           <div className="col-md-6 col-lg-4 mb-4">
             {/* Content Creation */}
             <Card
-              title="Content Creation"
-              subtitle="Promotional images & Reels for ads"
-              text="High-quaality  promotional content for Facebook and Google Ads, including professionally designed split-image posts and short video Reels that highlight your brand, services and calls to action."
+              title="homepage.ads.contentCreationCard.title"
+              subtitle="homepage.ads.contentCreationCard.subtitle"
+              text="homepage.ads.contentCreationCard.text"
               bgImage={contentCreationImg}
               link1="/portfolio"
               link2="/advertising-content-creation"
+              caseStudiesBtn="homepage.ads.contentCreationCard.caseStudiesBtn"
+              exploreServicesBtn="homepage.ads.contentCreationCard.exploreServicesBtn"
             />
           </div>
           <div className="col-md-6 col-lg-4 mb-4">
             {/* Google Ads Campaigns */}
             <Card
-              title="Google Ads Campaigns"
-              subtitle="Strategic creation and ongoing management of Google Ads campaigns tailored to your business goals"
-              text="We collaborate with you to design a high-performing Google Ads campaign from the ground up - selecting the right objectives and ensuring consistent optimizations and monitoring. We monitor performance, implement improvements and deliver clear monthly reports so you always know how your campaign is progressing."
+              title="homepage.ads.googleAdsCard.title"
+              subtitle="homepage.ads.googleAdsCard.subtitle"
+              text="homepage.ads.googleAdsCard.text"
+              readMoreBtn="homepage.ads.googleAdsCard.readMoreBtn"
               bgImage={googleAdsImage}
               link3="/advertising-content-creation"
             />
@@ -72,9 +73,10 @@ function Ads() {
           <div className="col-md-6 col-lg-4 mb-4">
             {/* Facebook Ads Campaigns */}
             <Card
-              title="Facebook Ads Campaigns"
-              subtitle="Engaging campaigns tailored to your business goals"
-              text="Creating and managing Facebook Ads campaigns, including promotional content, ad copy, and performance monitoring to reach your audience effectively."
+              title="homepage.ads.facebookAdsCard.title"
+              subtitle="homepage.ads.facebookAdsCard.subtitle"
+              text="homepage.ads.facebookAdsCard.text"
+              readMoreBtn="homepage.ads.googleAdsCard.readMoreBtn"
               bgImage={facebookAdsImage}
               link3="/advertising-content-creation"
             />

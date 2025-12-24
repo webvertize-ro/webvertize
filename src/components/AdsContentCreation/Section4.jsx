@@ -7,6 +7,7 @@ import {
   faHandshake,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useTranslation } from 'react-i18next';
 
 const ContentRow = styled.div`
   @media (max-width: 1200px) {
@@ -43,21 +44,18 @@ const StyledUl = styled.ul`
 const Item = styled.li``;
 
 function Section4() {
+  const { t } = useTranslation();
+
   return (
     <div className="container">
       <ContentRow className="row">
         <TitleTotal>
-          <Title>Why Work With Webvertize</Title>
-          <Subtitle>Simple Process, Powerful Results</Subtitle>
+          <Title>{t('AdsContentCreation.section4.title')}</Title>
+          <Subtitle>{t('AdsContentCreation.section4.subtitle')}</Subtitle>
         </TitleTotal>
 
         <StyledP className="fs-5">
-          At Webvertize, we don't believe advertising should feel complicated,
-          stressful or overwhelming. We approach each advertising project as a
-          creative journey that we take together - one where ideas flow openly,
-          experimentation is ecouraged and the process itself becomes engaging
-          and even fun. Great campaigns come from great teamwork and we make
-          sure that teamwork feels natural, energizing and genuinely enjoyable.
+          {t('AdsContentCreation.section4.description')}
         </StyledP>
         <StyledUl>
           <Item>
@@ -66,7 +64,7 @@ function Section4() {
                 <div>
                   <FontAwesomeIcon icon={faPenNib} />
                 </div>
-                <div>High-quality creative made for your business</div>
+                <div>{t('AdsContentCreation.section4.list.item1')}</div>
               </div>
             </div>
           </Item>
@@ -76,7 +74,7 @@ function Section4() {
                 <div>
                   <FontAwesomeIcon icon={faChartLine} />
                 </div>
-                <div>Data-driven optimization across platforms</div>
+                <div>{t('AdsContentCreation.section4.list.item2')}</div>
               </div>
             </div>
           </Item>
@@ -86,7 +84,7 @@ function Section4() {
                 <div>
                   <FontAwesomeIcon icon={faComments} />
                 </div>
-                <div>Ongoing communication and clear reporting</div>
+                <div>{t('AdsContentCreation.section4.list.item3')}</div>
               </div>
             </div>
           </Item>
@@ -96,7 +94,7 @@ function Section4() {
                 <div>
                   <FontAwesomeIcon icon={faBullseye} />
                 </div>
-                <div>Strategy tailored to your goals and budget</div>
+                <div>{t('AdsContentCreation.section4.list.item4')}</div>
               </div>
             </div>
           </Item>
@@ -106,10 +104,7 @@ function Section4() {
                 <div>
                   <FontAwesomeIcon icon={faHandshake} />
                 </div>
-                <div>
-                  A single partner for both creative assets and campaign
-                  management
-                </div>
+                <div>{t('AdsContentCreation.section4.list.item5')}</div>
               </div>
             </div>
           </Item>

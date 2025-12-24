@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ctaImage from '../assets/CTA_image.jpg';
 import ModalForm from './ModalForm';
+import { useTranslation } from 'react-i18next';
 
 const CTAWrapper = styled.div`
   background-color: #37353e;
@@ -62,6 +63,7 @@ const StyledButton = styled.button`
 function CTA({ title, text }) {
   const navigate = useNavigate();
   const [showForm, setShowForm] = useState(false);
+  const { t } = useTranslation();
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -101,10 +103,10 @@ function CTA({ title, text }) {
     <>
       <CTAWrapper>
         <CTAContainer className="container">
-          <h3>{title}</h3>
-          <p className="fs-4 text-center">{text}</p>
+          <h3>{t(title)}</h3>
+          <p className="fs-4 text-center">{t(text)}</p>
           <StyledButton onClick={() => setShowForm(true)}>
-            Schedule a call
+            {t('CTA.home.buttonText')}
           </StyledButton>
         </CTAContainer>
       </CTAWrapper>

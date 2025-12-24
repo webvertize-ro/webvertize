@@ -7,6 +7,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const StyledSection1 = styled.section`
   padding-top: 4rem;
@@ -80,85 +81,101 @@ const StyledLink = styled(Link)`
 `;
 
 function Section1() {
+  const { t } = useTranslation();
   return (
     <StyledSection1 className="container">
-      <Title>Content Creation for Ads</Title>
+      <Title>{t('AdsContentCreation.section1.title')}</Title>
       <Subtitle className="fs-6">
-        High-Quality Visuals Designed for Performance
+        {t('AdsContentCreation.section1.subtitle')}
       </Subtitle>
       <Description className="fs-5">
-        Our ad creatives are built to capture attention, communicate value and
-        support measurable results across modern advertising platforms.
+        {t('AdsContentCreation.section1.text')}
       </Description>
 
-      <InnerTitle>What We Create</InnerTitle>
+      <InnerTitle>{t('AdsContentCreation.section1.title2')}</InnerTitle>
       <StyledUl className="fs-5">
         <Item className="row">
           <div className="col-md-10">
             <ItemTitle>
               <FontAwesomeIcon icon={faBorderAll} />
-              Split-Image Promotional Graphics
+              {t('AdsContentCreation.section1.list.item1.title')}
             </ItemTitle>
             <ItemDescription>
-              Split-image promotional graphics are multi-section visuals
-              designed to communicate several ideas in a single, cohesive frame.
+              {t('AdsContentCreation.section1.list.item1.subtitle')}
             </ItemDescription>
             <InnerUl>
               <InnerUlItem>
                 <FontAwesomeIcon icon={faSquareCheck} />
-                Highlighting multiple services in one frame
+                {t(
+                  'AdsContentCreation.section1.list.item1.listInner.itemInner1'
+                )}
               </InnerUlItem>
               <InnerUlItem>
                 <FontAwesomeIcon icon={faSquareCheck} />
-                Showing before and after results
+                {t(
+                  'AdsContentCreation.section1.list.item1.listInner.itemInner2'
+                )}
               </InnerUlItem>
               <InnerUlItem>
                 <FontAwesomeIcon icon={faSquareCheck} />
-                Presenting promotions or seasonal offers for products and
-                services
+                {t(
+                  'AdsContentCreation.section1.list.item1.listInner.itemInner3'
+                )}
               </InnerUlItem>
               <InnerUlItem>
                 <FontAwesomeIcon icon={faSquareCheck} />
-                Increasing clarity, trust and brand awareness for your business
+                {t(
+                  'AdsContentCreation.section1.list.item1.listInner.itemInner4'
+                )}
               </InnerUlItem>
             </InnerUl>
           </div>
           <div className="col-md-2">
-            <StyledLink to="/portfolio">View Projects</StyledLink>
+            <StyledLink to="/portfolio">
+              {t('AdsContentCreation.section1.list.item1.listInner.buttonText')}
+            </StyledLink>
           </div>
         </Item>
         <Item className="row">
           <div className="col-md-10 mb-4">
             <ItemTitle>
               <FontAwesomeIcon icon={faFilm} />
-              Promotional Reels (Short Videos)
+              {t('AdsContentCreation.section1.list.item2.title')}
             </ItemTitle>
             <ItemDescription>
-              Reels are currently one of the most effective content formats for
-              reaching new audiences. Short-form videos optimized for Facebook
-              and Instagram include:
+              {t('AdsContentCreation.section1.list.item2.subtitle')}
             </ItemDescription>
             <InnerUl>
               <InnerUlItem>
                 <FontAwesomeIcon icon={faSquareCheck} />
-                Concise explanations of services
+                {t(
+                  'AdsContentCreation.section1.list.item2.listInner.itemInner1'
+                )}
               </InnerUlItem>
               <InnerUlItem>
                 <FontAwesomeIcon icon={faSquareCheck} />
-                Benefit-focused messaging
+                {t(
+                  'AdsContentCreation.section1.list.item2.listInner.itemInner2'
+                )}
               </InnerUlItem>
               <InnerUlItem>
                 <FontAwesomeIcon icon={faSquareCheck} />
-                Includes branding (logo, colors, tagline)
+                {t(
+                  'AdsContentCreation.section1.list.item2.listInner.itemInner3'
+                )}
               </InnerUlItem>
               <InnerUlItem>
                 <FontAwesomeIcon icon={faSquareCheck} />
-                Ends with a strong call-to-action
+                {t(
+                  'AdsContentCreation.section1.list.item2.listInner.itemInner4'
+                )}
               </InnerUlItem>
             </InnerUl>
           </div>
           <div className="col-md-2">
-            <StyledLink to="/portfolio">View Projects</StyledLink>
+            <StyledLink to="/portfolio">
+              {t('AdsContentCreation.section1.list.item2.listInner.buttonText')}
+            </StyledLink>
           </div>
         </Item>
 
@@ -166,24 +183,29 @@ function Section1() {
           <div className="col-md-10 mb-4">
             <ItemTitle>
               <FontAwesomeIcon icon={faBullhorn} />
-              Ad-Ready Visuals for Google Ads
+              {t('AdsContentCreation.section1.list.item3.title')}
             </ItemTitle>
             <ItemDescription>
-              Clean, high-quality image assets that follow Google's recommended
-              formats to improve visibility and click-through rates.{' '}
+              {t('AdsContentCreation.section1.list.item3.subtitle')}
             </ItemDescription>
             <InnerUl>
               <InnerUlItem>
                 <FontAwesomeIcon icon={faSquareCheck} />
-                Text Assets
+                {t(
+                  'AdsContentCreation.section1.list.item3.listInner.itemInner1'
+                )}
               </InnerUlItem>
               <InnerUlItem>
                 <FontAwesomeIcon icon={faSquareCheck} />
-                Image Assets
+                {t(
+                  'AdsContentCreation.section1.list.item3.listInner.itemInner2'
+                )}
               </InnerUlItem>
               <InnerUlItem>
                 <FontAwesomeIcon icon={faSquareCheck} />
-                Video Assets
+                {t(
+                  'AdsContentCreation.section1.list.item3.listInner.itemInner3'
+                )}
               </InnerUlItem>
             </InnerUl>
           </div>

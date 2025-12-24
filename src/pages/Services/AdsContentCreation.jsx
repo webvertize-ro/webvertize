@@ -12,6 +12,7 @@ import WhatsAppButton from '../../components/WhatsAppButton';
 import CookiePopup from '../../components/Cookies/CookiePopup';
 import styled from 'styled-components';
 import BackToTop from '../../components/BackToTop';
+import { useTranslation } from 'react-i18next';
 
 const StyledAdsContentCreation = styled.div`
   background-color: #2a566f;
@@ -19,6 +20,8 @@ const StyledAdsContentCreation = styled.div`
 `;
 
 function AdsContentCreation() {
+  const { t } = useTranslation();
+
   return (
     <StyledAdsContentCreation>
       <Navigation />
@@ -39,8 +42,8 @@ function AdsContentCreation() {
       <Section3 />
       <Section4 />
       <CTA
-        title="Ready to Grow Through Better Advertising?"
-        text="Book a call and let’s build campaigns that reach the right customers with the right message."
+        title="CTA.content-creation-ads.title"
+        text="CTA.content-creation-ads.text"
       />
       <SideButtons />
       <BackToTop />

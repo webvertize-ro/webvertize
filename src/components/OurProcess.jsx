@@ -14,6 +14,7 @@ import {
   faSitemap,
 } from '@fortawesome/free-solid-svg-icons';
 import bgImage from '../assets/our-process-bg.jpg';
+import { useTranslation } from 'react-i18next';
 
 const TabWrapper = styled.div`
   background-image: url(${bgImage});
@@ -155,40 +156,50 @@ const Subtitle = styled.p``;
 const tabs = [
   {
     label: 'Discovery',
+    labelKey: 'homepage.ourProcess.tabsLabel.tab1',
     content:
       'We begin by getting to know your business — your goals, audience, competitors, and what makes your brand unique. Together, we define what success means for this project and translate it into clear requirements. The outcome of this phase is a focused digital strategy that guides every design and development decision.',
+    contentKey: 'homepage.ourProcess.tabsText.text1',
     icon: faMagnifyingGlass,
     iconLabel: fa1,
     color: '#fff',
   },
   {
     label: 'UX/UI Design',
+    labelKey: 'homepage.ourProcess.tabsLabel.tab2',
     content:
       'Based on the strategy, we design the structure and visual identity of your website or application. This includes wireframes, layout, user flows and other design elements that reflect your brand and align with your business goals.',
+    contentKey: 'homepage.ourProcess.tabsText.text2',
     icon: faSitemap,
     iconLabel: fa2,
     color: '#fff',
   },
   {
     label: 'Development',
+    labelKey: 'homepage.ourProcess.tabsLabel.tab3',
     content:
       'We bring the design to life by building a fast, responsive, and modern solution optimized for all devices. Whether it’s a presentational website or a full web application, we code using reliable technologies and integrate all required features as defined in the project scope.',
+    contentKey: 'homepage.ourProcess.tabsText.text3',
     icon: faCode,
     iconLabel: fa3,
     color: '#fff',
   },
   {
     label: 'Testing & Optimization',
+    labelKey: 'homepage.ourProcess.tabsLabel.tab4',
     content:
       'Before launch, we carefully test everything - functionality, performance, accessibility and browser compatibility. We address issues, refine interactions, and optimize the experience so your product is ready for real users.',
+    contentKey: 'homepage.ourProcess.tabsText.text4',
     icon: faBugSlash,
     iconLabel: fa4,
     color: '#fff',
   },
   {
     label: 'Launch & Support',
+    labelKey: 'homepage.ourProcess.tabsLabel.tab5',
     content:
       'Once everything meets expectations, we deploy the final product and provide post-launch support according to the agreed terms. We can assist with updates, optimizations, analytics, and improvements — ensuring your digital presence keeps growing.',
+    contentKey: 'homepage.ourProcess.tabsText.text5',
     icon: faRocket,
     iconLabel: fa5,
     color: '#fff',
@@ -197,15 +208,15 @@ const tabs = [
 
 function OurProcess() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const { t } = useTranslation();
 
   return (
     <TabWrapper className="container">
       <TabContainer className="container">
         <TitleContainer>
-          <StyledH2>Our Process - How we build your digital presence</StyledH2>
+          <StyledH2>{t('homepage.ourProcess.title')}</StyledH2>
           <Subtitle className="fs-5">
-            A clear, step-by-step approach that turns ideas into reliable
-            digital solutions.
+            {t('homepage.ourProcess.subtitle')}
           </Subtitle>
         </TitleContainer>
         <TabListTabPanel className="d-flex">
@@ -219,7 +230,9 @@ function OurProcess() {
                 <TabButtonIcon>
                   <FontAwesomeIcon icon={tab.iconLabel} />
                 </TabButtonIcon>
-                <TabButtonText className="flex-3">{tab.label}</TabButtonText>
+                <TabButtonText className="flex-3">
+                  {t(tab.labelKey)}
+                </TabButtonText>
               </TabButton>
             ))}
           </TabList>
@@ -228,7 +241,9 @@ function OurProcess() {
               icon={tabs[activeIndex].icon}
               color={tabs[activeIndex].color}
             />
-            <StyledP className="fs-4">{tabs[activeIndex].content}</StyledP>
+            <StyledP className="fs-4">
+              {t(tabs[activeIndex].contentKey)}
+            </StyledP>
           </TabPanel>
         </TabListTabPanel>
       </TabContainer>

@@ -4,6 +4,10 @@ import styled from 'styled-components';
 import Logo from './Logo';
 import FacebookIcon from './FacebookIcon';
 import Dropdown from './Dropdown/Dropdown';
+import i18n from '../i18n';
+import { useTranslation } from 'react-i18next';
+import usaImg from '../assets/usa_flag.png';
+import roImg from '../assets/ro_flag.png';
 
 const NavigationHeader = styled.header`
   transition: all 0.3s ease-in-out;
@@ -84,10 +88,15 @@ const FacebookIconContainer = styled.div`
   padding-left: 1rem;
 `;
 
+const StyledSelect = styled.select`
+  width: 4rem;
+`;
+
 function Navigation() {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
   const navRef = useRef(null);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -169,7 +178,7 @@ function Navigation() {
             <StyledUl className="navbar-nav me-auto mb-2 mb-lg-0 ms-auto h-100">
               <StyledLi className="nav-item">
                 <StyledLink className="nav-link" to="/" onClick={closeNav}>
-                  Home
+                  {t('nav.home')}
                 </StyledLink>
               </StyledLi>
               {/* Services dropdown */}
@@ -183,7 +192,7 @@ function Navigation() {
                   to="/portfolio"
                   onClick={closeNav}
                 >
-                  Portfolio
+                  {t('nav.portfolio')}
                 </StyledLink>
               </StyledLi>
               <StyledLi className="nav-item">
@@ -192,13 +201,22 @@ function Navigation() {
                   to="/contact"
                   onClick={closeNav}
                 >
-                  Contact
+                  {t('nav.contact')}
                 </StyledLink>
               </StyledLi>
             </StyledUl>
             <FacebookIconContainer>
               <FacebookIcon color="dark" />
             </FacebookIconContainer>
+
+            <StyledSelect
+              value={i18n.language}
+              onChange={(e) => i18n.changeLanguage(e.target.value)}
+              className="form-select form-select-sm"
+            >
+              <option value="en">EN</option>
+              <option value="ro">RO</option>
+            </StyledSelect>
           </div>
         </div>
       </StyledNav>

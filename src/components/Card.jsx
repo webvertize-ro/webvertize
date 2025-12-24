@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe, faGear } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from 'react-i18next';
 
 const StyledCard = styled.div`
   height: 100%;
@@ -101,12 +102,17 @@ function Card({
   overlayOpacity = 0.5,
   blur = 0,
   bgcolor,
+  caseStudiesBtn,
+  exploreServicesBtn,
+  readMoreBtn,
 }) {
   const getIcon = () => {
     if (icon === 'websites-icon') return faGlobe;
     if (icon === 'web-app-icon') return faGear;
     return null;
   };
+
+  const { t } = useTranslation();
 
   return (
     <StyledCard
@@ -120,24 +126,24 @@ function Card({
         {title && (
           <h2 className="card-title d-flex align-items-center gap-2 fs-1">
             {getIcon() && <FontAwesomeIcon icon={getIcon()} />}
-            {title}
+            {t(title)}
           </h2>
         )}
 
         {subtitle && (
           <CardTitle className="text-start card-subtitle mb-2 fs-4">
-            {subtitle}
+            {t(subtitle)}
           </CardTitle>
         )}
-        {text && <StyledP className="fs-5">{text}</StyledP>}
+        {text && <StyledP className="fs-5">{t(text)}</StyledP>}
 
         {(link1 || link2 || link3) && (
           <div className="d-flex">
-            {link1 && <StyledLink to={link1}>View Case Studies</StyledLink>}
-            {link2 && <StyledLink to={link2}>Explore Services</StyledLink>}
-            {link3 && (
-              <StyledLink to={link3}>Read more about campaign types</StyledLink>
+            {link1 && <StyledLink to={link1}>{t(caseStudiesBtn)}</StyledLink>}
+            {link2 && (
+              <StyledLink to={link2}>{t(exploreServicesBtn)}</StyledLink>
             )}
+            {link3 && <StyledLink to={link3}>{t(readMoreBtn)}</StyledLink>}
           </div>
         )}
       </CardBody>

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import logoImg from '../assets/logo_no_text_simple_final.png';
 import logoImgLight from '../assets/logo_no_text_light.png';
+import { useTranslation } from 'react-i18next';
 
 const StyledLogo = styled.div``;
 
@@ -54,6 +55,7 @@ const LogoSubtitle = styled.div`
 `;
 
 function Logo({ theme }) {
+  const { t, i18n } = useTranslation();
   return (
     <StyledLogo className="d-flex justify-content-center align-items-center">
       <div>
@@ -65,7 +67,7 @@ function Logo({ theme }) {
       </div>
       <div className="d-flex justify-content-center align-items-left flex-column">
         <LogoTitle theme={theme}>Webvertize</LogoTitle>
-        <LogoSubtitle theme={theme}>Web Development & Ads</LogoSubtitle>
+        <LogoSubtitle theme={theme}>{t('logo.logoText')}</LogoSubtitle>
       </div>
     </StyledLogo>
   );
