@@ -106,32 +106,33 @@ function SectionWebsites() {
   ];
 
   const webApps = [
+    // Senorexpert
     {
       title: 'Senorexpert',
       companyName: 'Senorexpert',
       aboutCompany:
-        'Senorexpert is a local accounting firm in Galați providing comprehensive financial and accounting services for small and medium-sized businesses. With over 20 years of professional experience, the firm offers general accounting, tax reporting and compliance, payroll and HR services, financial consulting, and company formation support.',
+        'portfolio.web-apps.cards.card1.card1Modal.more.description',
       projectChallenges: {
-        title: 'Project Challenges',
+        title: 'portfolio.web-apps.cards.card1.card1Modal.challenges.title',
         challenges: [
-          'Lack of structured digital content to clearly present services and pricing',
-          'Identifying functionalities that bring real operational value, not just presentation',
-          'Replacing manual document exchange with a secure digital workflow',
-          'Implementing a secure authentication system for clients and admins',
-          'Building an admin dashboard with role-based access control',
-          "Allowing adminis to manage parts of the website's content",
+          'portfolio.web-apps.cards.card1.card1Modal.challenges.list.item1',
+          'portfolio.web-apps.cards.card1.card1Modal.challenges.list.item2',
+          'portfolio.web-apps.cards.card1.card1Modal.challenges.list.item3',
+          'portfolio.web-apps.cards.card1.card1Modal.challenges.list.item4',
+          'portfolio.web-apps.cards.card1.card1Modal.challenges.list.item5',
+          'portfolio.web-apps.cards.card1.card1Modal.challenges.list.item6',
         ],
       },
       projectSolution:
-        'We designed and developed a custom web application that combines a professional presentation website with a secure client portal. The project started with implementing validated forms and email delivery, followed by building a database-driven system to manage dynamic content such as services and pricing. We then developed a role-based admin dashboard that allows administrators to manage users, documents and website content. Finally, we implemented the client-facing interface, ensuring a modern, intuitive, and mobile-friendly user experience.',
+        'portfolio.web-apps.cards.card1.card1Modal.solution.description',
       projectResults: {
         generalText:
-          'The final application streamlined Senorexpert’s internal workflows and significantly improved client interaction:',
+          'portfolio.web-apps.cards.card1.card1Modal.results.description',
         listResults: [
-          'Eliminated the need for physical document delivery',
-          'Centralized accounting documents in a secure digital platform',
-          'Improved efficiency in client–accountant communication',
-          'Provided administrators with full control over users and content',
+          'portfolio.web-apps.cards.card1.card1Modal.results.list.item1',
+          'portfolio.web-apps.cards.card1.card1Modal.results.list.item2',
+          'portfolio.web-apps.cards.card1.card1Modal.results.list.item3',
+          'portfolio.web-apps.cards.card1.card1Modal.results.list.item4',
         ],
       },
       keyAppFunctionalities: [
@@ -143,50 +144,52 @@ function SectionWebsites() {
         'Responsive design optimized for desktop and mobile use',
       ],
       projectKeyPoints: [
-        'Business process optimization. Web applications can dramatically reduce manual work and operational friction.',
-        'Functionality-driven development. Every feature was built to solve a real, day-to-day business problem.',
-        'Scalable architecture. The application is designed to evolve with future business needs.',
+        'portfolio.web-apps.cards.card1.card1Modal.keyPoints.item1',
+        'portfolio.web-apps.cards.card1.card1Modal.keyPoints.item2',
+        'portfolio.web-apps.cards.card1.card1Modal.keyPoints.item3',
       ],
-      shortDescription: 'Custom Web Application for a local accounting firm',
+      shortDescription:
+        'portfolio.web-apps.cards.card1.card1Front.shortDescription',
       longDescription:
-        'A secure, database-driven web application featuring a client portal, document upload system, and an admin dashboard for managing users, content, and accounting workflows.',
+        'portfolio.web-apps.cards.card1.card1Back.longDescription',
       button1: {
         text: 'Live Application',
         link: 'https://www.senorexpert.ro/',
       },
       image: imgWebApps1,
-      category: 'Web Apps',
+      category: 'portfolio.web-apps.cards.card1.card1Front.category',
       logo: senorExpertLogo,
       categoryInner: 'web-apps',
     },
+    // FixAzi
     {
       title: 'FixAzi',
       companyName: 'FixAzi',
       aboutCompany:
-        'FixAzi is a local device repair service specializing in smartphones, tablets, and laptops. Customers bring their devices to the service location for diagnostics and repairs, making fast communication and clear pricing essential to the business.',
+        'portfolio.web-apps.cards.card2.card2Modal.more.description',
       projectChallenges: {
-        title: 'Project Challenges',
+        title: 'portfolio.web-apps.cards.card2.card2Modal.challenges.title',
         challenges: [
-          'Lack of structured digital content to present services and pricing',
-          'Identifying meaningful functionalities beyond a simple presentation website',
-          'Allowing administrators to manage supported devices and pricing without developer involvement',
-          'Improving customer communication through real-time interaction',
-          'Implementing a secure authentication system for admins',
-          'Implementing a secure authentication system for administrators',
-          'Building an admin dashboard for managing conversations and responding to messages',
-          'Implementing real-time notifications for incoming messages',
+          'portfolio.web-apps.cards.card2.card2Modal.challenges.list.item1',
+          'portfolio.web-apps.cards.card2.card2Modal.challenges.list.item2',
+          'portfolio.web-apps.cards.card2.card2Modal.challenges.list.item3',
+          'portfolio.web-apps.cards.card2.card2Modal.challenges.list.item4',
+          'portfolio.web-apps.cards.card2.card2Modal.challenges.list.item5',
+          'portfolio.web-apps.cards.card2.card2Modal.challenges.list.item6',
+          'portfolio.web-apps.cards.card2.card2Modal.challenges.list.item7',
+          'portfolio.web-apps.cards.card2.card2Modal.challenges.list.item8',
         ],
       },
       projectSolution:
-        'We designed and developed a web application that combines a professional presentation website with a real-time communication system. The project began by defining and implementing the core functionalities—content management and live chat—followed by creating structured content and a clean, user-friendly interface. An admin dashboard was built to allow secure management of services, prices, and customer conversations, while real-time notifications ensure no customer message is missed.',
+        'portfolio.web-apps.cards.card2.card2Modal.solution.description',
       projectResults: {
         generalText:
-          'The final application improves both customer experience and internal efficiency:',
+          'portfolio.web-apps.cards.card2.card2Modal.results.description',
         listResults: [
-          'Clear presentation of services, pricing, and contact information',
-          'Real-time live chat enabling instant customer communication',
-          'Centralized admin interface for managing conversations and content',
-          'Improved responsiveness to customer inquiries through notifications',
+          'portfolio.web-apps.cards.card2.card2Modal.results.list.item1',
+          'portfolio.web-apps.cards.card2.card2Modal.results.list.item2',
+          'portfolio.web-apps.cards.card2.card2Modal.results.list.item3',
+          'portfolio.web-apps.cards.card2.card2Modal.results.list.item4',
         ],
       },
       keyAppFunctionalities: [
@@ -198,19 +201,20 @@ function SectionWebsites() {
         'Responsive design optimized for desktop and mobile devices',
       ],
       projectKeyPoints: [
-        'Customer-first communication. Live chat lowers the barrier for customers to ask questions and request services.',
-        'Functionality-driven development. Core business needs were implemented first, followed by content and design.',
-        'Scalable foundation. The application is built to support future features and increased user interaction.',
+        'portfolio.web-apps.cards.card2.card2Modal.keyPoints.item1',
+        'portfolio.web-apps.cards.card2.card2Modal.keyPoints.item2',
+        'portfolio.web-apps.cards.card2.card2Modal.keyPoints.item3',
       ],
-      shortDescription: 'Web Application for a local device repair service',
+      shortDescription:
+        'portfolio.web-apps.cards.card2.card2Front.shortDescription',
       longDescription:
-        'A web application combining a presentational website with content management and real-time live chat, allowing customers to easily contact the service and administrators to manage communication and pricing.',
+        'portfolio.web-apps.cards.card2.card2Back.longDescription',
       button1: {
         text: 'Live Application',
         link: 'https://www.fixazi.com/',
       },
       image: imgWebApps2,
-      category: 'Web Apps',
+      category: 'portfolio.web-apps.cards.card2.card2Front.category',
       logo: fixaziLogo,
       categoryInner: 'web-apps',
     },
@@ -396,11 +400,8 @@ function SectionWebsites() {
       </section>
 
       <section className="mb-4">
-        <h2>Web Applications - Efficient & Scalable</h2>
-        <StyledP className="fs-5">
-          Explore our internal tools and web apps that streamline business
-          proccesses and improve productivity.
-        </StyledP>
+        <h2>{t('portfolio.web-apps.title')}</h2>
+        <StyledP className="fs-5">{t('portfolio.web-apps.subtitle')}</StyledP>
         <div className="container">{renderCards(webApps)}</div>
       </section>
 

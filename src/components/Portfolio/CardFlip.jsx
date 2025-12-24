@@ -120,7 +120,7 @@ function CardFlip({ project }) {
       >
         {/* Websites & Web Apps */}
         {project.categoryInner === 'websites' ||
-        project.categoryInner === 'Web Apps' ? (
+        project.categoryInner === 'web-apps' ? (
           <>
             <h3>{t('portfolio.websites.cards.card1.card1Modal.title')}</h3>
             <h4>

@@ -705,6 +705,119 @@
           }
         }
       }
+    },
+    "web-apps": {
+      "title": "Aplicații Web – Eficiente & Scalabile",
+      "subtitle": "Explorează instrumentele noastre interne și aplicațiile web care eficientizează procesele de business și cresc productivitatea.",
+      "cards": {
+        "card1": {
+          "card1Front": {
+            "title": "Senorexpert",
+            "shortDescription": "Aplicație web personalizată pentru o firmă locală de contabilitate.",
+            "category": "Aplicații Web"
+          },
+          "card1Back": {
+            "longDescription": "O aplicație web securizată, bazată pe bază de date, care include un portal pentru clienți, sistem de încărcare documente și un dashboard de administrare pentru gestionarea utilizatorilor, conținutului și fluxurilor contabile.",
+            "btnText": "Detalii Complete despre Proiect"
+          },
+          "card1Modal": {
+            "title": "Prezentare Generală a Proiectului",
+            "more": {
+              "title": "Mai multe despre",
+              "description": "Senorexpert este o firmă locală de contabilitate din Galați care oferă servicii financiare și contabile complete pentru întreprinderi mici și mijlocii. Cu peste 20 de ani de experiență profesională, firma oferă contabilitate generală, raportare fiscală și conformitate, servicii de salarizare și HR, consultanță financiară și suport pentru înființarea de firme."
+            },
+            "challenges": {
+              "title": "Provocările Proiectului",
+              "list": {
+                "item1": "Lipsa unui conținut digital structurat pentru prezentarea clară a serviciilor și tarifelor",
+                "item2": "Identificarea funcționalităților care aduc valoare operațională reală, nu doar prezentare",
+                "item3": "Înlocuirea schimbului manual de documente cu un flux digital securizat",
+                "item4": "Implementarea unui sistem de autentificare sigur pentru clienți și administratori",
+                "item5": "Construirea unui dashboard de administrare cu acces bazat pe roluri",
+                "item6": "Permiterea administratorilor să gestioneze anumite părți din conținutul website-ului"
+              }
+            },
+            "solution": {
+              "title": "Soluția",
+              "description": "Am proiectat și dezvoltat o aplicație web personalizată care combină un website de prezentare profesional cu un portal securizat pentru clienți. Proiectul a început cu implementarea formularelor validate și a livrării prin email, urmată de dezvoltarea unui sistem bazat pe bază de date pentru gestionarea conținutului dinamic, precum servicii și tarife. Ulterior, am creat un dashboard de administrare cu acces bazat pe roluri, care permite administratorilor să gestioneze utilizatorii, documentele și conținutul website-ului. În final, am implementat interfața destinată clienților, asigurând o experiență modernă, intuitivă și optimizată pentru dispozitive mobile."
+            },
+            "results": {
+              "title": "Rezultate",
+              "description": "Aplicația finală a eficientizat fluxurile interne ale Senorexpert și a îmbunătățit semnificativ interacțiunea cu clienții:",
+              "list": {
+                "item1": "Eliminarea necesității livrării fizice a documentelor",
+                "item2": "Centralizarea documentelor contabile într-o platformă digitală securizată",
+                "item3": "Creșterea eficienței comunicării dintre client și contabil",
+                "item4": "Oferirea controlului complet administratorilor asupra utilizatorilor și conținutului"
+              }
+            },
+            "keyPoints": {
+              "title": "Puncte Cheie",
+              "item1": "Optimizarea proceselor de business. Aplicațiile web pot reduce semnificativ munca manuală și fricțiunile operaționale.",
+              "item2": "Dezvoltare orientată pe funcționalitate. Fiecare funcționalitate a fost construită pentru a rezolva o problemă reală, de zi cu zi.",
+              "item3": "Arhitectură scalabilă. Aplicația este concepută pentru a evolua odată cu nevoile viitoare ale afacerii."
+            },
+            "liveProject": {
+              "title": "Proiect Live",
+              "btnText": "Previzualizare Live"
+            }
+          }
+        },
+        "card2": {
+          "card2Front": {
+            "title": "FixAzi",
+            "shortDescription": "Aplicație web pentru un service local de reparații dispozitive",
+            "category": "Aplicații Web"
+          },
+          "card2Back": {
+            "longDescription": "O aplicație web care combină un website de prezentare cu management de conținut și chat live în timp real, permițând clienților să contacteze ușor service-ul, iar administratorilor să gestioneze comunicarea și prețurile.",
+            "btnText": "Detalii Complete despre Proiect"
+          },
+          "card2Modal": {
+            "title": "Prezentare Generală a Proiectului",
+            "more": {
+              "title": "Mai multe despre",
+              "description": "FixAzi este un service local de reparații dispozitive, specializat în smartphone-uri, tablete și laptopuri. Clienții aduc dispozitivele la locația service-ului pentru diagnosticare și reparații, ceea ce face ca comunicarea rapidă și transparența prețurilor să fie esențiale pentru acest business."
+            },
+            "challenges": {
+              "title": "Provocările Proiectului",
+              "list": {
+                "item1": "Lipsa unui conținut digital structurat pentru prezentarea serviciilor și a tarifelor",
+                "item2": "Identificarea unor funcționalități relevante, dincolo de un simplu website de prezentare",
+                "item3": "Permiterea administratorilor să gestioneze dispozitivele suportate și prețurile fără implicarea unui dezvoltator",
+                "item4": "Îmbunătățirea comunicării cu clienții prin interacțiune în timp real",
+                "item5": "Implementarea unui sistem sigur de autentificare pentru administratori",
+                "item6": "Construirea unui dashboard de administrare pentru gestionarea conversațiilor și răspunsul la mesaje",
+                "item7": "Implementarea notificărilor în timp real pentru mesajele primite"
+              }
+            },
+            "solution": {
+              "title": "Soluția",
+              "description": "Am proiectat și dezvoltat o aplicație web care îmbină un website de prezentare profesional cu un sistem de comunicare în timp real. Proiectul a început cu definirea și implementarea funcționalităților de bază — management de conținut și chat live — urmate de crearea unui conținut structurat și a unei interfețe curate și ușor de utilizat. Am dezvoltat un dashboard de administrare care permite gestionarea securizată a serviciilor, prețurilor și conversațiilor cu clienții, iar notificările în timp real asigură faptul că niciun mesaj nu este ratat."
+            },
+            "results": {
+              "title": "Rezultate",
+              "description": "Aplicația finală a eficientizat fluxurile interne și a îmbunătățit semnificativ interacțiunea cu clienții:",
+              "list": {
+                "item1": "Prezentare clară a serviciilor, tarifelor și informațiilor de contact",
+                "item2": "Chat live în timp real pentru comunicare instantă cu clienții",
+                "item3": "Interfață de administrare centralizată pentru gestionarea conversațiilor și a conținutului",
+                "item4": "Timp de răspuns îmbunătățit la solicitările clienților prin notificări"
+              }
+            },
+            "keyPoints": {
+              "title": "Puncte Cheie",
+              "item1": "Comunicare orientată către client. Chat-ul live reduce barierele pentru clienți și facilitează solicitarea serviciilor.",
+              "item2": "Dezvoltare orientată pe funcționalitate. Nevoile esențiale ale businessului au fost implementate primele, urmate de conținut și design.",
+              "item3": "Bază scalabilă. Aplicația este construită pentru a susține funcționalități viitoare și un volum mai mare de interacțiuni."
+            },
+            "liveProject": {
+              "title": "Proiect Live",
+              "btnText": "Previzualizare Live"
+            }
+          }
+        }
+      }
     }
   },
   "footer": {

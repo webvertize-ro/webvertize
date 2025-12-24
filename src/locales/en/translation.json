@@ -745,16 +745,17 @@
               "title": "Results",
               "description": "The final application streamlined Senorexpert’s internal workflows and significantly improved client interaction: ",
               "list": {
-                "item1": "Business process optimization. Web applications can dramatically reduce manual work and operational friction.",
-                "item2": "Functionality-driven development. Every feature was built to solve a real, day-to-day business problem.",
-                "item3": "Scalable architecture. The application is designed to evolve with future business needs."
+                "item1": "Eliminated the need for physical document delivery",
+                "item2": "Centralized accounting documents in a secure digital platform",
+                "item3": "Improved efficiency in client–accountant communication",
+                "item4": "Provided administrators with full control over users and content"
               }
             },
             "keyPoints": {
               "title": "Key Points",
-              "item1": "",
-              "item2": "",
-              "item3": ""
+              "item1": "Business process optimization. Web applications can dramatically reduce manual work and operational friction",
+              "item2": "Functionality-driven development. Every feature was built to solve a real, day-to-day business problem.",
+              "item3": "Scalable architecture. The application is designed to evolve with future business needs."
             },
             "liveProject": {
               "title": "Live Project",
@@ -764,48 +765,52 @@
         },
         "card2": {
           "card2Front": {
-            "title": "",
-            "shortDescription": "",
-            "category": ""
+            "title": "FixAzi",
+            "shortDescription": "Web Application for a local device repair service",
+            "category": "Web Apps"
           },
           "card2Back": {
-            "longDescription": "",
-            "btnText": ""
+            "longDescription": "A web application combining a presentational website with content management and real-time live chat, allowing customers to easily contact the service and administrators to manage communication and pricing.",
+            "btnText": "Full Project Details"
           },
           "card2Modal": {
-            "title": "",
+            "title": "Project Overview",
             "more": {
-              "title": "",
-              "description": ""
+              "title": "More about ",
+              "description": "FixAzi is a local device repair service specializing in smartphones, tablets, and laptops. Customers bring their devices to the service location for diagnostics and repairs, making fast communication and clear pricing essential to the business."
             },
             "challenges": {
-              "title": "",
+              "title": "Project Challenges",
               "list": {
-                "item1": "",
-                "item2": "",
-                "item3": "",
-                "item4": ""
+                "item1": "Lack of structured digital content to present services and pricing",
+                "item2": "Identifying meaningful functionalities beyond a simple presentation website",
+                "item3": "Allowing administrators to manage supported devices and pricing without developer involvement",
+                "item4": "Improving customer communication through real-time interaction",
+                "item5": "Implementing a secure authentication system for admins",
+                "item6": "Implementing a secure authentication system for administrators",
+                "item7": "Building an admin dashboard for managing conversations and responding to messages",
+                "item8": "Implementing real-time notifications for incoming messages"
               }
             },
             "solution": {
               "title": "Solution",
-              "description": ""
+              "description": "We designed and developed a web application that combines a professional presentation website with a real-time communication system. The project began by defining and implementing the core functionalities—content management and live chat—followed by creating structured content and a clean, user-friendly interface. An admin dashboard was built to allow secure management of services, prices, and customer conversations, while real-time notifications ensure no customer message is missed."
             },
             "results": {
               "title": "Results",
-              "description": "",
+              "description": "The final application streamlined Senorexpert’s internal workflows and significantly improved client interaction: ",
               "list": {
-                "item1": "",
-                "item2": "",
-                "item3": "",
-                "item4": ""
+                "item1": "Clear presentation of services, pricing, and contact information",
+                "item2": "Real-time live chat enabling instant customer communication",
+                "item3": "Centralized admin interface for managing conversations and content",
+                "item4": "Improved responsiveness to customer inquiries through notifications"
               }
             },
             "keyPoints": {
               "title": "Key Points",
-              "item1": "",
-              "item2": "",
-              "item3": ""
+              "item1": "Customer-first communication. Live chat lowers the barrier for customers to ask questions and request services.",
+              "item2": "Functionality-driven development. Core business needs were implemented first, followed by content and design.",
+              "item3": "Scalable foundation. The application is built to support future features and increased user interaction."
             },
             "liveProject": {
               "title": "Live Project",
