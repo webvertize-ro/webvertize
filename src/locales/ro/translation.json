@@ -986,6 +986,11 @@
       "descriptionError": "Descrierea proiectului este obligatorie"
     }
   },
+  "thankYouPage": {
+    "title": "Îți mulțumim pentru completarea formularului!",
+    "paragraph": "Vom analiza solicitarea ta și te vom contacta în cel mai scurt timp posibil.",
+    "buttonText": "Înapoi la pagina principală"
+  },
   "footer": {
     "quickLinks": {
       "title": "Linkuri rapide",
