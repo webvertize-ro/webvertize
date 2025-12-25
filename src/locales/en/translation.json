@@ -974,6 +974,27 @@
       }
     }
   },
+  "contact": {
+    "mainSection": {}
+  },
+  "contactForm": {
+    "title": "Contact Form",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "projectDescriptionLabel": "Project Description",
+    "submitBtn": "Submit",
+    "submitBtnLoading": "Submitting...",
+    "errors": {
+      "nameError": "Name is required",
+      "emailError": "Email is required",
+      "descriptionError": "Project Description is required"
+    }
+  },
+  "thankYouPage": {
+    "title": "Thank you for filling out the form!",
+    "paragraph": "We will review your request and get back to you as soon as possible.",
+    "buttonText": "Back to the main page"
+  },
   "footer": {
     "quickLinks": {
       "title": "Quick Links",

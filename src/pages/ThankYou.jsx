@@ -51,16 +51,14 @@ function ThankYou() {
     <ThankYouContainer>
       <Logo />
       <ThankYouText>
-        <h3>Thank you for filling out the form!</h3>
-        <p className="fs-5">
-          We will review your request and get back to you as soon as possible.
-        </p>
+        <h3>{'thankYouPage.title'}</h3>
+        <p className="fs-5">{'thankYouPage.paragraph'}</p>
       </ThankYouText>
       <StyledLink to="/">
         <div>
           <FontAwesomeIcon icon={faCircleLeft} />
         </div>
-        <div>Back to the main page</div>
+        <div>{'thankYouPage.buttonText'}</div>
       </StyledLink>
     </ThankYouContainer>
   );

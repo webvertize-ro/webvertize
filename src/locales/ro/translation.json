@@ -973,6 +973,19 @@
       }
     }
   },
+  "contactForm": {
+    "title": "Formular de contact",
+    "nameLabel": "Nume",
+    "emailLabel": "Email",
+    "projectDescriptionLabel": "Descrierea proiectului",
+    "submitBtn": "Trimite",
+    "submitBtnLoading": "Trimitere...",
+    "errors": {
+      "nameError": "Numele este obligatoriu",
+      "emailError": "Emailul este obligatoriu",
+      "descriptionError": "Descrierea proiectului este obligatorie"
+    }
+  },
   "footer": {
     "quickLinks": {
       "title": "Linkuri rapide",
