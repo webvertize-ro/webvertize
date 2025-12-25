@@ -28,8 +28,8 @@ function Portfolio() {
       <SectionWebsites />
 
       <CTA
-        title="Want to start a project?"
-        text="Let’s chat about your ideas and turn them into a clear, well-designed digital solution. Schedule a call and we can start building it with you today!"
+        title="CTA.content-creation-ads.title"
+        text="CTA.content-creation-ads.text"
       />
       <SideButtons />
       <BackToTop />

@@ -221,45 +221,48 @@ function SectionWebsites() {
   ];
 
   const content = [
+    // FixAzi poster
     {
-      title: 'Promotional Poster for FixAzi Device Repair',
+      title: 'portfolio.content-creation.cards.card1.card1Front.title',
       companyName: 'FixAzi',
 
       aboutCompany:
-        'FixAzi is a local repair service specializing in smartphones, tablets, and laptops. Customers bring their devices to the service location for diagnostics and repairs, making clear communication and visually appealing marketing materials essential for attracting new clients.',
+        'portfolio.content-creation.cards.card1.card1Modal.more.description',
 
       projectChallenges: {
-        title: 'Project Challenges',
+        title:
+          'portfolio.content-creation.cards.card1.card1Modal.challenges.title',
         challenges: [
-          'Designing a poster that clearly communicates the business offer',
-          'Choosing colors and typography that align with the brand identity',
-          'Selecting high-quality stock images that visually support the message',
+          'portfolio.content-creation.cards.card1.card1Modal.challenges.list.item1',
+          'portfolio.content-creation.cards.card1.card1Modal.challenges.list.item2',
+          'portfolio.content-creation.cards.card1.card1Modal.challenges.list.item3',
         ],
       },
 
       projectSolution:
-        'We approached the poster design by first mapping out the placement of key elements—images, title, and offer details. The goal was to create a visually appealing poster that conveys the business offer effectively while capturing the attention of potential customers.',
+        'portfolio.content-creation.cards.card1.card1Modal.solution.description',
 
       projectResults: {
         generalText:
-          'The final poster presents the business offer clearly and professionally, enhancing FixAzi’s brand image and communication:',
+          'portfolio.content-creation.cards.card1.card1Modal.results.description',
         listResults: [
-          'Clear and concise presentation of the services and offer',
-          'Actionable contact information, including phone number and website',
-          'Inclusion of company logo and slogan to boost brand recognition',
+          'portfolio.content-creation.cards.card1.card1Modal.results.list.item1',
+          'portfolio.content-creation.cards.card1.card1Modal.results.list.item2',
+          'portfolio.content-creation.cards.card1.card1Modal.results.list.item3',
         ],
       },
 
       projectKeyPoints: [
-        'Strong first impressions matter. Professionally designed promotional materials convey trust and credibility to potential clients.',
-        'Purpose-driven design. Every element of the poster serves to highlight key offers and services.',
-        'Attractive visuals drive engagement. Eye-catching and well-structured posters increase the likelihood of customer interaction.',
+        'portfolio.content-creation.cards.card1.card1Modal.keyPoints.item1',
+        'portfolio.content-creation.cards.card1.card1Modal.keyPoints.item2',
+        'portfolio.content-creation.cards.card1.card1Modal.keyPoints.item3',
       ],
 
-      shortDescription: 'Promotional poster for a local device repair service',
+      shortDescription:
+        'portfolio.content-creation.cards.card1.card1Front.shortDescription',
 
       longDescription:
-        'A visually appealing promotional poster for FixAzi, designed to clearly communicate business offers and drive customer engagement.',
+        'portfolio.content-creation.cards.card1.card1Back.longDescription',
 
       button1: {
         text: 'View Full Poster',
@@ -267,49 +270,51 @@ function SectionWebsites() {
       },
 
       image: imgContent1,
-      category: 'Ads',
+      category: 'portfolio.content-creation.cards.card2.card2Front.category',
+      categoryInner: 'ads',
       logo: fixaziLogo,
     },
+    // CERTICORP poster
     {
-      title: 'Promotional Poster for CERTICORP',
+      title: 'portfolio.content-creation.cards.card2.card2Front.title',
       companyName: 'CERTICORP',
 
       aboutCompany:
-        'CERTICORP is a specialized energy audit and management company that provides energy certificates for individuals, businesses, and institutions. Their services are essential when selling or renovating real estate, securing mortgages, or fulfilling regulatory requirements.',
+        'portfolio.content-creation.cards.card2.card2Modal.more.description',
 
       projectChallenges: {
         title: 'Project Challenges',
         challenges: [
-          'Designing a poster that clearly communicates CERTICORP’s services and purpose',
-          'Selecting colors and typography that reflect the brand while engaging potential clients',
-          'Using high-quality imagery that visually supports the message and encourages action',
+          'portfolio.content-creation.cards.card2.card2Modal.challenges.list.item1',
+          'portfolio.content-creation.cards.card2.card2Modal.challenges.list.item2',
+          'portfolio.content-creation.cards.card2.card2Modal.challenges.list.item3',
         ],
       },
 
       projectSolution:
-        'We designed the poster to clearly communicate both the services CERTICORP provides and the situations in which these services are needed. The poster serves a dual purpose: informing potential clients about energy certificates and educating them on when such services are required, while maintaining a professional and approachable look.',
+        'portfolio.content-creation.cards.card1.card1Modal.solution.description',
 
       projectResults: {
         generalText:
-          'The final poster communicates CERTICORP’s offer clearly and effectively, helping potential clients understand when to use their services:',
+          'portfolio.content-creation.cards.card2.card2Modal.results.description',
         listResults: [
-          'Clear and concise presentation of services and business offer',
-          'Actionable contact information, including phone number and website',
-          'Inclusion of company logo to strengthen brand recognition',
+          'portfolio.content-creation.cards.card2.card2Modal.results.list.item1',
+          'portfolio.content-creation.cards.card2.card2Modal.results.list.item2',
+          'portfolio.content-creation.cards.card2.card2Modal.results.list.item3',
         ],
       },
 
       projectKeyPoints: [
-        'Concise and meaningful content. Text is informative, easy to read, and highlights the value for potential clients.',
-        'Visually suggestive design. Every image was chosen to imply an action or scenario, making the poster more engaging.',
-        'Professional yet approachable. The design positions CERTICORP as both a trustworthy and friendly business.',
+        'portfolio.content-creation.cards.card2.card2Modal.keyPoints.item1',
+        'portfolio.content-creation.cards.card2.card2Modal.keyPoints.item2',
+        'portfolio.content-creation.cards.card2.card2Modal.keyPoints.item3',
       ],
 
       shortDescription:
-        'Promotional poster for an energy audit and management company',
+        'portfolio.content-creation.cards.card2.card2Front.shortDescription',
 
       longDescription:
-        'A professional and approachable poster for CERTICORP, designed to clearly present their energy audit and certificate services while educating potential clients.',
+        'portfolio.content-creation.cards.card2.card2Back.longDescription',
 
       button1: {
         text: 'View Full Poster',
@@ -317,49 +322,52 @@ function SectionWebsites() {
       },
 
       image: imgContent2,
-      category: 'Ads',
+      category: 'portfolio.content-creation.cards.card2.card2Front.category',
+      categoryInner: 'ads',
       logo: certicorpLogo,
     },
+    // CERTICORP reel
     {
-      title: 'Promotional Short Video for CERTICORP',
+      title: 'portfolio.content-creation.cards.card3.card3Front.title',
       companyName: 'CERTICORP',
 
       aboutCompany:
-        'CERTICORP is a specialized energy audit and management company that provides energy certificates for individuals, businesses, and institutions. Their services are essential when selling or renovating real estate, securing mortgages, or meeting regulatory requirements.',
+        'portfolio.content-creation.cards.card3.card3Modal.more.description',
 
       projectChallenges: {
-        title: 'Project Challenges',
+        title:
+          'portfolio.content-creation.cards.card3.card3Modal.challenges.title',
         challenges: [
-          'Creating a short video that simultaneously educates the public and promotes CERTICORP’s services',
-          'Selecting high-quality free stock footage that effectively communicates the intended message',
-          'Designing concise, engaging captions to complement the voice-over and reinforce the key points',
+          'portfolio.content-creation.cards.card3.card3Modal.challenges.list.item1',
+          'portfolio.content-creation.cards.card3.card3Modal.challenges.list.item2',
+          'portfolio.content-creation.cards.card3.card3Modal.challenges.list.item3',
         ],
       },
 
       projectSolution:
-        'We started by developing a concise script to address both educational and promotional goals. Then we carefully selected video footage and crafted captions to clearly convey the message within a short timeframe, while maintaining a professional and approachable tone.',
+        'portfolio.content-creation.cards.card3.card3Modal.solution.description',
 
       projectResults: {
         generalText:
-          'The final Reel successfully educates viewers while presenting CERTICORP’s services in a 19-second voice-over video with captions:',
+          'portfolio.content-creation.cards.card3.card3Modal.results.description',
         listResults: [
-          'Clear explanation of when and why clients might need CERTICORP’s services',
-          'Prominent display of contact information for easy follow-up',
-          'Inclusion of the company logo to strengthen brand awareness',
+          'portfolio.content-creation.cards.card3.card3Modal.results.list.item1',
+          'portfolio.content-creation.cards.card3.card3Modal.results.list.item2',
+          'portfolio.content-creation.cards.card3.card3Modal.results.list.item3',
         ],
       },
 
       projectKeyPoints: [
-        'Concise storytelling. The Reel quickly communicates different scenarios in which CERTICORP’s services are relevant.',
-        'Visually coherent design. Every stock video segment aligns with the message being presented, creating a seamless and engaging experience.',
-        'Professional yet approachable style. The video conveys credibility while remaining friendly and accessible, encouraging viewer engagement.',
+        'portfolio.content-creation.cards.card3.card3Modal.keyPoints.item1',
+        'portfolio.content-creation.cards.card3.card3Modal.keyPoints.item2',
+        'portfolio.content-creation.cards.card3.card3Modal.keyPoints.item3',
       ],
 
       shortDescription:
-        'A short promotional video for CERTICORP highlighting their services and educating potential clients',
+        'portfolio.content-creation.cards.card3.card3Front.shortDescription',
 
       longDescription:
-        'A professional and engaging 19-second promotional video for CERTICORP, designed to educate viewers about their services and enhance brand awareness.',
+        'portfolio.content-creation.cards.card3.card3Back.longDescription',
 
       button1: {
         text: 'Watch Full Video',
@@ -370,6 +378,8 @@ function SectionWebsites() {
       video: reelCerticorp,
       poster: reelPoster,
       category: 'Reel',
+      categoryInner:
+        'portfolio.content-creation.cards.card3.card3Front.category',
       logo: certicorpLogo,
     },
   ];
@@ -406,10 +416,9 @@ function SectionWebsites() {
       </section>
 
       <section className="mb-4">
-        <h2>Content Creation - Engaging & Impactful</h2>
+        <h2>{t('portfolio.content-creation.title')}</h2>
         <StyledP className="fs-5">
-          Browse our advertising content, graphics and media projects designed
-          to captivate your audience.
+          {t('portfolio.content-creation.subtitle')}
         </StyledP>
         <div className="container">{renderCards(content)}</div>
       </section>

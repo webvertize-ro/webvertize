@@ -85,7 +85,7 @@ function CardFlip({ project }) {
                 alt={project.title}
               />
               <div className="card-body">
-                <h5 className="card-title">{project.title}</h5>
+                <h5 className="card-title">{t(project.title)}</h5>
                 <p className="card-text">{t(project.shortDescription)}</p>
                 <div className="text-muted">{t(project.category)}</div>
               </div>
@@ -96,7 +96,7 @@ function CardFlip({ project }) {
           <CardBack>
             <div className="card h-100 d-flex justify-content-center align-items-center rounded-4">
               <CardBodyBack className="card-body d-flex flex-column gap-1">
-                <h5 className="card-title">{project.title}</h5>
+                <h5 className="card-title">{t(project.title)}</h5>
                 <StyledP className="card-text">
                   {t(project.longDescription)}
                 </StyledP>
@@ -114,7 +114,7 @@ function CardFlip({ project }) {
       </CardWrapper>
       <Modal
         show={showForm}
-        title={project.title}
+        title={t(project.title)}
         onClose={() => setShowForm(false)}
         logo={project.logo}
       >
@@ -194,56 +194,83 @@ function CardFlip({ project }) {
           ''
         )}
         {/* Ads */}
-        {project.category === 'Ads' ? (
+        {project.categoryInner === 'ads' ? (
           <>
-            <h3>Project Overview</h3>
-            <h4>More about {project.companyName}</h4>
-            <p>{project.aboutCompany}</p>
+            <h3>
+              {t('portfolio.content-creation.cards.card1.card1Modal.title')}
+            </h3>
+            <h4>
+              {t(
+                'portfolio.content-creation.cards.card1.card1Modal.more.title'
+              )}{' '}
+              {project.companyName}
+            </h4>
+            <p>{t(project.aboutCompany)}</p>
             {/* Challenges */}
             <section>
-              <h4>{project.projectChallenges?.title}</h4>
+              <h4>
+                {t(
+                  'portfolio.content-creation.cards.card1.card1Modal.challenges.title'
+                )}
+              </h4>
               <StyledUl>
                 {project.projectChallenges?.challenges.map((ch) => (
                   <li>
                     <FontAwesomeIcon icon={faCheckSquare} />
-                    {ch}
+                    {t(ch)}
                   </li>
                 ))}
               </StyledUl>
             </section>
             {/* Solution */}
             <section>
-              <h4>Solution</h4>
-              <p>{project.projectSolution}</p>
+              <h4>
+                {t(
+                  'portfolio.content-creation.cards.card1.card1Modal.solution.title'
+                )}
+              </h4>
+              <p>{t(project.projectSolution)}</p>
             </section>
             {/* Results */}
             <section>
-              <h4>Results</h4>
-              <p>{project.projectResults?.generalText}</p>
+              <h4>
+                {t(
+                  'portfolio.content-creation.cards.card1.card1Modal.results.title'
+                )}
+              </h4>
+              <p>{t(project.projectResults?.generalText)}</p>
               <StyledUl>
                 {project.projectResults?.listResults?.map((res) => (
                   <li>
                     <FontAwesomeIcon icon={faCheckSquare} />
-                    {res}
+                    {t(res)}
                   </li>
                 ))}
               </StyledUl>
             </section>
             {/* Key Points */}
             <section>
-              <h4>Key Points</h4>
+              <h4>
+                {t(
+                  'portfolio.content-creation.cards.card1.card1Modal.keyPoints.title'
+                )}
+              </h4>
               <StyledUl>
                 {project.projectKeyPoints?.map((point) => (
                   <li>
                     <FontAwesomeIcon icon={faCheckSquare} />
-                    {point}
+                    {t(point)}
                   </li>
                 ))}
               </StyledUl>
             </section>
             {/* Full Image */}
             <section>
-              <h4>Full Image</h4>
+              <h4>
+                {t(
+                  'portfolio.content-creation.cards.card1.card1Modal.liveProject.title'
+                )}
+              </h4>
               <StyledButton
                 href="#!"
                 className="btn btn-success"
@@ -252,7 +279,9 @@ function CardFlip({ project }) {
                   setOpen(true);
                 }}
               >
-                View Full Image
+                {t(
+                  'portfolio.content-creation.cards.card1.card1Modal.liveProject.btnText'
+                )}
               </StyledButton>
 
               {/* Lightbox */}
@@ -269,54 +298,77 @@ function CardFlip({ project }) {
         {/* Reel */}
         {project.category === 'Reel' ? (
           <>
-            <h3>Project Overview</h3>
-            <h4>More about {project.companyName}</h4>
-            <p>{project.aboutCompany}</p>
+            <h3>
+              {t('portfolio.content-creation.cards.card1.card1Modal.title')}
+            </h3>
+            <h4>
+              {t(
+                'portfolio.content-creation.cards.card1.card1Modal.more.title'
+              )}{' '}
+              {project.companyName}
+            </h4>
+            <p>{t(project.aboutCompany)}</p>
             {/* Challenges */}
             <section>
-              <h4>{project.projectChallenges?.title}</h4>
+              <h4>{t(project.projectChallenges?.title)}</h4>
               <StyledUl>
                 {project.projectChallenges?.challenges.map((ch) => (
                   <li>
                     <FontAwesomeIcon icon={faCheckSquare} />
-                    {ch}
+                    {t(ch)}
                   </li>
                 ))}
               </StyledUl>
             </section>
             {/* Solution */}
             <section>
-              <h4>Solution</h4>
-              <p>{project.projectSolution}</p>
+              <h4>
+                {t(
+                  'portfolio.content-creation.cards.card3.card3Modal.solution.title'
+                )}
+              </h4>
+              <p>{t(project.projectSolution)}</p>
             </section>
             {/* Results */}
             <section>
-              <h4>Results</h4>
-              <p>{project.projectResults?.generalText}</p>
+              <h4>
+                {t(
+                  'portfolio.content-creation.cards.card3.card3Modal.results.title'
+                )}
+              </h4>
+              <p>{t(project.projectResults?.generalText)}</p>
               <StyledUl>
                 {project.projectResults?.listResults?.map((res) => (
                   <li>
                     <FontAwesomeIcon icon={faCheckSquare} />
-                    {res}
+                    {t(res)}
                   </li>
                 ))}
               </StyledUl>
             </section>
             {/* Key Points */}
             <section>
-              <h4>Key Points</h4>
+              <h4>
+                {t(
+                  'portfolio.content-creation.cards.card3.card3Modal.keyPoints.title'
+                )}
+              </h4>
               <StyledUl>
                 {project.projectKeyPoints?.map((point) => (
                   <li>
                     <FontAwesomeIcon icon={faCheckSquare} />
-                    {point}
+                    {t(point)}
                   </li>
                 ))}
               </StyledUl>
             </section>
             {/* Full Image */}
             <section>
-              <h4>Full Video</h4>
+              <h4>
+                {t(
+                  'portfolio.content-creation.cards.card3.card3Modal.liveProject.title'
+                )}
+              </h4>
               <StyledButton
                 href="#!"
                 className="btn btn-success"
@@ -325,7 +377,9 @@ function CardFlip({ project }) {
                   setOpen(true);
                 }}
               >
-                View Full Video
+                {t(
+                  'portfolio.content-creation.cards.card3.card3Modal.liveProject.btnText'
+                )}
               </StyledButton>
 
               {/* Lightbox */}

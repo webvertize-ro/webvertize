@@ -819,6 +819,159 @@
           }
         }
       }
+    },
+    "content-creation": {
+      "title": "Content Creation - Engaging & Impactful",
+      "subtitle": "Browse our advertising content, graphics and media projects designed to captivate your audience.",
+      "cards": {
+        "card1": {
+          "card1Front": {
+            "title": "Promotional Poster for FixAzi Device Repair",
+            "shortDescription": "Promotional poster for a local device repair service",
+            "category": "Ads"
+          },
+          "card1Back": {
+            "longDescription": "A visually appealing promotional poster for FixAzi, designed to clearly communicate business offers and drive customer engagement.",
+            "btnText": "Full Project Details"
+          },
+          "card1Modal": {
+            "title": "Project Overview",
+            "more": {
+              "title": "More about ",
+              "description": "FixAzi is a local repair service specializing in smartphones, tablets, and laptops. Customers bring their devices to the service location for diagnostics and repairs, making clear communication and visually appealing marketing materials essential for attracting new clients."
+            },
+            "challenges": {
+              "title": "Project Challenges",
+              "list": {
+                "item1": "Designing a poster that clearly communicates the business offer",
+                "item2": "Choosing colors and typography that align with the brand identity",
+                "item3": "Selecting high-quality stock images that visually support the message"
+              }
+            },
+            "solution": {
+              "title": "Solution",
+              "description": "We approached the poster design by first mapping out the placement of key elements—images, title, and offer details. The goal was to create a visually appealing poster that conveys the business offer effectively while capturing the attention of potential customers."
+            },
+            "results": {
+              "title": "Results",
+              "description": "The final poster presents the business offer clearly and professionally, enhancing FixAzi’s brand image and communication: ",
+              "list": {
+                "item1": "Clear and concise presentation of the services and offer",
+                "item2": "Actionable contact information, including phone number and website",
+                "item3": "Inclusion of company logo and slogan to boost brand recognition"
+              }
+            },
+            "keyPoints": {
+              "title": "Key Points",
+              "item1": "Strong first impressions matter. Professionally designed promotional materials convey trust and credibility to potential clients.",
+              "item2": "Purpose-driven design. Every element of the poster serves to highlight key offers and services.",
+              "item3": "Attractive visuals drive engagement. Eye-catching and well-structured posters increase the likelihood of customer interaction."
+            },
+            "liveProject": {
+              "title": "Full Image",
+              "btnText": "View Full Image"
+            }
+          }
+        },
+        "card2": {
+          "card2Front": {
+            "title": "Promotional Poster for CERTICORP",
+            "shortDescription": "Promotional poster for an energy audit and management company",
+            "category": "Ads"
+          },
+          "card2Back": {
+            "longDescription": "A professional and approachable poster for CERTICORP, designed to clearly present their energy audit and certificate services while educating potential clients.",
+            "btnText": "Full Project Details"
+          },
+          "card2Modal": {
+            "title": "Project Overview",
+            "more": {
+              "title": "More about ",
+              "description": "CERTICORP is a specialized energy audit and management company that provides energy certificates for individuals, businesses, and institutions. Their services are essential when selling or renovating real estate, securing mortgages, or fulfilling regulatory requirements."
+            },
+            "challenges": {
+              "title": "Project Challenges",
+              "list": {
+                "item1": "Designing a poster that clearly communicates CERTICORP’s services and purpose",
+                "item2": "Selecting colors and typography that reflect the brand while engaging potential clients",
+                "item3": "Using high-quality imagery that visually supports the message and encourages action"
+              }
+            },
+            "solution": {
+              "title": "Solution",
+              "description": "We designed the poster to clearly communicate both the services CERTICORP provides and the situations in which these services are needed. The poster serves a dual purpose: informing potential clients about energy certificates and educating them on when such services are required, while maintaining a professional and approachable look."
+            },
+            "results": {
+              "title": "Results",
+              "description": "The final poster communicates CERTICORP’s offer clearly and effectively, helping potential clients understand when to use their services: ",
+              "list": {
+                "item1": "Clear and concise presentation of services and business offer",
+                "item2": "Actionable contact information, including phone number and website",
+                "item3": "Inclusion of company logo and slogan to boost brand recognition"
+              }
+            },
+            "keyPoints": {
+              "title": "Key Points",
+              "item1": "Concise and meaningful content. Text is informative, easy to read, and highlights the value for potential clients.",
+              "item2": "Visually suggestive design. Every image was chosen to imply an action or scenario, making the poster more engaging.",
+              "item3": "Professional yet approachable. The design positions CERTICORP as both a trustworthy and friendly business."
+            },
+            "liveProject": {
+              "title": "Live Project",
+              "btnText": "Live preview"
+            }
+          }
+        },
+        "card3": {
+          "card3Front": {
+            "title": "Promotional Short Video for CERTICORP",
+            "shortDescription": "A short promotional video for CERTICORP highlighting their services and educating potential clients",
+            "category": "Reel"
+          },
+          "card3Back": {
+            "longDescription": "A professional and engaging 19-second promotional video for CERTICORP, designed to educate viewers about their services and enhance brand awareness.",
+            "btnText": "Full Project Details"
+          },
+          "card3Modal": {
+            "title": "Project Overview",
+            "more": {
+              "title": "More about ",
+              "description": "CERTICORP is a specialized energy audit and management company that provides energy certificates for individuals, businesses, and institutions. Their services are essential when selling or renovating real estate, securing mortgages, or meeting regulatory requirements."
+            },
+            "challenges": {
+              "title": "Project Challenges",
+              "list": {
+                "item1": "Creating a short video that simultaneously educates the public and promotes CERTICORP’s services",
+                "item2": "Selecting high-quality free stock footage that effectively communicates the intended message",
+                "item3": "Designing concise, engaging captions to complement the voice-over and reinforce the key points"
+              }
+            },
+            "solution": {
+              "title": "Solution",
+              "description": "We started by developing a concise script to address both educational and promotional goals. Then we carefully selected video footage and crafted captions to clearly convey the message within a short timeframe, while maintaining a professional and approachable tone."
+            },
+            "results": {
+              "title": "Results",
+              "description": "The final Reel successfully educates viewers while presenting CERTICORP’s services in a 19-second voice-over video with captions: ",
+              "list": {
+                "item1": "Clear explanation of when and why clients might need CERTICORP’s services",
+                "item2": "Prominent display of contact information for easy follow-up",
+                "item3": "Inclusion of the company logo to strengthen brand awareness"
+              }
+            },
+            "keyPoints": {
+              "title": "Key Points",
+              "item1": "Concise storytelling. The Reel quickly communicates different scenarios in which CERTICORP’s services are relevant.",
+              "item2": "Visually coherent design. Every stock video segment aligns with the message being presented, creating a seamless and engaging experience.",
+              "item3": "Professional yet approachable style. The video conveys credibility while remaining friendly and accessible, encouraging viewer engagement."
+            },
+            "liveProject": {
+              "title": "Full Video",
+              "btnText": "Watch Full Video"
+            }
+          }
+        }
+      }
     }
   },
   "footer": {

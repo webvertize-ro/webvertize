@@ -818,6 +818,159 @@
           }
         }
       }
+    },
+    "content-creation": {
+      "title": "Creare de Conținut – Captivant & Impactant",
+      "subtitle": "Descoperă materialele noastre publicitare, grafica și proiectele media create pentru a atrage și a capta atenția publicului tău.",
+      "cards": {
+        "card1": {
+          "card1Front": {
+            "title": "Poster promoțional pentru service-ul de reparații FixAzi",
+            "shortDescription": "Poster promoțional pentru un service local de reparații dispozitive",
+            "category": "Reclame"
+          },
+          "card1Back": {
+            "longDescription": "Un poster promoțional atractiv din punct de vedere vizual pentru FixAzi, conceput pentru a comunica clar ofertele serviciului și pentru a încuraja interacțiunea clienților.",
+            "btnText": "Detalii complete proiect"
+          },
+          "card1Modal": {
+            "title": "Prezentare Proiect",
+            "more": {
+              "title": "Mai multe despre ",
+              "description": "FixAzi este un service local de reparații specializat în smartphone-uri, tablete și laptopuri. Clienții aduc dispozitivele la locația service-ului pentru diagnosticare și reparații, iar o comunicare clară și materiale de promovare atractive sunt esențiale pentru atragerea de noi clienți."
+            },
+            "challenges": {
+              "title": "Provocări ale Proiectului",
+              "list": {
+                "item1": "Realizarea unui poster care să comunice clar oferta serviciului",
+                "item2": "Alegerea culorilor și a tipografiei în acord cu identitatea vizuală a brandului",
+                "item3": "Selectarea unor imagini stock de calitate, care să susțină vizual mesajul"
+              }
+            },
+            "solution": {
+              "title": "Soluție",
+              "description": "Am abordat designul posterului prin stabilirea inițială a poziționării elementelor-cheie — imagini, titlu și detalii ale ofertei. Obiectivul a fost crearea unui poster atractiv vizual, care să transmită eficient oferta serviciului și să capteze atenția potențialilor clienți."
+            },
+            "results": {
+              "title": "Rezultate",
+              "description": "Posterul final prezintă oferta serviciului într-un mod clar și profesionist, consolidând imaginea de brand a FixAzi și comunicarea cu publicul:",
+              "list": {
+                "item1": "Prezentare clară și concisă a serviciilor și ofertelor",
+                "item2": "Informații de contact ușor de accesat, inclusiv număr de telefon și website",
+                "item3": "Integrarea logo-ului și a sloganului companiei pentru creșterea recunoașterii brandului"
+              }
+            },
+            "keyPoints": {
+              "title": "Puncte-cheie",
+              "item1": "Prima impresie contează. Materialele promoționale realizate profesional transmit încredere și credibilitate potențialilor clienți.",
+              "item2": "Design orientat spre scop. Fiecare element al posterului este gândit pentru a evidenția ofertele și serviciile principale.",
+              "item3": "Vizualuri atractive cresc implicarea. Posterele bine structurate și atrăgătoare sporesc șansele de interacțiune din partea clienților."
+            },
+            "liveProject": {
+              "title": "Proiect Live",
+              "btnText": "Previzualizare live"
+            }
+          }
+        },
+        "card2": {
+          "card2Front": {
+            "title": "Poster promoțional pentru CERTICORP",
+            "shortDescription": "Poster promoțional pentru o companie de audit și management energetic",
+            "category": "Reclame"
+          },
+          "card2Back": {
+            "longDescription": "Un poster profesionist și accesibil pentru CERTICORP, conceput pentru a prezenta clar serviciile de audit energetic și certificare, educând în același timp potențialii clienți.",
+            "btnText": "Detalii complete proiect"
+          },
+          "card2Modal": {
+            "title": "Prezentare Proiect",
+            "more": {
+              "title": "Mai multe despre ",
+              "description": "CERTICORP este o companie specializată în audit și management energetic, care oferă certificate energetice pentru persoane fizice, companii și instituții. Serviciile sale sunt esențiale în situații precum vânzarea sau renovarea imobilelor, obținerea unui credit ipotecar sau respectarea cerințelor legale."
+            },
+            "challenges": {
+              "title": "Provocări ale Proiectului",
+              "list": {
+                "item1": "Realizarea unui poster care să comunice clar serviciile și scopul CERTICORP",
+                "item2": "Alegerea culorilor și a tipografiei care să reflecte identitatea brandului și să atragă potențialii clienți",
+                "item3": "Utilizarea unor imagini de înaltă calitate care să susțină vizual mesajul și să încurajeze acțiunea"
+              }
+            },
+            "solution": {
+              "title": "Soluție",
+              "description": "Am conceput posterul astfel încât să comunice clar atât serviciile oferite de CERTICORP, cât și situațiile în care acestea sunt necesare. Posterul are un dublu rol: informarea potențialilor clienți despre certificatele energetice și educarea acestora cu privire la momentul în care aceste servicii sunt obligatorii, păstrând în același timp un aspect profesionist și accesibil."
+            },
+            "results": {
+              "title": "Rezultate",
+              "description": "Posterul final comunică oferta CERTICORP într-un mod clar și eficient, ajutând potențialii clienți să înțeleagă când este necesar să apeleze la serviciile companiei:",
+              "list": {
+                "item1": "Prezentare clară și concisă a serviciilor și a ofertei comerciale",
+                "item2": "Informații de contact ușor de accesat, inclusiv număr de telefon și website",
+                "item3": "Integrarea logo-ului și a sloganului companiei pentru creșterea recunoașterii brandului"
+              }
+            },
+            "keyPoints": {
+              "title": "Puncte-cheie",
+              "item1": "Conținut concis și relevant. Textul este informativ, ușor de parcurs și evidențiază beneficiile pentru potențialii clienți.",
+              "item2": "Design sugestiv din punct de vedere vizual. Fiecare imagine a fost aleasă pentru a sugera o acțiune sau un context, făcând posterul mai atractiv.",
+              "item3": "Profesional, dar accesibil. Designul poziționează CERTICORP ca o companie de încredere și prietenoasă."
+            },
+            "liveProject": {
+              "title": "Proiect Live",
+              "btnText": "Previzualizare live"
+            }
+          }
+        },
+        "card3": {
+          "card3Front": {
+            "title": "Video promoțional scurt pentru CERTICORP",
+            "shortDescription": "Video promoțional scurt pentru CERTICORP, care evidențiază serviciile și educă potențialii clienți",
+            "category": "Reel"
+          },
+          "card3Back": {
+            "longDescription": "Un video promoțional profesionist și captivant de 19 secunde pentru CERTICORP, conceput pentru a educa publicul și a crește notorietatea brandului.",
+            "btnText": "Detalii complete proiect"
+          },
+          "card3Modal": {
+            "title": "Prezentare Proiect",
+            "more": {
+              "title": "Mai multe despre ",
+              "description": "CERTICORP este o companie specializată în audit și management energetic, care oferă certificate energetice pentru persoane fizice, companii și instituții. Serviciile sale sunt esențiale în situații precum vânzarea sau renovarea imobilelor, obținerea unui credit ipotecar sau respectarea cerințelor legale."
+            },
+            "challenges": {
+              "title": "Provocări ale Proiectului",
+              "list": {
+                "item1": "Crearea unui video scurt care să educe publicul și, în același timp, să promoveze serviciile CERTICORP",
+                "item2": "Selectarea unor materiale video stock gratuite, de înaltă calitate, care să transmită eficient mesajul dorit",
+                "item3": "Conceperea unor subtitrări concise și atractive, care să completeze voice-over-ul și să întărească ideile principale"
+              }
+            },
+            "solution": {
+              "title": "Soluție",
+              "description": "Am început prin dezvoltarea unui scenariu concis, care să atingă atât obiectivele educaționale, cât și cele promoționale. Ulterior, am selectat cu atenție materialele video și am creat subtitrări care să transmită clar mesajul într-un timp scurt, menținând un ton profesionist și accesibil."
+            },
+            "results": {
+              "title": "Rezultate",
+              "description": "Reel-ul final reușește să educe publicul și să prezinte serviciile CERTICORP într-un video de 19 secunde cu voice-over și subtitrări:",
+              "list": {
+                "item1": "Explicarea clară a situațiilor în care clienții pot avea nevoie de serviciile CERTICORP",
+                "item2": "Afișarea vizibilă a informațiilor de contact pentru o urmărire ușoară",
+                "item3": "Integrarea logo-ului companiei pentru consolidarea notorietății brandului"
+              }
+            },
+            "keyPoints": {
+              "title": "Puncte-cheie",
+              "item1": "Povestire concisă. Reel-ul comunică rapid diferitele scenarii în care serviciile CERTICORP sunt relevante.",
+              "item2": "Design vizual coerent. Fiecare secvență video stock este aliniată cu mesajul prezentat, creând o experiență fluentă și captivantă.",
+              "item3": "Stil profesionist, dar accesibil. Video-ul transmite credibilitate, rămânând în același timp prietenos și ușor de urmărit, încurajând interacțiunea."
+            },
+            "liveProject": {
+              "title": "Video complet",
+              "btnText": "Vezi video-ul complet"
+            }
+          }
+        }
+      }
     }
   },
   "footer": {
