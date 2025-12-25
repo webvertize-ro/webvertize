@@ -62,7 +62,7 @@ function TooManyRequests() {
         <div>
           <FontAwesomeIcon icon={faCircleLeft} />
         </div>
-        <div>{t('tooManyRequests.buttonText')}</div>
+        <div>{t('tooManyRequestsPage.buttonText')}</div>
       </StyledLink>
     </StyledTooManyRequests>
   );
