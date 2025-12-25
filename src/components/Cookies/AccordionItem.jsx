@@ -2,6 +2,7 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useTranslation } from 'react-i18next';
 
 const Item = styled.div`
   display: flex;
@@ -57,6 +58,7 @@ const ContentBox = styled.p`
 
 function AccordionItem({ num, title, text, curOpen, onOpen, children }) {
   const isOpen = num === curOpen;
+  const { t } = useTranslation();
 
   function handleToggle() {
     onOpen(isOpen ? null : num);
@@ -67,7 +69,7 @@ function AccordionItem({ num, title, text, curOpen, onOpen, children }) {
       <NumberTitle className="d-flex">
         <NumberTitleInner>
           <Number>{num < 9 ? `0${num}` : num}</Number>
-          <Title className="fs-4">{title}</Title>
+          <Title className="fs-4">{t(title)}</Title>
         </NumberTitleInner>
 
         <Icon>
@@ -79,7 +81,7 @@ function AccordionItem({ num, title, text, curOpen, onOpen, children }) {
         </Icon>
       </NumberTitle>
 
-      {isOpen && <ContentBox className="fs-5">{children}</ContentBox>}
+      {isOpen && <ContentBox className="fs-5">{t(children)}</ContentBox>}
     </Item>
   );
 }

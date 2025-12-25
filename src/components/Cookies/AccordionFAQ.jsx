@@ -4,28 +4,28 @@ import { useState } from 'react';
 
 const faqs = [
   {
-    title: 'What are cookies and how do they work?',
-    text: 'Cookies are small text files that websites store on your device when you visit them. They are commonly used to remember information about your visit, such as preferences, login status or usage patterns, in order to improve the browsing experience. When you visit a website, cookies are saved in your browser and then sent back to the website on subsequent visits. This allows the website to recognize your device and remember certain information, helping pages load correctly or function as expected.',
+    title: 'cookiesPage.faqs.item1.question',
+    text: 'cookiesPage.faqs.item1.answer',
   },
   {
-    title: 'Why do websites use cookies?',
-    text: 'Websites typically use cookies to enhance functionality, analyze traffic, personalize content and improve overall user experience. Some cookies are essential for basic features, while others help website owners understand how visitors interact with their site.',
+    title: 'cookiesPage.faqs.item2.question',
+    text: 'cookiesPage.faqs.item2.answer',
   },
   {
-    title: 'What types of cookies are commonly used?',
-    text: 'Common cookie types include essential cookies (required for core functionality), performance or analytics cookies (used to measure website usage), functionality cookies (used to remember preferences) and marketing cookies (used for advertising and tracking).',
+    title: 'cookiesPage.faqs.item3.question',
+    text: 'cookiesPage.faqs.item3.answer',
   },
   {
-    title: 'Does Webvertize use cookies?',
-    text: 'At this time, Webvertize does not use cookies on this website. You can browse the site without any cookie-based tracking or data storage.',
+    title: 'cookiesPage.faqs.item4.question',
+    text: 'cookiesPage.faqs.item4.answer',
   },
   {
-    title: 'Will Webvertize use cookies in the future?',
-    text: 'If cookies are introduced in the future, this page will be updated accordingly. We are committed to transparency and will clearly explain what cookies are used, why they are implemented  and how they affect your browsing experience.',
+    title: 'cookiesPage.faqs.item5.question',
+    text: 'cookiesPage.faqs.item5.answer',
   },
   {
-    title: 'How will I be informed about cookie usage changes?',
-    text: 'Any changes related to cookie usage will be communicated through updates to this Cookie Policy page. Where required, you will also be given clear choices regarding cookie consent.',
+    title: 'cookiesPage.faqs.item6.question',
+    text: 'cookiesPage.faqs.item6.answer',
   },
 ];
 
