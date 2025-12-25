@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleLeft } from '@fortawesome/free-solid-svg-icons';
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const StyledLink = styled(Link)`
   text-decoration: none;
@@ -33,6 +34,7 @@ const ThankYouText = styled.div`
 `;
 
 function ThankYou() {
+  const { t } = useTranslation();
   // Check for the sessionStorage flag - if it doesn't exist, redirect to "/"
   const navigate = useNavigate();
   useEffect(() => {
@@ -51,14 +53,14 @@ function ThankYou() {
     <ThankYouContainer>
       <Logo />
       <ThankYouText>
-        <h3>{'thankYouPage.title'}</h3>
-        <p className="fs-5">{'thankYouPage.paragraph'}</p>
+        <h3>{t('thankYouPage.title')}</h3>
+        <p className="fs-5">{t('thankYouPage.paragraph')}</p>
       </ThankYouText>
       <StyledLink to="/">
         <div>
           <FontAwesomeIcon icon={faCircleLeft} />
         </div>
-        <div>{'thankYouPage.buttonText'}</div>
+        <div>{t('thankYouPage.buttonText')}</div>
       </StyledLink>
     </ThankYouContainer>
   );
