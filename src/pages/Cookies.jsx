@@ -5,6 +5,7 @@ import MainContent from '../components/Cookies/MainContent';
 import cookiesHeader from '../assets/cookies_header.jpg';
 import CookiePopup from '../components/Cookies/CookiePopup';
 import BackToTop from '../components/BackToTop';
+import WhatsAppButton from '../components/WhatsAppButton';
 
 function Cookies() {
   return (
@@ -17,6 +18,7 @@ function Cookies() {
         text2="Below you'll find general information about cookies - what they are and how they're commonly used - along with details about how cookies may be implemented on Webvertize when applicable."
       />
       <MainContent />
+      <WhatsAppButton />
       <BackToTop />
       <CookiePopup />
       <Footer />

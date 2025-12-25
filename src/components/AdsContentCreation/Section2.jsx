@@ -33,7 +33,7 @@ const TitleTotal = styled.div`
 const Title = styled.h2``;
 
 const Subtitle = styled.div`
-  margin-top: -12px;
+  /* margin-top: -12px; */
 `;
 
 const Content = styled.div`
@@ -72,7 +72,7 @@ const GoogleAdsCampaigns = styled.img`
 `;
 
 const StyledP = styled.p`
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-align: justify;
 `;
 
@@ -90,7 +90,7 @@ function Section2() {
       <div className="row">
         <TitleTotal>
           <Title>{t('AdsContentCreation.section2.title')}</Title>
-          <Subtitle className="fs-6">
+          <Subtitle className="fs-5">
             {t('AdsContentCreation.section2.subtitle')}
           </Subtitle>
         </TitleTotal>
@@ -112,7 +112,7 @@ function Section2() {
         </Content>
         {/* Our Process */}
         <ContentRow className="row">
-          <h3>{t('AdsContentCreation.section2.ourProcess.title')}</h3>
+          <h2>{t('AdsContentCreation.section2.ourProcess.title')}</h2>
           <StyledUl>
             <li>
               <div class="card rounded-4">
@@ -237,7 +237,7 @@ function Section2() {
         </ContentRow>
         {/* Campaign Types We Manage */}
         <ContentRow className="row">
-          <h4>{t('AdsContentCreation.section2.campaignTypes.title')}</h4>
+          <h2>{t('AdsContentCreation.section2.campaignTypes.title')}</h2>
           <div className="card rounded-4">
             <StyledUl className="list-group list-group-flush fs-5 p-4">
               <li className="list-group-item d-flex gap-2">

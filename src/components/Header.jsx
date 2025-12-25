@@ -119,14 +119,9 @@ function Header({ bgImage, title, text1, text2 }) {
     <>
       <StyledHeader $bgImage={bgImage}>
         <TextContent className="container">
-          <Title>{t('homepage.header.title')}</Title>
+          <Title>{t(title)}</Title>
           <StyledP className="fs-4 text-center">
-            {t('homepage.header.tex2') ? (
-              <strong>{t('homepage.header.text1')}</strong>
-            ) : (
-              t('homepage.header.text1')
-            )}{' '}
-            {t('homepage.header.text2')}
+            {t(text2) ? <strong>{t(text1)}</strong> : t(text1)} {t(text2)}
           </StyledP>
           {title !== 'Webvertize Cookie Policy' && (
             <StyledButton onClick={() => setShowForm(true)}>

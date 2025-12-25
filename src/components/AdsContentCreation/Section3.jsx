@@ -35,10 +35,10 @@ const ContentRow = styled.div`
 
 const TitleTotal = styled.div``;
 
-const Title = styled.h4``;
+const Title = styled.h2``;
 
 const Subtitle = styled.div`
-  margin-top: -12px;
+  /* margin-top: -12px; */
 `;
 
 const StyledUl = styled.ul`
@@ -56,13 +56,13 @@ function Section3() {
       <ContentRow className="row">
         <TitleTotal className="mb-4">
           <Title>{t('AdsContentCreation.section3.title')}</Title>
-          <Subtitle className="fs-6">
+          <Subtitle className="fs-5">
             {t('AdsContentCreation.section3.subtitle')}
           </Subtitle>
         </TitleTotal>
 
-        <p className="fs-5">{t('AdsContentCreation.section3.description')}</p>
-        <h4>{t('AdsContentCreation.section3.campaignObjectives.title')}</h4>
+        <p className="fs-4">{t('AdsContentCreation.section3.description')}</p>
+        <h2>{t('AdsContentCreation.section3.campaignObjectives.title')}</h2>
         <StyledUl>
           <li>
             <div className="card rounded-4">
@@ -200,7 +200,7 @@ function Section3() {
       </ContentRow>
       {/* Campaign Types We Manage */}
       <ContentRow className="row">
-        <h4>{t('AdsContentCreation.section3.adFormats.title')}</h4>
+        <h2>{t('AdsContentCreation.section3.adFormats.title')}</h2>
         <div className="card rounded-4">
           <StyledUl className="list-group list-group-flush">
             <li className="list-group-item d-flex gap-2 align-items-center fs-5">

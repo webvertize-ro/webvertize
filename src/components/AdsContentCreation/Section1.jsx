@@ -17,7 +17,7 @@ const StyledSection1 = styled.section`
 const Title = styled.h2``;
 
 const Subtitle = styled.div`
-  margin-top: -14px;
+  /* margin-top: -14px; */
   margin-bottom: 5px;
 `;
 
@@ -44,7 +44,7 @@ const Item = styled.li`
 `;
 
 const ItemTitle = styled.div`
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -62,6 +62,7 @@ const InnerUl = styled.ul`
 const InnerUlItem = styled.li`
   display: flex;
   align-items: center;
+  padding-left: 0.8rem;
   gap: 0.5rem;
 `;
 
@@ -85,13 +86,9 @@ function Section1() {
   return (
     <StyledSection1 className="container">
       <Title>{t('AdsContentCreation.section1.title')}</Title>
-      <Subtitle className="fs-6">
+      <Subtitle className="fs-5 mb-4">
         {t('AdsContentCreation.section1.subtitle')}
       </Subtitle>
-      <Description className="fs-5">
-        {t('AdsContentCreation.section1.text')}
-      </Description>
-
       <InnerTitle>{t('AdsContentCreation.section1.title2')}</InnerTitle>
       <StyledUl className="fs-5">
         <Item className="row">

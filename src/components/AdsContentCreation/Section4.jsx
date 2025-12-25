@@ -9,6 +9,10 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useTranslation } from 'react-i18next';
 
+const StyledSection4 = styled.div`
+  /* border: 1px solid black; */
+`;
+
 const ContentRow = styled.div`
   @media (max-width: 1200px) {
     display: flex;
@@ -19,10 +23,10 @@ const ContentRow = styled.div`
 
 const TitleTotal = styled.div``;
 
-const Title = styled.h4``;
+const Title = styled.h2``;
 
 const Subtitle = styled.div`
-  margin-top: -12px;
+  /* margin-top: -12px; */
   margin-bottom: 1rem;
 `;
 
@@ -47,11 +51,13 @@ function Section4() {
   const { t } = useTranslation();
 
   return (
-    <div className="container">
+    <StyledSection4 className="container">
       <ContentRow className="row">
         <TitleTotal>
           <Title>{t('AdsContentCreation.section4.title')}</Title>
-          <Subtitle>{t('AdsContentCreation.section4.subtitle')}</Subtitle>
+          <Subtitle className="fs-4">
+            {t('AdsContentCreation.section4.subtitle')}
+          </Subtitle>
         </TitleTotal>
 
         <StyledP className="fs-5">
@@ -110,7 +116,7 @@ function Section4() {
           </Item>
         </StyledUl>
       </ContentRow>
-    </div>
+    </StyledSection4>
   );
 }
 

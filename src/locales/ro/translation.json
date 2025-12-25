@@ -1024,6 +1024,9 @@
       }
     }
   },
+  "whatsAppComponent": {
+    "text": "Contactează-ne"
+  },
   "contactForm": {
     "title": "Formular de contact",
     "nameLabel": "Nume",

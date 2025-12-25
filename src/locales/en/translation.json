@@ -1048,6 +1048,9 @@
       }
     }
   },
+  "whatsAppComponent": {
+    "text": "Contact us"
+  },
   "footer": {
     "quickLinks": {
       "title": "Quick Links",
