@@ -973,6 +973,27 @@
       }
     }
   },
+  "contact": {
+    "mainSection": {
+      "title": "Hai să începem conversația",
+      "formText": "Completează formularul de mai jos, iar noi te vom contacta prin email pentru a programa un apel și a discuta despre proiectul tău.",
+      "whatToExpect": {
+        "title": "La ce să te aștepți",
+        "text": "Folosește formularul pentru a lua legătura cu noi, iar noi te vom contacta pentru a programa un apel. Indiferent dacă ai deja un proiect clar în minte sau încă explorezi idei, ne vom lua timp să îți înțelegem nevoile și să discutăm împreună cea mai bună direcție de urmat.",
+        "title2": "Ce urmează",
+        "list": {
+          "item1": "Analizăm mesajul tău.",
+          "item2": "Te contactăm prin email pentru a programa un apel.",
+          "item3": "Discutăm obiectivele tale și vedem dacă suntem potriviți pentru a colabora."
+        }
+      }
+    }
+  },
+  "cookiePopup": {
+    "text": "În prezent, Webvertize nu utilizează niciun tip de cookie. În cazul în care vom implementa cookie-uri în viitor, te vom informa în mod corespunzător. Te rugăm să verifici periodic pagina noastră despre cookie-uri pentru actualizări și mai multe informații.",
+    "okBtn": "Ok",
+    "moreAboutCookiesBtn": "Mai multe despre cookie-uri"
+  },
   "contactForm": {
     "title": "Formular de contact",
     "nameLabel": "Nume",

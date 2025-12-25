@@ -975,7 +975,25 @@
     }
   },
   "contact": {
-    "mainSection": {}
+    "mainSection": {
+      "title": "Start the Conversation",
+      "formText": "Fill out the form below and we'll reach out by email to schedule a call and explore your project together.",
+      "whatToExpect": {
+        "title": "What to Expect",
+        "text": "Use the form to get in touch with us and we'll follow up to schedule a call. Whether you already have a clear project in mind or are still exploring ideas, we'll take the time to understand your needs and discuss the best way forward together.",
+        "title2": "What happens next",
+        "list": {
+          "item1": "We review your message.",
+          "item2": "We reach out by email to schedule a call.",
+          "item3": "We discuss your goals and see if we're a good fit."
+        }
+      }
+    }
+  },
+  "cookiePopup": {
+    "text": "Webvertize doesn't use any cookies at the moment. Should we implement any, we will make sure to let you know. Please check our cookies page regularily for updates and more information about cookies.",
+    "okBtn": "Ok",
+    "moreAboutCookiesBtn": "More About Cookies"
   },
   "contactForm": {
     "title": "Contact Form",

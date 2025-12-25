@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Form from '../../components/Form';
 import { fa1, fa2, fa3 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useTranslation } from 'react-i18next';
 
 const StyledMainSection = styled.div`
   padding: 4rem 6rem;
@@ -35,43 +36,39 @@ const StyledUl = styled.ul`
 `;
 
 function MainSection() {
+  const { t } = useTranslation();
+
   return (
     <StyledMainSection className="container">
       <div className="row">
         {/* Contact Form */}
         <div className="col-md-6 mb-4">
           <Text>
-            <h3>Start the Conversation</h3>
-            <p className="fs-5">
-              Fill out the form below and we'll reach out by email to schedule a
-              call and explore your project together.
-            </p>
+            <h3>{t('contact.mainSection.title')}</h3>
+            <p className="fs-5">{t('contact.mainSection.formText')}</p>
           </Text>
 
           <Form />
         </div>
         {/* CTA */}
         <div className="col-md-6">
-          <h3>What to Expect</h3>
+          <h3>{t('contact.mainSection.whatToExpect.title')}</h3>
           <StyledP className="fs-5">
-            Use the form to get in touch with us and we'll follow up to schedule
-            a call. Whether you already have a clear project in mind or are
-            still exploring ideas, we'll take the time to understand your needs
-            and discuss the best way forward together.
+            {t('contact.mainSection.whatToExpect.text')}
           </StyledP>
-          <h4>What happens next</h4>
+          <h4>{t('contact.mainSection.whatToExpect.title2')}</h4>
           <StyledUl>
             <li className="fs-5">
               <FontAwesomeIcon icon={fa1} />
-              We review your message.
+              {t('contact.mainSection.whatToExpect.list.item1')}
             </li>
             <li className="fs-5">
               <FontAwesomeIcon icon={fa2} />
-              We reach out by email to schedule a call.
+              {t('contact.mainSection.whatToExpect.list.item2')}
             </li>
             <li className="fs-5">
               <FontAwesomeIcon icon={fa3} />
-              We discuss your goals and see if we're a good fit.
+              {t('contact.mainSection.whatToExpect.list.item3')}
             </li>
           </StyledUl>
         </div>

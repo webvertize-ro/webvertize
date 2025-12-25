@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -48,6 +49,7 @@ const StyledP = styled.p`
 `;
 
 function CookiePopup() {
+  const { t } = useTranslation();
   const [acceptedCookies, setAcceptedCookies] = useState(
     localStorage.getItem('WebvertizeAcceptedCookies') === 'true'
   );
@@ -65,20 +67,17 @@ function CookiePopup() {
             <div className="row">
               {/* Message */}
               <div className="col-md-8 mb-3">
-                <StyledP>
-                  Webvertize doesn't use any cookies at the moment. Should we
-                  imStyledPlement any, we will make sure to let you know. Please
-                  check our cookies page regularily for updates and more
-                  information about cookies.
-                </StyledP>
+                <StyledP>{t('cookiePopup.text')}</StyledP>
               </div>
               {/* Buttons */}
               <div className="col-md-4 d-flex align-items-center">
                 <ButtonsContainer>
                   <StyledButton onClick={() => handleAcceptedCookies()}>
-                    Ok
+                    {t('cookiePopup.okBtn')}
                   </StyledButton>
-                  <StyledLink to="/cookies">More about cookies</StyledLink>
+                  <StyledLink to="/cookies">
+                    {t('cookiePopup.moreAboutCookiesBtn')}
+                  </StyledLink>
                 </ButtonsContainer>
               </div>
             </div>
