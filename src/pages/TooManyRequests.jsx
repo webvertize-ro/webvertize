@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleLeft } from '@fortawesome/free-solid-svg-icons';
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const StyledTooManyRequests = styled.div`
   height: 100vh;
@@ -33,6 +34,7 @@ const StyledLink = styled(Link)`
 `;
 
 function TooManyRequests() {
+  const { t } = useTranslation();
   // Check for the sessionStorage flag - if it doesn't exist, redirect to "/"
   const navigate = useNavigate();
   useEffect(() => {
@@ -51,17 +53,16 @@ function TooManyRequests() {
     <StyledTooManyRequests>
       <Logo />
       <TooManyRequestsText>
-        <h3>Too Many Requests!</h3>
+        <h3>{t('tooManyRequestsPage.title')}</h3>
         <p className="fs-5 w-75 text-center fs-4">
-          For security reasons, we limit the number of form submissions within a
-          certain time frame. Please try again tomorrow. Thank you!
+          {t('tooManyRequestsPage.text')}
         </p>
       </TooManyRequestsText>
       <StyledLink to="/">
         <div>
           <FontAwesomeIcon icon={faCircleLeft} />
         </div>
-        <div>Back to the main page</div>
+        <div>{t('tooManyRequests.buttonText')}</div>
       </StyledLink>
     </StyledTooManyRequests>
   );

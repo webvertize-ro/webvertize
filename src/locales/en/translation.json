@@ -995,6 +995,11 @@
     "paragraph": "We will review your request and get back to you as soon as possible.",
     "buttonText": "Back to the main page"
   },
+  "tooManyRequestsPage": {
+    "title": "Too Many Requests!",
+    "text": "For security reasons, we limit the number of form submissions within a certain time frame. Please try again tomorrow. Thank you!",
+    "buttonText": "Back to the main page"
+  },
   "footer": {
     "quickLinks": {
       "title": "Quick Links",

@@ -991,6 +991,11 @@
     "paragraph": "Vom analiza solicitarea ta și te vom contacta în cel mai scurt timp posibil.",
     "buttonText": "Înapoi la pagina principală"
   },
+  "tooManyRequestsPage": {
+    "title": "Prea multe solicitări!",
+    "text": "Din motive de securitate, limităm numărul de trimiteri ale formularului într-un anumit interval de timp. Te rugăm să încerci din nou mâine. Mulțumim!",
+    "buttonText": "Înapoi la pagina principală"
+  },
   "footer": {
     "quickLinks": {
       "title": "Linkuri rapide",
