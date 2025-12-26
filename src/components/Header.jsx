@@ -125,7 +125,7 @@ function Header({ bgImage, title, text1, text2 }) {
           </StyledP>
           {title !== 'Webvertize Cookie Policy' && (
             <StyledButton onClick={() => setShowForm(true)}>
-              {t('homepage.header.buttonText')}
+              {t('header.homepage.textBtn')}
             </StyledButton>
           )}
         </TextContent>

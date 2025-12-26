@@ -11,13 +11,48 @@
   "logo": {
     "logoText": "Web Development & Ads"
   },
-  "homepage": {
-    "header": {
+  "header": {
+    "homepage": {
       "title": "Websites, Web Applications & Advertising Built for Real Business Growth",
       "text1": "At Webvertize, we help businesses build a strong, professional online presence through custom websites, web applications and performance-driven advertising. From modern presentation websites to tailored internal tools and strategic ad campaigns, we deliver digital solutions aligned with your business goals.",
       "text2": "We believe the journey to digital success should be enjoyable and collaborative — not stressful. That’s why we work closely with you at every step, from strategy and design to development, launch and ongoing optimization, delivering reliable solutions that support your business long-term.",
-      "buttonText": "Schedule a Call"
+      "textBtn": "Schedule a call"
     },
+    "websites": {
+      "title": "Websites Built to Represent Your Business — Clearly and Professionally",
+      "text1": "Your business website is a reflection of your brand and a powerful tool to engage customers.",
+      "text2": "At Webvertize, we create websites that are visually appealing, easy to navigate and fully responsive, ensuring a seamless experience on any device. We collaborate with you every step of the way in order to build your online presence in an enjoyabale way.",
+      "textBtn": "Schedule a call"
+    },
+    "web-apps": {
+      "title": "Custom Web Applications Built Around Your Workflow",
+      "text1": "Webvertize steps in when off-the-shelf software doesn't quite fit, providing the flexibility your business needs to operate efficiently.",
+      "text2": "We design and develop tailored solutions that start from your existing work flow - not the other way around. From internal dashboards and process automation to customer-facing platforms, we work closely with you to build reliable, scalable tools that simplify operations and support your long-term growth.",
+      "textBtn": "Schedule a call"
+    },
+    "advertising-content-creation": {
+      "title": "Advertising & Content Creation",
+      "text1": "Modern businesses can't rely on good services alone — they need clear, professional advertising that reaches the right audience at the right moment. At Webvertize, we combine content creation, ad campaign strategy and ongoing optimization to ensure your business gets noticed where it matters most. Whether you need engaging visuals for your next promotion, a high-performing Google Ads campaign or a series of Meta ads built to generate leads, we provide the creative and technical support to help your business grow.",
+      "textBtn": "Schedule a call"
+    },
+    "portfolio": {
+      "title": "Projects & Case Studies",
+      "text1": "Explore our projects and discover how web development and advertising can become a clear and enjoyable journey - not a complicated one.",
+      "text2": "At Webvertize, we believe building an online presence is a collaborative process based on communication, transparency and trust. From concept to launch, we work closely with our clients to create digital solutions that support their business goals and have a good looking, moder design - all while keeping the entire process smooth, efficient and enjoyable.",
+      "textBtn": "Schedule a call"
+    },
+    "contact": {
+      "title": "Let's Discuss Your Digital Project",
+      "text1": "Whether you’re planning a new website, a custom web application or an advertising campaign, we’re here to listen and help you find the right solution for your business.",
+      "text2": "Tell us about your goals, challenges or ideas and we’ll take it from there. We believe great digital projects start with clear communication, collaboration and a conversation that feels easy and transparent from the very beginning."
+    },
+    "cookies": {
+      "title": "Webvertize Cookie Policy",
+      "text1": "At the moment, Webvertize does not use cookies on this website. If this changes in the future, we will update this page accordingly and explain exactly what data is collected and why.",
+      "text2": "Below you'll find general information about cookies - what they are and how they're commonly used - along with details about how cookies may be implemented on Webvertize when applicable."
+    }
+  },
+  "homepage": {
     "webdev": {
       "title": "Web Development - Websites and Web Applications",
       "subtitle": "Modern web solutions designed to grow, streamline and support your business.",

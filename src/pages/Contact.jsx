@@ -20,9 +20,9 @@ function Contact() {
       <Navigation />
       <Header
         bgImage={contactHeaderImg}
-        title="Let's Discuss Your Digital Project"
-        text1="Whether you’re planning a new website, a custom web application or an advertising campaign, we’re here to listen and help you find the right solution for your business."
-        text2="Tell us about your goals, challenges or ideas and we’ll take it from there. We believe great digital projects start with clear communication, collaboration and a conversation that feels easy and transparent from the very beginning."
+        title="header.contact.title"
+        text1="header.contact.text1"
+        text2="header.contact.text2"
       />
       <MainSection />
       <SideButtons />

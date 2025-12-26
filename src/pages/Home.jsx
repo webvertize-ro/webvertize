@@ -32,9 +32,9 @@ function Home() {
     <StyledHome>
       <Navigation />
       <Header
-        title="Websites, Web Applications & Advertising Built for Real Business Growth"
-        text1="At Webvertize, we help businesses build a strong, professional online presence through custom websites, web applications and performance-driven advertising. From modern presentation websites to tailored internal tools and strategic ad campaigns, we deliver digital solutions aligned with your business goals."
-        text2="We believe the journey to digital success should be enjoyable and collaborative — not stressful. That’s why we work closely with you at every step, from strategy and design to development, launch and ongoing optimization, delivering reliable solutions that support your business long-term."
+        title="header.homepage.title"
+        text1="header.homepage.text1"
+        text2="header.homepage.text2"
         bgImage={homepageHeader}
       />
       <div className="container">

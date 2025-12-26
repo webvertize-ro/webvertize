@@ -21,9 +21,9 @@ function Portfolio() {
       <Navigation />
       <Header
         bgImage={bgImage}
-        title="Projects & Case Studies"
-        text1="Explore our projects and discover how web development and advertising can become a clear and enjoyable journey - not a complicated one."
-        text2="At Webvertize, we believe building an online presence is a collaborative process based on communication, transparency and trust. From concept to launch, we work closely with our clients to create digital solutions that support their business goals and have a good looking, moder design - all while keeping the entire process smooth, efficient and enjoyable."
+        title="header.portfolio.title"
+        text1="header.portfolio.text1"
+        text2="header.portfolio.text2"
       />
       <SectionWebsites />
 

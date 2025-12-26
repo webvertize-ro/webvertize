@@ -26,9 +26,9 @@ function WebAppsPage() {
     <StyledWebAppsPage>
       <Navigation />
       <Header
-        title="Custom Web Applications Built Around Your Workflow"
-        text1="Webvertize steps in when off-the-shelf software doesn't quite fit, providing the flexibility your business needs to operate efficiently."
-        text2="We design and develop tailored solutions that start from your existing work flow - not the other way around. From internal dashboards and process automation to customer-facing platforms, we work closely with you to build reliable, scalable tools that simplify operations and support your long-term growth."
+        title="header.web-apps.title"
+        text1="header.web-apps.text1"
+        text2="header.web-apps.text2"
         bgImage={webAppsHeader}
       />
       <WebAppsIntro />

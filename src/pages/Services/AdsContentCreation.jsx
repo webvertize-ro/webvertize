@@ -27,15 +27,8 @@ function AdsContentCreation() {
       <Navigation />
       <Header
         bgImage={bgImage}
-        title="Advertising & Content Creation"
-        text1="Modern businesses can't rely on good services alone — they need clear,
-          professional advertising that reaches the right audience at the right
-          moment. At Webvertize, we combine content creation, ad campaign
-          strategy and ongoing optimization to ensure your business gets noticed
-          where it matters most. Whether you need engaging visuals for your next
-          promotion, a high-performing Google Ads campaign or a series of Meta
-          ads built to generate leads, we provide the creative and technical
-          support to help your business grow."
+        title="header.advertising-content-creation.title"
+        text1="header.advertising-content-creation.text1"
       />
       <Section1 />
       <Section2 />

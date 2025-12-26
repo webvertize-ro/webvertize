@@ -26,10 +26,9 @@ function WebsitesPage() {
     <StyledWebsitesPage>
       <Navigation />
       <Header
-        title="Websites Built to Represent Your Business — Clearly and
-              Professionally"
-        text1="Your business website is a reflection of your brand and a powerful tool to engage customers."
-        text2="At Webvertize, we create websites that are visually appealing, easy to navigate and fully responsive, ensuring a seamless experience on any device. We collaborate with you every step of the way in order to build your online presence in an enjoyabale way."
+        title="header.websites.title"
+        text1="header.websites.text1"
+        text2="header.websites.text2"
         bgImage={websitesHeader}
       />
       <WebsitesIntro />

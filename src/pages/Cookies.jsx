@@ -13,9 +13,9 @@ function Cookies() {
       <Navigation />
       <Header
         bgImage={cookiesHeader}
-        title="Webvertize Cookie Policy"
-        text1="At the moment, Webvertize does not use cookies on this website. If this changes in the future, we will update this page accordingly and explain exactly what data is collected and why."
-        text2="Below you'll find general information about cookies - what they are and how they're commonly used - along with details about how cookies may be implemented on Webvertize when applicable."
+        title="header.cookies.title"
+        text1="header.cookies.text1"
+        text2="header.cookies.text2"
       />
       <MainContent />
       <WhatsAppButton />

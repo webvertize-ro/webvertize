@@ -11,6 +11,47 @@
   "logo": {
     "logoText": "Dezvoltare Web și Publicitate"
   },
+  "header": {
+    "homepage": {
+      "title": "Website-uri, Aplicații Web și Publicitate Construite pentru Creștere Reală în Business",
+      "text1": "La Webvertize, ajutăm afacerile să își construiască o prezență online solidă și profesională prin website-uri personalizate, aplicații web și publicitate orientată spre performanță. De la website-uri moderne de prezentare la instrumente interne adaptate și campanii publicitare strategice, livrăm soluții digitale aliniate obiectivelor tale de business.",
+      "text2": "Credem că drumul către succesul digital ar trebui să fie plăcut și colaborativ — nu stresant. De aceea, lucrăm îndeaproape cu tine la fiecare pas, de la strategie și design, până la dezvoltare, lansare și optimizare continuă, oferind soluții fiabile care susțin afacerea ta pe termen lung.",
+      "textBtn": "Programează un apel"
+    },
+    "websites": {
+      "title": "Website-uri Construite pentru a-ți Reprezenta Afacerea — Clar și Profesional",
+      "text1": "Website-ul afacerii tale este o extensie a brandului și un instrument puternic de interacțiune cu clienții.",
+      "text2": "La Webvertize, creăm website-uri atractive din punct de vedere vizual, ușor de navigat și complet responsive, oferind o experiență fluentă pe orice dispozitiv. Colaborăm cu tine la fiecare etapă pentru a construi prezența ta online într-un mod plăcut și eficient.",
+      "textBtn": "Programează un apel"
+    },
+    "web-apps": {
+      "title": "Aplicații Web Personalizate Construite în Jurul Fluxului Tău de Lucru",
+      "text1": "Webvertize intervine atunci când soluțiile software standard nu se potrivesc perfect, oferind flexibilitatea de care afacerea ta are nevoie pentru a funcționa eficient.",
+      "text2": "Proiectăm și dezvoltăm soluții adaptate care pornesc de la fluxul tău de lucru existent — nu invers. De la dashboard-uri interne și automatizarea proceselor, până la platforme orientate către clienți, lucrăm împreună cu tine pentru a crea instrumente fiabile și scalabile care simplifică operațiunile și susțin creșterea ta pe termen lung.",
+      "textBtn": "Programează un apel"
+    },
+    "advertising-content-creation": {
+      "title": "Publicitate și Creare de Conținut",
+      "text1": "Afaceri moderne nu se pot baza doar pe servicii bune — au nevoie de publicitate clară și profesionistă care să ajungă la publicul potrivit, la momentul potrivit. La Webvertize, combinăm crearea de conținut, strategia campaniilor publicitare și optimizarea continuă pentru a ne asigura că afacerea ta este vizibilă acolo unde contează cel mai mult. Fie că ai nevoie de materiale vizuale atractive pentru următoarea promoție, de o campanie Google Ads performantă sau de o serie de reclame Meta concepute pentru a genera lead-uri, îți oferim suportul creativ și tehnic necesar pentru a-ți dezvolta afacerea.",
+      "textBtn": "Programează un apel"
+    },
+    "portfolio": {
+      "title": "Proiecte și Studii de Caz",
+      "text1": "Explorează proiectele noastre și descoperă cum dezvoltarea web și publicitatea pot deveni un proces clar și plăcut — nu unul complicat.",
+      "text2": "La Webvertize, credem că construirea unei prezențe online este un proces colaborativ, bazat pe comunicare, transparență și încredere. De la concept la lansare, lucrăm îndeaproape cu clienții noștri pentru a crea soluții digitale care susțin obiectivele lor de business și au un design modern și bine definit — păstrând întregul proces simplu, eficient și plăcut.",
+      "textBtn": "Programează un apel"
+    },
+    "contact": {
+      "title": "Hai să Discutăm Despre Proiectul Tău Digital",
+      "text1": "Indiferent dacă plănuiești un website nou, o aplicație web personalizată sau o campanie publicitară, suntem aici să te ascultăm și să te ajutăm să găsești soluția potrivită pentru afacerea ta.",
+      "text2": "Povestește-ne despre obiectivele, provocările sau ideile tale și vom construi mai departe împreună. Credem că proiectele digitale de succes încep cu o comunicare clară, colaborare și o conversație deschisă și transparentă încă de la primul pas."
+    },
+    "cookies": {
+      "title": "Politica de Cookie-uri Webvertize",
+      "text1": "În prezent, Webvertize nu utilizează cookie-uri pe acest website. În cazul în care acest lucru se va schimba în viitor, vom actualiza această pagină în mod corespunzător și vom explica exact ce date sunt colectate și de ce.",
+      "text2": "Mai jos vei găsi informații generale despre cookie-uri — ce sunt și cum sunt utilizate în mod obișnuit — precum și detalii despre modul în care cookie-urile pot fi implementate pe Webvertize, atunci când este cazul."
+    }
+  },
   "homepage": {
     "header": {
       "title": "Website-uri, Aplicații Web și Publicitate pentru Afacerea Ta",

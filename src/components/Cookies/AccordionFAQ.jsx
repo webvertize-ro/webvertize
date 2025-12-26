@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import AccordionItem from './AccordionItem';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const faqs = [
   {
@@ -37,14 +38,12 @@ const Accordion = styled.div`
 `;
 
 function AccordionFAQ() {
+  const { t } = useTranslation();
   const [curOpen, setIsOpen] = useState(null);
   return (
     <Accordion className="container">
-      <h3>Cookie Information and FAQs</h3>
-      <p className="fs-5">
-        Find below some general information about cookies, their purpose and our
-        current usage.
-      </p>
+      <h3>{t('cookiesPage.title')}</h3>
+      <p className="fs-5">{t('cookiesPage.subtitle')}</p>
       {faqs.map((el, index) => (
         <AccordionItem
           curOpen={curOpen}
