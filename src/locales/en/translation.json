@@ -1086,6 +1086,10 @@
   "whatsAppComponent": {
     "text": "Contact us"
   },
+  "languageDropdown": {
+    "lng1": "English",
+    "lng2": "Romanian"
+  },
   "footer": {
     "quickLinks": {
       "title": "Quick Links",

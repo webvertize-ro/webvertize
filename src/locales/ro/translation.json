@@ -1091,6 +1091,10 @@
     "text": "Din motive de securitate, limităm numărul de trimiteri ale formularului într-un anumit interval de timp. Te rugăm să încerci din nou mâine. Mulțumim!",
     "buttonText": "Înapoi la pagina principală"
   },
+  "languageDropdown": {
+    "lng1": "Engleză",
+    "lng2": "Română"
+  },
   "footer": {
     "quickLinks": {
       "title": "Linkuri rapide",

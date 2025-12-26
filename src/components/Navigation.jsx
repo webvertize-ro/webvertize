@@ -8,6 +8,7 @@ import i18n from '../i18n';
 import { useTranslation } from 'react-i18next';
 import usaImg from '../assets/usa_flag.png';
 import roImg from '../assets/ro_flag.png';
+import LanguageDropdown from './Dropdown/LanguageDropdown';
 
 const NavigationHeader = styled.header`
   transition: all 0.3s ease-in-out;
@@ -86,10 +87,6 @@ const StyledLi = styled.li`
 
 const FacebookIconContainer = styled.div`
   padding-left: 1rem;
-`;
-
-const StyledSelect = styled.select`
-  width: 4rem;
 `;
 
 function Navigation() {
@@ -208,15 +205,8 @@ function Navigation() {
             <FacebookIconContainer>
               <FacebookIcon color="dark" />
             </FacebookIconContainer>
-
-            <StyledSelect
-              value={i18n.language}
-              onChange={(e) => i18n.changeLanguage(e.target.value)}
-              className="form-select form-select-sm"
-            >
-              <option value="en">EN</option>
-              <option value="ro">RO</option>
-            </StyledSelect>
+            {/* Language Select Dropdown */}
+            <LanguageDropdown />
           </div>
         </div>
       </StyledNav>
