@@ -25,7 +25,7 @@ function Contact() {
         text2="header.contact.text2"
       />
       <MainSection />
-      {/* <SideButtons /> */}
+      <SideButtons />
       <BackToTop />
       <WhatsAppButton />
       <CookiePopup />

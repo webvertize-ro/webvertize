@@ -3,6 +3,8 @@ import Form from '../../components/Form';
 import { fa1, fa2, fa3 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useTranslation } from 'react-i18next';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const StyledMainSection = styled.div`
   padding: 4rem 6rem;
@@ -37,6 +39,38 @@ const StyledUl = styled.ul`
 
 function MainSection() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+  const [isLoading, setIsLoading] = useState(false);
+
+  function handleLoading(bool) {
+    setIsLoading(bool);
+  }
+
+  async function handleValidSubmit(data) {
+    handleLoading(true);
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+
+    if (res.ok) {
+      handleLoading(false);
+      document.body.classList.remove('modal-open');
+      document.querySelectorAll('.modal-backdrop').forEach((el) => el.remove());
+      sessionStorage.setItem('formSubmitted', 'true');
+      navigate('/thank-you');
+    } else if (res.status === 429) {
+      handleLoading(false);
+      document.body.classList.remove('modal-open');
+      document.querySelectorAll('.modal-backdrop').forEach((el) => el.remove());
+      sessionStorage.setItem('tooManyRequests', 'true');
+      navigate('/too-many-requests');
+    } else if (res.status === 400) {
+      handleLoading(false);
+      // toast.error('Captcha verification failed!');
+    }
+  }
 
   return (
     <StyledMainSection className="container">
@@ -48,7 +82,7 @@ function MainSection() {
             <p className="fs-5">{t('contact.mainSection.formText')}</p>
           </Text>
 
-          <Form />
+          <Form onValidSubmit={handleValidSubmit} isLoading={isLoading} />
         </div>
         {/* CTA */}
         <div className="col-md-6">
