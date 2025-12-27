@@ -72,9 +72,7 @@ const CardBody = styled.div`
   flex-grow: 1 !important;
 `;
 
-const StyledP = styled.p`
-  text-align: justify;
-`;
+const StyledP = styled.p``;
 
 const StyledLink = styled(Link)`
   text-decoration: none;

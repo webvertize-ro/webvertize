@@ -42,7 +42,7 @@ function OurMission() {
   const { t } = useTranslation();
 
   return (
-    <StyledOurMission className="mb-4">
+    <StyledOurMission className="container mb-4">
       <StyledH2>{t('homepage.ourMission.title')}</StyledH2>
       <Subtitle className="fs-5">{t('homepage.ourMission.subtitle')}</Subtitle>
       <Description>

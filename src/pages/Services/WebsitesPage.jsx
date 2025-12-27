@@ -21,7 +21,6 @@ const StyledWebsitesPage = styled.div`
 `;
 
 function WebsitesPage() {
-  const { t } = useTranslation();
   return (
     <StyledWebsitesPage>
       <Navigation />
@@ -33,8 +32,8 @@ function WebsitesPage() {
       />
       <WebsitesIntro />
       <WebsitesFeatures />
-      <WebsitesResults />
       <ServicesStackedCards />
+      <WebsitesResults />
       <CTA title="CTA.websites.title" text="CTA.websites.text" />
       <SideButtons />
       <WhatsAppButton />

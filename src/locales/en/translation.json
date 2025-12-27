@@ -27,24 +27,24 @@
     "web-apps": {
       "title": "Custom Web Applications Built Around Your Workflow",
       "text1": "Webvertize steps in when off-the-shelf software doesn't quite fit, providing the flexibility your business needs to operate efficiently.",
-      "text2": "We design and develop tailored solutions that start from your existing work flow - not the other way around. From internal dashboards and process automation to customer-facing platforms, we work closely with you to build reliable, scalable tools that simplify operations and support your long-term growth.",
+      "text2": "We design and develop tailored solutions that start from your existing work flow - not the other way around.",
       "textBtn": "Schedule a call"
     },
     "advertising-content-creation": {
       "title": "Advertising & Content Creation",
-      "text1": "Modern businesses can't rely on good services alone — they need clear, professional advertising that reaches the right audience at the right moment. At Webvertize, we combine content creation, ad campaign strategy and ongoing optimization to ensure your business gets noticed where it matters most. Whether you need engaging visuals for your next promotion, a high-performing Google Ads campaign or a series of Meta ads built to generate leads, we provide the creative and technical support to help your business grow.",
+      "text1": "Modern businesses can't rely on good services alone — they need clear, professional advertising that reaches the right audience at the right moment. At Webvertize, we combine content creation, ad campaign strategy and ongoing optimization to ensure your business gets noticed where it matters most.",
       "textBtn": "Schedule a call"
     },
     "portfolio": {
       "title": "Projects & Case Studies",
       "text1": "Explore our projects and discover how web development and advertising can become a clear and enjoyable journey - not a complicated one.",
-      "text2": "At Webvertize, we believe building an online presence is a collaborative process based on communication, transparency and trust. From concept to launch, we work closely with our clients to create digital solutions that support their business goals and have a good looking, moder design - all while keeping the entire process smooth, efficient and enjoyable.",
+      "text2": "At Webvertize, we believe building an online presence is a collaborative process based on communication, transparency and trust. From concept to launch, we work closely with our clients to create digital solutions that support their business goals.",
       "textBtn": "Schedule a call"
     },
     "contact": {
       "title": "Let's Discuss Your Digital Project",
       "text1": "Whether you’re planning a new website, a custom web application or an advertising campaign, we’re here to listen and help you find the right solution for your business.",
-      "text2": "Tell us about your goals, challenges or ideas and we’ll take it from there. We believe great digital projects start with clear communication, collaboration and a conversation that feels easy and transparent from the very beginning."
+      "text2": "Tell us about your goals, challenges or ideas and we’ll take it from there."
     },
     "cookies": {
       "title": "Webvertize Cookie Policy",
@@ -59,14 +59,14 @@
       "websitesCard": {
         "title": "Websites",
         "subtitle": "Presentational websites & essential online presence",
-        "text": "Delivering fast, modern and responsive mobile-friendly presentation websites tailored to your brand. Additional features can be integrated based on your business needs - such as live chats, interactive maps, image galleries, contact forms, admin dashboards, login funtionality and more.",
+        "text": "Delivering fast, modern and responsive mobile-friendly presentation websites tailored to your brand. Additional features can be integrated based on your business needs.",
         "caseStudiesBtn": "View Case Studies",
         "exploreServicesBtn": "Explore Services"
       },
       "webAppsCard": {
         "title": "Web Applications",
         "subtitle": "Internal tools & custom business solutions",
-        "text": "Custom internal applications designed for small and medium-sized businesses. Streamline your operations with tools built around your specific workflows—such as task management systems, ticketing platforms, live chat applications, inventory tracking, booking systems, and more.",
+        "text": "Custom internal applications designed for small and medium-sized businesses. Streamline your operations with tools built around your specific workflows.",
         "caseStudiesBtn": "View Case Studies",
         "exploreServicesBtn": "Explore Services"
       }
@@ -77,20 +77,20 @@
       "contentCreationCard": {
         "title": "Content Creation",
         "subtitle": "Promotional images & Reels for ads",
-        "text": "High-quaality promotional content for Facebook and Google Ads, including professionally designed split-image posts and short video Reels that highlight your brand, services and calls to action.",
+        "text": "High-quaality promotional content for Facebook and Google Ads, including professionally designed split-image posts and short video Reels.",
         "caseStudiesBtn": "View Case Studies",
         "exploreServicesBtn": "Explore Services"
       },
       "googleAdsCard": {
         "title": "Google Ads Campaigns",
         "subtitle": "Strategic creation and ongoing management of Google Ads campaigns tailored to your business goals",
-        "text": "We collaborate with you to design a high-performing Google Ads campaign from the ground up - selecting the right objectives and ensuring consistent optimizations and monitoring. We monitor performance, implement improvements and deliver clear monthly reports so you always know how your campaign is progressing.",
+        "text": "We collaborate with you to design a high-performing Google Ads campaign from the ground up - selecting the right objectives and ensuring consistent optimizations and monitoring.",
         "readMoreBtn": "Read More About Campaign Types"
       },
       "facebookAdsCard": {
         "title": "Facebook Ads Campaigns",
         "subtitle": "Engaging campaigns tailored to your business goals",
-        "text": "Creating and managing Facebook Ads campaigns, including promotional content, ad copy, and performance monitoring to reach your audience effectively.",
+        "text": "Creating and managing Facebook Ads campaigns, including promotional content, ad copy and performance monitoring to reach your audience effectively.",
         "readMoreBtn": "Read More About Campaign Types"
       }
     },
@@ -256,7 +256,7 @@
           },
           "item2": {
             "itemTitle": "Deliverables",
-            "itemText": "Wireframes, interactive prototypes, style guide, design assets"
+            "itemText": "Wireframes, interactive prototypes, style guide, design assets."
           },
           "item3": {
             "itemTitle": "Tools & Methods",
@@ -362,7 +362,7 @@
           },
           "item6": {
             "itemTitle": "Value",
-            "itemText": "You can confidently go live knowing everything works, and you have a partner to help with improvements and updates."
+            "itemText": "You can confidently go live knowing everything works and you have a partner to help with improvements and updates."
           }
         }
       }
@@ -372,9 +372,8 @@
     "webAppsIntro": {
       "title": "Why Custom Web Applications Matter",
       "text": {
-        "text1": "Modern businesses rely on digital tools to operate efficiently and while most ready-made software can work for general needs, it rarely fits the unique workflow, structure and priorities of your organization.",
-        "text2": "We design and build custom web applications tailored to the way your business actually works - from internal management systems to customer-facing platforms.",
-        "text3": "Whether you need a task management platform for your team, an internal dashboard for tracking daily operations, a custom ticketing tool for client interactions or an integrated live chat system that connects departments, our applications are built to simplify complexity, reduce repetitive work and unlock new scalability opportunities."
+        "text1": "We design and build custom web applications tailored to the way your business actually works - from internal management systems to customer-facing platforms.",
+        "text2": "Whether you need a task management platform for your team, an internal dashboard for tracking daily operations, a custom ticketing tool for client interactions or an integrated live chat system that connects departments, our applications are built to simplify complexity, reduce repetitive work and unlock new scalability opportunities."
       }
     },
     "webAppsFeatures": {

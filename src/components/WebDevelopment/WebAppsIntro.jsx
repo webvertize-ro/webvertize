@@ -63,9 +63,6 @@ function WebAppsIntro() {
             <StyledP className="fs-5">
               {t('webapps.webAppsIntro.text.text2')}
             </StyledP>
-            <StyledP className="fs-5">
-              {t('webapps.webAppsIntro.text.text3')}
-            </StyledP>
           </SectionTextContent>
         </div>
       </div>

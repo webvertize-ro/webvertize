@@ -21,7 +21,6 @@ const StyledWebAppsPage = styled.div`
 `;
 
 function WebAppsPage() {
-  const { t } = useTranslation();
   return (
     <StyledWebAppsPage>
       <Navigation />

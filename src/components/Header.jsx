@@ -13,6 +13,8 @@ const StyledHeader = styled.header`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 
   &::before {
     content: '';
@@ -121,7 +123,7 @@ function Header({ bgImage, title, text1, text2 }) {
         <TextContent className="container">
           <Title>{t(title)}</Title>
           <StyledP className="fs-4 text-center">
-            {t(text2) ? <strong>{t(text1)}</strong> : t(text1)} {t(text2)}
+            <strong>{t(text1)}</strong> {t(text2)}
           </StyledP>
           {title !== 'Webvertize Cookie Policy' && (
             <StyledButton onClick={() => setShowForm(true)}>

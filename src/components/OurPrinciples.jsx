@@ -49,7 +49,7 @@ function OurPrinciples() {
   const { t } = useTranslation();
 
   return (
-    <Pillars className="mb-5">
+    <Pillars className="container mb-5">
       <PillarsTitle>{t('homepage.ourCorePrinciples.title')}</PillarsTitle>
       <SubtitleCorePrinciples className="fs-5">
         {t('homepage.ourCorePrinciples.subtitle')}

@@ -41,7 +41,7 @@ function Ads() {
   const { t } = useTranslation();
 
   return (
-    <StyledAds>
+    <StyledAds className="container">
       <AdsTitle>{t('homepage.ads.title')}</AdsTitle>
       <p className="fs-5">{t('homepage.ads.subtitle')}</p>
       <div className="container">

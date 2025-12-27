@@ -14,6 +14,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useTranslation } from 'react-i18next';
 
 const CardWrapper = styled.div`
+  height: 100%;
   perspective: 1000px;
 
   &:hover .card-flip-inner {
@@ -48,11 +49,10 @@ const CardBodyBack = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
 `;
 
 const StyledP = styled.p`
-  text-align: justify;
+  text-align: center;
 `;
 
 const StyledUl = styled.ul`
@@ -95,8 +95,8 @@ function CardFlip({ project }) {
           {/* Back */}
           <CardBack>
             <div className="card h-100 d-flex justify-content-center align-items-center rounded-4">
-              <CardBodyBack className="card-body d-flex flex-column gap-1">
-                <h5 className="card-title">{t(project.title)}</h5>
+              <CardBodyBack className="card-body d-flex flex-column align-items-center justify-content-center gap-1">
+                <h5 className="card-title text-center">{t(project.title)}</h5>
                 <StyledP className="card-text">
                   {t(project.longDescription)}
                 </StyledP>

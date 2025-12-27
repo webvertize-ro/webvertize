@@ -32,19 +32,19 @@
     },
     "advertising-content-creation": {
       "title": "Publicitate și Creare de Conținut",
-      "text1": "Afaceri moderne nu se pot baza doar pe servicii bune — au nevoie de publicitate clară și profesionistă care să ajungă la publicul potrivit, la momentul potrivit. La Webvertize, combinăm crearea de conținut, strategia campaniilor publicitare și optimizarea continuă pentru a ne asigura că afacerea ta este vizibilă acolo unde contează cel mai mult. Fie că ai nevoie de materiale vizuale atractive pentru următoarea promoție, de o campanie Google Ads performantă sau de o serie de reclame Meta concepute pentru a genera lead-uri, îți oferim suportul creativ și tehnic necesar pentru a-ți dezvolta afacerea.",
+      "text1": "Afaceri moderne nu se pot baza doar pe servicii bune — au nevoie de publicitate clară și profesionistă care să ajungă la publicul potrivit, la momentul potrivit. La Webvertize, combinăm crearea de conținut, strategia campaniilor publicitare și optimizarea continuă pentru a ne asigura că afacerea ta este vizibilă acolo unde contează cel mai mult.",
       "textBtn": "Programează un apel"
     },
     "portfolio": {
       "title": "Proiecte și Studii de Caz",
       "text1": "Explorează proiectele noastre și descoperă cum dezvoltarea web și publicitatea pot deveni un proces clar și plăcut — nu unul complicat.",
-      "text2": "La Webvertize, credem că construirea unei prezențe online este un proces colaborativ, bazat pe comunicare, transparență și încredere. De la concept la lansare, lucrăm îndeaproape cu clienții noștri pentru a crea soluții digitale care susțin obiectivele lor de business și au un design modern și bine definit — păstrând întregul proces simplu, eficient și plăcut.",
+      "text2": "La Webvertize, credem că construirea unei prezențe online este un proces colaborativ, bazat pe comunicare, transparență și încredere. De la concept la lansare, lucrăm îndeaproape cu clienții noștri pentru a crea soluții digitale care susțin obiectivele lor de business.",
       "textBtn": "Programează un apel"
     },
     "contact": {
       "title": "Hai să Discutăm Despre Proiectul Tău Digital",
       "text1": "Indiferent dacă plănuiești un website nou, o aplicație web personalizată sau o campanie publicitară, suntem aici să te ascultăm și să te ajutăm să găsești soluția potrivită pentru afacerea ta.",
-      "text2": "Povestește-ne despre obiectivele, provocările sau ideile tale și vom construi mai departe împreună. Credem că proiectele digitale de succes încep cu o comunicare clară, colaborare și o conversație deschisă și transparentă încă de la primul pas."
+      "text2": "Povestește-ne despre obiectivele, provocările sau ideile tale și vom construi mai departe împreună."
     },
     "cookies": {
       "title": "Politica de Cookie-uri Webvertize",
@@ -65,14 +65,14 @@
       "websitesCard": {
         "title": "Website-uri",
         "subtitle": "Website-uri de prezentare și o prezență online esențială",
-        "text": "Livrăm website-uri de prezentare rapide, moderne și responsive, optimizate pentru dispozitive mobile și adaptate identității brandului tău. Funcționalități suplimentare pot fi integrate în funcție de nevoile afacerii tale — precum chat-uri live, hărți interactive, galerii de imagini, formulare de contact, panouri de administrare, funcționalități de autentificare și multe altele.",
+        "text": "Livrăm website-uri de prezentare rapide, moderne și responsive, optimizate pentru dispozitive mobile și adaptate identității brandului tău. Funcționalități suplimentare pot fi integrate în funcție de nevoile afacerii tale.",
         "caseStudiesBtn": "Vezi studii de caz",
         "exploreServicesBtn": "Descoperă serviciile"
       },
       "webAppsCard": {
         "title": "Aplicații Web",
         "subtitle": "Instrumente interne și soluții personalizate pentru afaceri",
-        "text": "Aplicații interne personalizate, concepute pentru întreprinderi mici și mijlocii. Optimizează-ți operațiunile cu instrumente construite în jurul fluxurilor tale de lucru specifice — precum sisteme de management al sarcinilor, platforme de ticketing, aplicații de chat live, sisteme de gestiune a stocurilor, sisteme de programări și multe altele.",
+        "text": "Aplicații interne personalizate, concepute pentru întreprinderi mici și mijlocii. Optimizează-ți operațiunile cu instrumente construite în jurul fluxurilor tale de lucru specifice.",
         "caseStudiesBtn": "Vezi studii de caz",
         "exploreServicesBtn": "Descoperă serviciile"
       }
@@ -378,9 +378,8 @@
     "webAppsIntro": {
       "title": "De ce contează aplicațiile web personalizate",
       "text": {
-        "text1": "Afac­erile moderne se bazează pe instrumente digitale pentru a funcționa eficient, iar deși majoritatea soluțiilor software standard pot acoperi nevoi generale, acestea se potrivesc rareori fluxurilor de lucru, structurii și priorităților unice ale organizației tale.",
-        "text2": "Proiectăm și dezvoltăm aplicații web personalizate, adaptate modului real în care funcționează afacerea ta — de la sisteme interne de management până la platforme orientate către clienți.",
-        "text3": "Fie că ai nevoie de o platformă de gestionare a sarcinilor pentru echipa ta, un dashboard intern pentru monitorizarea operațiunilor zilnice, un sistem de ticketing personalizat pentru interacțiunea cu clienții sau un sistem de chat live integrat care conectează departamentele, aplicațiile noastre sunt construite pentru a simplifica complexitatea, a reduce munca repetitivă și a deschide noi oportunități de scalare."
+        "text1": "Proiectăm și dezvoltăm aplicații web personalizate, adaptate modului real în care funcționează afacerea ta — de la sisteme interne de management până la platforme orientate către clienți.",
+        "text2": "Fie că ai nevoie de o platformă de gestionare a sarcinilor pentru echipa ta, un dashboard intern pentru monitorizarea operațiunilor zilnice, un sistem de ticketing personalizat pentru interacțiunea cu clienții sau un sistem de chat live integrat care conectează departamentele, aplicațiile noastre sunt construite pentru a simplifica complexitatea, a reduce munca repetitivă și a deschide noi oportunități de scalare."
       }
     },
     "webAppsFeatures": {

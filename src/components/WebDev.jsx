@@ -35,7 +35,7 @@ function WebDev() {
   const { t } = useTranslation();
 
   return (
-    <StyledWebDev>
+    <StyledWebDev className="container">
       <h1>{t('homepage.webdev.title')}</h1>
       <p className="fs-4">{t('homepage.webdev.subtitle')}</p>
       <div className="container">
