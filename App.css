@@ -1,6 +1,8 @@
 body {
   font-family: 'Roboto', sans-serif !important;
   font-weight: 400;
+  overflow-y: auto !important;
+  padding: 0 !important;
 }
 
 @font-face {
