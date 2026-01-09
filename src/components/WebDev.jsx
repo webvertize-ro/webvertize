@@ -40,7 +40,7 @@ function WebDev() {
       <p className="fs-4">{t('homepage.webdev.subtitle')}</p>
       <div className="container">
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-md-6 mb-4">
             <Card
               title="homepage.webdev.websitesCard.title"
               subtitle="homepage.webdev.websitesCard.subtitle"
@@ -56,7 +56,7 @@ function WebDev() {
               exploreServicesBtn="homepage.webdev.websitesCard.exploreServicesBtn"
             />
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 mb-4">
             <Card
               title="homepage.webdev.webAppsCard.title"
               subtitle="homepage.webdev.webAppsCard.subtitle"
