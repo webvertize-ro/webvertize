@@ -5,6 +5,7 @@ import ModalForm from './ModalForm';
 import Form from './Form';
 import ScheduleACallButton from './ScheduleACallButton';
 import { useTranslation } from 'react-i18next';
+import toast from 'react-hot-toast';
 
 const StyledHeader = styled.header`
   position: relative;
@@ -82,14 +83,14 @@ function Header({ bgImage, title, text1, text2 }) {
   const navigate = useNavigate();
   const [showForm, setShowForm] = useState(false);
   const { t } = useTranslation();
+  const [isLoading, setIsLoading] = useState(false);
 
-  async function handleSubmit(e) {
-    e.preventDefault();
+  function handleLoading(bool) {
+    setIsLoading(bool);
+  }
 
-    const formData = new FormData(e.target);
-    const data = Object.fromEntries(formData.entries());
-
-    // send to Vercel API route
+  async function handleValidSubmit(data) {
+    handleLoading(true);
     const res = await fetch('/api/contact', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -97,23 +98,22 @@ function Header({ bgImage, title, text1, text2 }) {
     });
 
     if (res.ok) {
-      // Navigate to the thank-you page
-      // 1. Removing Bootstrap's modal-backdrop
+      handleLoading(false);
       document.body.classList.remove('modal-open');
       document.querySelectorAll('.modal-backdrop').forEach((el) => el.remove());
       setShowForm(false);
-      // 2. Setting a flag in the SessionStorage
       sessionStorage.setItem('formSubmitted', 'true');
-      // 3. Navigating to the thank-you page
       navigate('/thank-you');
     } else if (res.status === 429) {
+      handleLoading(false);
       document.body.classList.remove('modal-open');
       document.querySelectorAll('.modal-backdrop').forEach((el) => el.remove());
       setShowForm(false);
-      // setting a flag in sessionStorage
       sessionStorage.setItem('tooManyRequests', 'true');
       navigate('/too-many-requests');
-      return;
+    } else if (res.status === 400) {
+      handleLoading(false);
+      toast.error('Captcha verification failed!');
     }
   }
 
@@ -138,7 +138,7 @@ function Header({ bgImage, title, text1, text2 }) {
         title="Schedule a Call"
         onClose={() => setShowForm(false)}
       >
-        <Form onSubmit={handleSubmit}></Form>
+        <Form onValidSubmit={handleValidSubmit} isLoading={isLoading}></Form>
       </ModalForm>
     </>
   );
