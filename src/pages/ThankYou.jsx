@@ -3,8 +3,8 @@ import Logo from '../components/Logo';
 import { Link, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleLeft } from '@fortawesome/free-solid-svg-icons';
-import { useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useEffect, useState } from 'react';
+import { useSSR, useTranslation } from 'react-i18next';
 
 const StyledLink = styled(Link)`
   text-decoration: none;
@@ -34,6 +34,8 @@ const ThankYouText = styled.div`
 `;
 
 function ThankYou() {
+  const [allowed, setAllowed] = useState(false);
+
   const { t } = useTranslation();
   // Check for the sessionStorage flag - if it doesn't exist, redirect to "/"
   const navigate = useNavigate();
@@ -47,7 +49,10 @@ function ThankYou() {
 
     // if accessed correctly, remove the flag so refreshing the page doesn't show the content again
     sessionStorage.removeItem('formSubmitted');
+    setAllowed(true);
   }, [navigate]);
+
+  if (!allowed) return null;
 
   return (
     <ThankYouContainer>
